@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+@prefix cmdb: <http://purl.org/aer/cmdb/1.0/> .
+
+#@prefix cmdb: <http://aeriandi.com/ontology/cmdb/> .
+#@prefix cmdbl: <http://aeriandi.com/ontology/cmdb/layout/> .
+
+#entities and services
+cmdb:service 
+	a rdfs:Class ;
+	rdfs:label "Service" ;
+	rdfs:comment "A software service" .
+
+cmdb:database 
+	a rdfs:Class ;
+	a cmdb:service ;
+	rdfs:label "Database" ;
+	rdfs:comment "A database service" .
+
+cmdb:fileshare 
+	a cmdb:service ;
+	a rdfs:Class ;
+	rdfs:label "FileShare" ;
+	rdfs:comment "A fileshare service" .
+
+#Reliability and Availability
+cmdb:availabilityDependsOn: 
+	rdfs:label "Depends On for Availability" ;
+	rdfs:comment "A Dependency relating two entities where the subject depends on the object for reliability" .
+
+cmdb:isHighlyAvailable:
+	a rdf:Property;
+	rdfs:label "isHighlyAvailable" ;
+	rdfs:comment "Means that the entity can maintain at least failure with no (or very little) downtime" .
+
+#security
+cmdb:mustProvideAccessTo: 
+	rdfs:label "Needs Access To" ;
+	rdfs:comment "Points to a group of users who need access to this system" .
+
+#@prefix restrictAccessTo: <http://aeriandi.com/cmdb/relationship/restrictAccessTo> .
+#@prefix doNotGiveAccessTo: <http://aeriandi.com/cmdb/relationship/doNotGiveAccessTo> .
+#security
+#@prefix needsAccessTo: <http://aeriandi.com/cmdb/relationship/needsAccessTo> .
+#@prefix securityRequirement: <http://aeriandi.com/cmdb/properties/securityRequirement> .
+#@prefix restrictAccessTo: <http://aeriandi.com/cmdb/relationship/restrictAccessTo> .
+#@prefix doNotGiveAccessTo: <http://aeriandi.com/cmdb/relationship/doNotGiveAccessTo> .
+
+#auditing
+#@prefix isAuditedBy: <http://aeriandi.com/cmdb/relationship/auditing/isAuditedBy> .
+#@prefix mustAudit: <http://aeriandi.com/cmdb/properties/auditing/mustAudit> .
+
+
+#Layout
+cmdbl:xpos 
+	a rdf:Property;
+	rdfs:label "x" ;
+	rdfs:comment "The x in px from top left corner of the logical screen" .
+
+cmdbl:ypos 
+	a rdf:Property;
+	rdfs:label "y" ;	
+	rdfs:comment "The y in px from top left corner of the logical screen" .
+
+cmdbl:isVisible
+	a rdf:Property;
+	rdfs:label "Is Visible" ;
+	rdfs:comment "Showing if this node is visible in the graph" .
+	
+cmdbl:graph 
+	a rdfs:Class ;
+	rdfs:label "Layout Graph" ;
+	rdfs:comment "Represents a Graph of the positions of nodes in a graph when visualising these nodes" .
+
+cmdbl:shouldDisplayInPropertyGrid 	
+	a rdf:Property ;
+	rdfs:label "Display In Property Grid" ;
+	rdfs:comment "Represents a Graph of the positions of nodes in a graph when visualising these nodes" .
