@@ -11,5 +11,12 @@
         <h1>Coming Soon</h1>
         <p>This website is under construction. Please check back soon.</p>
     </div>
+    <script>
+        function setRandomBackground() {
+            const imageNumber = Math.floor(Math.random() * 6) + 1;
+            document.body.style.backgroundImage = `url('images/Sparks${imageNumber}.jpg')`;
+        }
+        setRandomBackground();
+    </script>
 </body>
 </html>
