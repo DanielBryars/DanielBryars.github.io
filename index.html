@@ -11,6 +11,7 @@
         <h1>Coming Soon</h1>
         <p>This website is under construction. Please check back soon.</p>
     </div>
+    <div id="buildInfo" class="build-info"></div>
     <script>
         let currentImageNumber = 1;
         const BACKGROUND_ROTATION_INTERVAL_MS = 5000;
@@ -20,6 +21,15 @@
         }
         rotateBackground();
         setInterval(rotateBackground, BACKGROUND_ROTATION_INTERVAL_MS);
+
+        // Load and display build info
+        fetch('build-info.json')
+            .then(response => response.json())
+            .then(data => {
+                const buildInfo = document.getElementById('buildInfo');
+                buildInfo.textContent = `Build: ${data.commitHash.substring(0, 7)} | ${new Date(data.buildDate).toLocaleDateString()}`;
+            })
+            .catch(error => console.error('Error loading build info:', error));
     </script>
 </body>
 </html>
