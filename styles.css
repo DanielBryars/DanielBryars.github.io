@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     text-align: center;
+    transition: background-image 1s ease-in-out;
 }
 
 .container {
