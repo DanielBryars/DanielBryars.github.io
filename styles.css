@@ -25,4 +25,17 @@ h1 {
 
 p {
     color: #666;
+}
+
+.build-info {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: monospace;
+    z-index: 1000;
 } 
