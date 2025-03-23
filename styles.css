@@ -237,4 +237,23 @@ p {
 
 .back-link a:hover {
     color: #ffffff;
+}
+
+.social-badges {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-badges img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+}
+
+.social-badges img:hover {
+    transform: scale(1.05);
 } 
