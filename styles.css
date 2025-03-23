@@ -168,4 +168,73 @@ p {
 
 .back-link a:hover {
     color: #000;
+}
+
+.cv-container {
+    max-width: 90%;
+    width: 90%;
+    margin: 20px auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.cv-content {
+    font-family: 'Consolas', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d4d4d4;
+    overflow-x: auto;
+    text-align: left;
+}
+
+.python-code {
+    margin: 0;
+    white-space: pre;
+    tab-size: 4;
+    display: inline-block;
+    min-width: 100%;
+    text-align: left;
+}
+
+.comment {
+    color: #6a9955;
+}
+
+.keyword {
+    color: #569cd6;
+}
+
+.string {
+    color: #ce9178;
+}
+
+.function {
+    color: #dcdcaa;
+}
+
+.class-name {
+    color: #4ec9b0;
+}
+
+.self {
+    color: #9cdcfe;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-link a {
+    color: #d4d4d4;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+    color: #ffffff;
 } 
