@@ -12,11 +12,14 @@
         <p>This website is under construction. Please check back soon.</p>
     </div>
     <script>
-        function setRandomBackground() {
-            const imageNumber = Math.floor(Math.random() * 6) + 1;
-            document.body.style.backgroundImage = `url('images/Sparks${imageNumber}.jpg')`;
+        let currentImageNumber = 1;
+        const BACKGROUND_ROTATION_INTERVAL_MS = 5000;
+        function rotateBackground() {
+            document.body.style.backgroundImage = `url('images/Sparks${currentImageNumber}.jpg')`;
+            currentImageNumber = currentImageNumber >= 6 ? 1 : currentImageNumber + 1;
         }
-        setRandomBackground();
+        rotateBackground();
+        setInterval(rotateBackground, BACKGROUND_ROTATION_INTERVAL_MS);
     </script>
 </body>
 </html>
