@@ -3,20 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Daniel Bryars</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        .background-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: opacity 1s ease-in-out;
+        }
+        #bgLayer1 { z-index: -2; }
+        #bgLayer2 { z-index: -1; opacity: 0; }
+
+        .menu {
+            position: fixed;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .menu-item {
+            font-family: 'VT323', monospace;
+            font-size: 48px;
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 20px 0;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            position: relative;
+            padding-left: 30px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu-item:before {
+            content: '+';
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu-item:hover {
+            opacity: 1;
+        }
+
+        .menu-item:hover:before {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>This website is under construction. Please check back soon.</p>
+    <div id="bgLayer1" class="background-layer" role="img" aria-label="CBN insert, 3000 rpm, Colchester Chipmaster, machining hardened steel collar for a farmer friend in the village in my car port" title="CBN insert, 3000 rpm, Colchester Chipmaster, machining hardened steel collar for a farmer friend in the village in my car port"></div>
+    <div id="bgLayer2" class="background-layer" role="img" aria-label="CBN insert, 3000 rpm, Colchester Chipmaster, machining hardened steel collar for a farmer friend in the village in my car port" title="CBN insert, 3000 rpm, Colchester Chipmaster, machining hardened steel collar for a farmer friend in the village in my car port"></div>
+    <div class="background-hover" title="CBN insert, 3000 rpm, Colchester Chipmaster, machining hardened steel collar for a farmer friend in the village in my car port"></div>
+    
+    <nav class="menu">
+        <a href="about.html" class="menu-item">ABOUT</a>
+        <a href="coolprojects.html" class="menu-item">COOL PROJECTS</a>
+        <a href="cv.html" class="menu-item">CV</a>
+    </nav>
+
+    <div class="social-badges">
+        <a href="https://stackoverflow.com/users/418246/daniel-james-bryars" target="_blank">
+            <img src="https://stackoverflow.com/users/flair/418246.png" width="208" height="58" 
+                alt="Stack Overflow profile for Daniel James Bryars" 
+                title="Stack Overflow profile for Daniel James Bryars">
+        </a>
+        <a href="https://www.linkedin.com/in/danielbryars/" target="_blank">
+            <img src="https://img.shields.io/badge/LinkedIn-danielbryars-blue?style=for-the-badge&logo=linkedin" 
+                alt="LinkedIn profile for Daniel Bryars"
+                title="Connect with me on LinkedIn">
+        </a>
+        <a href="https://github.com/DanielBryars" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-DanielBryars-black?style=for-the-badge&logo=github" 
+                alt="GitHub profile for Daniel Bryars"
+                title="Connect with me on GitHub">
+        </a>
     </div>
+
+    <div id="buildInfo" class="build-info"></div>
     <script>
-        function setRandomBackground() {
-            const imageNumber = Math.floor(Math.random() * 6) + 1;
-            document.body.style.backgroundImage = `url('images/Sparks${imageNumber}.jpg')`;
+        let currentImageNumber = 1;
+        const BACKGROUND_ROTATION_INTERVAL_MS = 30000;
+        let activeLayer = 1;
+        
+        function rotateBackground() {
+            const nextLayer = activeLayer === 1 ? 2 : 1;
+            const currentLayer = document.getElementById(`bgLayer${activeLayer}`);
+            const nextLayerElement = document.getElementById(`bgLayer${nextLayer}`);
+            
+            nextLayerElement.style.backgroundImage = `url('images/Sparks${currentImageNumber}.jpg')`;
+            nextLayerElement.style.opacity = '1';
+            currentLayer.style.opacity = '0';
+            
+            activeLayer = nextLayer;
+            currentImageNumber = currentImageNumber >= 6 ? 1 : currentImageNumber + 1;
         }
-        setRandomBackground();
+        
+        // Set initial background
+        document.getElementById('bgLayer1').style.backgroundImage = `url('images/Sparks${currentImageNumber}.jpg')`;
+        rotateBackground();
+        setInterval(rotateBackground, BACKGROUND_ROTATION_INTERVAL_MS);
+
+        // Load and display build info
+        fetch('build-info.json')
+            .then(response => response.json())
+            .then(data => {
+                const buildInfo = document.getElementById('buildInfo');
+                buildInfo.textContent = `Build: ${data.commitHash.substring(0, 7)} | ${new Date(data.buildDate).toLocaleDateString()}`;
+            })
+            .catch(error => console.error('Error loading build info:', error));
     </script>
 </body>
 </html>
