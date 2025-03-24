@@ -172,7 +172,6 @@ p {
 
 .cv-container {
     max-width: 90%;
-    width: 90%;
     margin: 20px auto;
     background: #1e1e1e;
     padding: 30px;
@@ -256,4 +255,21 @@ p {
 
 .social-badges img:hover {
     transform: scale(1.05);
+}
+
+.cv-box-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cv-box-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.cv-box-image:hover {
+    transform: scale(1.02);
 } 
