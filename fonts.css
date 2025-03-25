@@ -1,0 +1,16 @@
+/* VT323 - Regular */
+@font-face {
+    font-family: 'VT323';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/VT323-Regular.woff2') format('woff2'),
+         url('fonts/VT323-Regular.woff') format('woff');
+}
+
+/* Consolas */
+@font-face {
+    font-family: 'Consolas';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Consolas');
+} 
