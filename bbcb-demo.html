@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Bryars - Portfolio</title>
+    <title>BBC B Style Demo - Daniel Bryars</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
@@ -183,28 +183,6 @@
             text-decoration: underline;
         }
 
-        .social-badges {
-            margin: 30px 0;
-            padding: 20px;
-            border: 2px solid #FF00FF;
-            text-align: center;
-        }
-
-        .social-badges a {
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .social-badges img {
-            width: 150px;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
-
-        .social-badges img:hover {
-            transform: scale(1.1);
-        }
-
         @media (max-width: 768px) {
             .teletext-header {
                 font-size: 18px;
@@ -216,10 +194,6 @@
 
             .menu-item {
                 font-size: 16px;
-            }
-
-            .social-badges img {
-                width: 120px;
             }
         }
     </style>
@@ -335,34 +309,6 @@
 
         <div class="separator"></div>
 
-        <div class="social-badges">
-            <div class="teletext-line color-white bg-blue" style="margin-bottom: 20px;">
-                ░ CONNECT WITH ME ░
-            </div>
-            <a href="https://stackoverflow.com/users/418246/daniel-james-bryars" target="_blank">
-                <img src="https://stackoverflow.com/users/flair/418246.png"
-                    alt="Stack Overflow profile for Daniel James Bryars"
-                    title="Stack Overflow profile for Daniel James Bryars">
-            </a>
-            <a href="https://www.linkedin.com/in/danielbryars/" target="_blank">
-                <img src="https://img.shields.io/badge/LinkedIn-danielbryars-blue?style=for-the-badge&logo=linkedin"
-                    alt="LinkedIn profile for Daniel Bryars"
-                    title="Connect with me on LinkedIn">
-            </a>
-            <a href="https://github.com/DanielBryars" target="_blank">
-                <img src="https://img.shields.io/badge/GitHub-DanielBryars-black?style=for-the-badge&logo=github"
-                    alt="GitHub profile for Daniel Bryars"
-                    title="Connect with me on GitHub">
-            </a>
-            <a href="mailto:seriouscallersonly@bryars.com">
-                <img src="https://img.shields.io/badge/Email-DanielBryars-red?style=for-the-badge&logo=gmail"
-                    alt="Email Daniel Bryars"
-                    title="Send me an email">
-            </a>
-        </div>
-
-        <div class="separator"></div>
-
         <div class="teletext-line color-cyan">
             ════════════════════════════════════════════
         </div>
@@ -386,7 +332,9 @@
             <div class="color-yellow">
                 CEEFAX STYLE PAGE | DANIEL BRYARS © 2025
             </div>
-            <div id="buildInfo" style="margin-top: 10px; color: #00FFFF;"></div>
+            <div style="margin-top: 10px;">
+                <a href="index.html">[ RETURN TO MODERN SITE ]</a>
+            </div>
         </div>
     </div>
 
@@ -425,15 +373,6 @@
             pos = (pos + 2) % window.innerHeight;
             scanline.style.top = pos + 'px';
         }, 16);
-
-        // Load and display build info
-        fetch('build-info.json')
-            .then(response => response.json())
-            .then(data => {
-                const buildInfo = document.getElementById('buildInfo');
-                buildInfo.textContent = `Build: ${data.commitHash.substring(0, 7)} | ${new Date(data.buildDate).toLocaleDateString()}`;
-            })
-            .catch(error => console.error('Error loading build info:', error));
     </script>
 </body>
 </html>
