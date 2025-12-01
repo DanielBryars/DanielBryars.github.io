@@ -155,6 +155,90 @@
             border: 2px solid #FFFF00;
         }
 
+        /* Dungeon torch styles */
+        .torch-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .torch {
+            font-family: monospace;
+            font-size: 10px;
+            line-height: 1;
+            white-space: pre;
+            text-align: center;
+        }
+
+        .torch-flame {
+            color: #FF6600;
+            text-shadow: 0 0 10px #FF6600, 0 0 20px #FF3300, 0 0 30px #FF0000;
+        }
+
+        .torch-handle {
+            color: #8B4513;
+        }
+
+        .torch-bracket {
+            color: #666666;
+        }
+
+        .flame-1, .flame-2, .flame-3 {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .torch-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .torch-wrapper .flame-1 {
+            animation: flicker1 0.3s infinite;
+        }
+
+        .torch-wrapper .flame-2 {
+            animation: flicker2 0.3s infinite;
+        }
+
+        .torch-wrapper .flame-3 {
+            animation: flicker3 0.3s infinite;
+        }
+
+        @keyframes flicker1 {
+            0%, 33% { opacity: 1; }
+            34%, 100% { opacity: 0; }
+        }
+
+        @keyframes flicker2 {
+            0%, 33% { opacity: 0; }
+            34%, 66% { opacity: 1; }
+            67%, 100% { opacity: 0; }
+        }
+
+        @keyframes flicker3 {
+            0%, 66% { opacity: 0; }
+            67%, 100% { opacity: 1; }
+        }
+
+        .torch-glow {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, rgba(255,102,0,0.3) 0%, rgba(255,51,0,0.1) 50%, transparent 70%);
+            animation: glow-pulse 0.5s ease-in-out infinite alternate;
+            pointer-events: none;
+        }
+
+        @keyframes glow-pulse {
+            0% { opacity: 0.6; transform: translateX(-50%) scale(0.9); }
+            100% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+        }
+
         .footer {
             margin-top: 40px;
             padding: 20px;
@@ -221,6 +305,19 @@
             .social-badges img {
                 width: 120px;
             }
+
+            .torch {
+                font-size: 8px;
+            }
+
+            .torch-container {
+                gap: 10px;
+            }
+
+            .torch-glow {
+                width: 40px;
+                height: 40px;
+            }
         }
     </style>
 </head>
@@ -228,8 +325,51 @@
     <div class="page-number">P<span class="blink">100</span></div>
 
     <div class="teletext-container">
-        <div class="teletext-header">
-            ░░ DANIEL BRYARS - PORTFOLIO ░░
+        <!-- Dungeon Torches -->
+        <div class="torch-container">
+            <div class="torch-wrapper">
+                <div class="torch-glow"></div>
+                <div class="torch">
+<span class="torch-flame flame-1">    )
+   (
+  (
+ ( )</span><span class="torch-flame flame-2" style="position:absolute;top:0;left:0;">   (
+  )
+   (
+  ( )</span><span class="torch-flame flame-3" style="position:absolute;top:0;left:0;">  ) (
+   )
+  (
+ (  )</span>
+<span class="torch-handle">  ║║
+  ║║
+  ║║</span>
+<span class="torch-bracket">══╩╩══</span>
+                </div>
+            </div>
+
+            <div class="teletext-header" style="flex-grow: 1; margin: 0 20px;">
+                ░░ DANIEL BRYARS - PORTFOLIO ░░
+            </div>
+
+            <div class="torch-wrapper">
+                <div class="torch-glow"></div>
+                <div class="torch">
+<span class="torch-flame flame-1">    )
+   (
+  (
+ ( )</span><span class="torch-flame flame-2" style="position:absolute;top:0;left:0;">   (
+  )
+   (
+  ( )</span><span class="torch-flame flame-3" style="position:absolute;top:0;left:0;">  ) (
+   )
+  (
+ (  )</span>
+<span class="torch-handle">  ║║
+  ║║
+  ║║</span>
+<span class="torch-bracket">══╩╩══</span>
+                </div>
+            </div>
         </div>
 
         <div class="teletext-line color-cyan">
