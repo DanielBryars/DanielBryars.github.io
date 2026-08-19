@@ -3,577 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Bryars - Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000000;
-            font-family: 'Pixelify Sans', monospace;
-            color: #FFFF00;
-            line-height: 1.4;
-            overflow-x: hidden;
-        }
-
-        .teletext-container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #000000;
-        }
-
-        .teletext-header {
-            background-color: #0000FF;
-            color: #FFFF00;
-            padding: 10px 20px;
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            border: 2px solid #FFFF00;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .teletext-line {
-            font-size: 18px;
-            margin: 8px 0;
-            padding: 5px 10px;
-            letter-spacing: 1px;
-        }
-
-        .color-yellow { color: #FFFF00; }
-        .color-cyan { color: #00FFFF; }
-        .color-magenta { color: #FF00FF; }
-        .color-white { color: #FFFFFF; }
-        .color-red { color: #FF0000; }
-        .color-green { color: #00FF00; }
-        .color-blue { color: #0000FF; }
-
-        .bg-blue { background-color: #0000FF; }
-        .bg-red { background-color: #FF0000; }
-        .bg-green { background-color: #00FF00; }
-        .bg-cyan { background-color: #00FFFF; }
-        .bg-magenta { background-color: #FF00FF; }
-        .bg-white { background-color: #FFFFFF; color: #000000; }
-        .bg-yellow { background-color: #FFFF00; color: #000000; }
-
-        .teletext-block {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            background-color: currentColor;
-        }
-
-        .teletext-menu {
-            margin: 30px 0;
-            padding: 20px;
-            border: 2px solid #00FFFF;
-        }
-
-        .menu-item {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-            font-size: 20px;
-        }
-
-        .menu-number {
-            background-color: #FF0000;
-            color: #FFFF00;
-            padding: 5px 15px;
-            margin-right: 15px;
-            font-weight: bold;
-            min-width: 60px;
-            text-align: center;
-        }
-
-        .menu-text {
-            color: #00FFFF;
-        }
-
-        .menu-text:hover {
-            color: #FFFF00;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-
-        .separator {
-            height: 2px;
-            background: repeating-linear-gradient(
-                90deg,
-                #FFFF00 0px,
-                #FFFF00 10px,
-                transparent 10px,
-                transparent 20px
-            );
-            margin: 20px 0;
-        }
-
-        .blink {
-            animation: blink 1s step-start infinite;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-
-        .graphics-line {
-            line-height: 0.8;
-            font-size: 20px;
-        }
-
-        .flash-text {
-            animation: flash 0.5s linear infinite;
-        }
-
-        @keyframes flash {
-            0%, 49% {
-                color: #FFFF00;
-            }
-            50%, 100% {
-                color: #FF0000;
-            }
-        }
-
-        .page-number {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background-color: #0000FF;
-            color: #FFFF00;
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            border: 2px solid #FFFF00;
-        }
-
-        /* Dungeon torch styles */
-        .torch-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin: 20px 0;
-        }
-
-        .torch {
-            font-family: monospace;
-            font-size: 10px;
-            line-height: 1;
-            white-space: pre;
-            text-align: center;
-        }
-
-        .torch-flame {
-            color: #FF6600;
-            text-shadow: 0 0 10px #FF6600, 0 0 20px #FF3300, 0 0 30px #FF0000;
-        }
-
-        .torch-handle {
-            color: #8B4513;
-        }
-
-        .torch-bracket {
-            color: #666666;
-        }
-
-        .flame-1, .flame-2, .flame-3 {
-            position: absolute;
-            opacity: 0;
-        }
-
-        .torch-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-
-        .torch-wrapper .flame-1 {
-            animation: flicker1 0.3s infinite;
-        }
-
-        .torch-wrapper .flame-2 {
-            animation: flicker2 0.3s infinite;
-        }
-
-        .torch-wrapper .flame-3 {
-            animation: flicker3 0.3s infinite;
-        }
-
-        @keyframes flicker1 {
-            0%, 33% { opacity: 1; }
-            34%, 100% { opacity: 0; }
-        }
-
-        @keyframes flicker2 {
-            0%, 33% { opacity: 0; }
-            34%, 66% { opacity: 1; }
-            67%, 100% { opacity: 0; }
-        }
-
-        @keyframes flicker3 {
-            0%, 66% { opacity: 0; }
-            67%, 100% { opacity: 1; }
-        }
-
-        .torch-glow {
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 60px;
-            background: radial-gradient(circle, rgba(255,102,0,0.3) 0%, rgba(255,51,0,0.1) 50%, transparent 70%);
-            animation: glow-pulse 0.5s ease-in-out infinite alternate;
-            pointer-events: none;
-        }
-
-        @keyframes glow-pulse {
-            0% { opacity: 0.6; transform: translateX(-50%) scale(0.9); }
-            100% { opacity: 1; transform: translateX(-50%) scale(1.1); }
-        }
-
-        .footer {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #0000FF;
-            color: #00FFFF;
-            text-align: center;
-            border: 2px solid #00FFFF;
-        }
-
-        .pixel-art {
-            font-family: monospace;
-            line-height: 1;
-            font-size: 12px;
-            color: #00FF00;
-            white-space: pre;
-            margin: 20px 0;
-        }
-
-        a {
-            color: #00FFFF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #FFFF00;
-            text-decoration: underline;
-        }
-
-        .social-badges {
-            margin: 30px 0;
-            padding: 20px;
-            border: 2px solid #FF00FF;
-            text-align: center;
-        }
-
-        .social-badges a {
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .social-badges img {
-            width: 150px;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
-
-        .social-badges img:hover {
-            transform: scale(1.1);
-        }
-
-        @media (max-width: 768px) {
-            .teletext-header {
-                font-size: 18px;
-            }
-
-            .teletext-line {
-                font-size: 14px;
-            }
-
-            .menu-item {
-                font-size: 16px;
-            }
-
-            .social-badges img {
-                width: 120px;
-            }
-
-            .torch {
-                font-size: 8px;
-            }
-
-            .torch-container {
-                gap: 10px;
-            }
-
-            .torch-glow {
-                width: 40px;
-                height: 40px;
-            }
-        }
-    </style>
+    <meta name="description" content="Daniel Bryars - AI, robotics and systems engineer. Founder, builder, MSc AI, Formula One R&D, robot learning and workshop projects.">
+    <title>Daniel Bryars - AI, Robotics & Systems</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="page-number">P<span class="blink">100</span></div>
+<body class="home-page">
+    <div class="home-shell">
+        <header class="site-header" aria-label="Primary">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">DB</span>
+                <span>
+                    <strong>Daniel Bryars</strong>
+                    <small>AI / robotics / systems</small>
+                </span>
+            </a>
+            <nav class="top-nav">
+                <a href="#projects">Projects</a>
+                <a href="cv.html">CV</a>
+                <a href="about.html">About</a>
+                <a href="mailto:seriouscallersonly@bryars.com">Contact</a>
+            </nav>
+        </header>
 
-    <div class="teletext-container">
-        <!-- Dungeon Torches -->
-        <div class="torch-container">
-            <div class="torch-wrapper">
-                <div class="torch-glow"></div>
-                <div class="torch">
-<span class="torch-flame flame-1">    )
-   (
-  (
- ( )</span><span class="torch-flame flame-2" style="position:absolute;top:0;left:0;">   (
-  )
-   (
-  ( )</span><span class="torch-flame flame-3" style="position:absolute;top:0;left:0;">  ) (
-   )
-  (
- (  )</span>
-<span class="torch-handle">  ║║
-  ║║
-  ║║</span>
-<span class="torch-bracket">══╩╩══</span>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Mode 7 energy, real engineering underneath</p>
+                    <h1>I build systems where software has to survive contact with the physical world.</h1>
+                    <p class="hero-text">
+                        Staff engineer, founder and hands-on maker. I have worked in motorsport electronics and Formula One R&D,
+                        co-founded and scaled a B2B SaaS company to successful exit, and recently completed an MSc in AI focused on robot learning.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#projects">See projects</a>
+                        <a class="button" href="cv.html">Read CV</a>
+                        <a class="button" href="https://github.com/DanielBryars" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
                 </div>
-            </div>
+                <aside class="hero-panel" aria-label="Current focus">
+                    <div class="panel-screen">
+                        <div class="screen-bar">
+                            <span>BRYARS_OS</span>
+                            <span>READY</span>
+                        </div>
+                        <pre><code>&gt; current_focus
+robot learning
+research infrastructure
+simulation vs reality
+reliable systems
+things with wires</code></pre>
+                    </div>
+                    <img src="images/CV-Box.jpg" alt="A boxed retro-style CV on a bookshelf beside AI and machine learning books.">
+                </aside>
+            </section>
 
-            <div class="teletext-header" style="flex-grow: 1; margin: 0 20px;">
-                ░░ DANIEL BRYARS - PORTFOLIO ░░
-            </div>
-
-            <div class="torch-wrapper">
-                <div class="torch-glow"></div>
-                <div class="torch">
-<span class="torch-flame flame-1">    )
-   (
-  (
- ( )</span><span class="torch-flame flame-2" style="position:absolute;top:0;left:0;">   (
-  )
-   (
-  ( )</span><span class="torch-flame flame-3" style="position:absolute;top:0;left:0;">  ) (
-   )
-  (
- (  )</span>
-<span class="torch-handle">  ║║
-  ║║
-  ║║</span>
-<span class="torch-bracket">══╩╩══</span>
+            <section class="signal-strip" aria-label="Career highlights">
+                <div>
+                    <strong>25 years</strong>
+                    <span>software, hardware and production engineering</span>
                 </div>
+                <div>
+                    <strong>Founder exit</strong>
+                    <span>40 staff, GBP 8M ARR, hands-on CTO</span>
+                </div>
+                <div>
+                    <strong>MSc AI</strong>
+                    <span>Distinction, robot-learning dissertation</span>
+                </div>
+                <div>
+                    <strong>F1 R&D</strong>
+                    <span>sensors, telemetry, test rigs and simulation</span>
+                </div>
+            </section>
+
+            <section class="section-intro" id="projects">
+                <p class="eyebrow">Selected projects</p>
+                <h2>Some of the useful, strange and over-engineered things.</h2>
+                <p>
+                    A mix of recent AI work, robots, electronics, simulations and workshop builds. Some are polished,
+                    some are gloriously in-progress. That is part of the point.
+                </p>
+            </section>
+
+            <section class="project-grid" aria-label="Selected project cards">
+                <article class="project-card featured">
+                    <div class="project-media code-card">
+                        <span>RL</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="tag">AI / robotics</p>
+                        <h3>Robot learning MSc work</h3>
+                        <p>MuJoCo simulation, OpenVR teleoperation, multimodal datasets, PyTorch policies, evaluation harnesses and physical robot testing.</p>
+                        <a href="https://github.com/DanielBryars/leeds-msc-ai-fp" target="_blank" rel="noreferrer">View research repo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/Screenshot 2025-03-27 201258.png" alt="A finite element analysis displacement plot from an engineering project.">
+                    <div class="project-body">
+                        <p class="tag">Mechanical / simulation</p>
+                        <h3>Physical design and analysis</h3>
+                        <p>Design work where the computer model has to earn its keep against materials, loads, tolerances and the real world.</p>
+                        <a href="cool-projects/index.html">Browse workshop projects</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media terminal-card">
+                        <span>diff</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="tag">Developer tools</p>
+                        <h3>DiffVantage</h3>
+                        <p>A visual difference review tool, because sometimes the useful thing is making change easier to inspect.</p>
+                        <a href="https://github.com/DanielBryars/diffantage" target="_blank" rel="noreferrer">Open on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media robot-card">
+                        <span>ESP32</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="tag">Embedded / control</p>
+                        <h3>Active speakers and control projects</h3>
+                        <p>ESP32, reverse-engineered USB protocols, home automation, audio hardware and the occasional inverted pendulum.</p>
+                        <a href="https://github.com/DanielBryars/KingRO4Y" target="_blank" rel="noreferrer">See speaker repo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/CV-Box.jpg" alt="A boxed CV designed like vintage software packaging.">
+                    <div class="project-body">
+                        <p class="tag">A tiny bit ridiculous</p>
+                        <h3>CV in a Box</h3>
+                        <p>A physical CV packaged like old software. Deeply unnecessary, which is not the same thing as wrong.</p>
+                        <a href="cool-projects/CVInABox.html">Open project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media teletext-card">
+                        <span>MODE 7</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="tag">Retro computing</p>
+                        <h3>BBC Micro / Teletext experiments</h3>
+                        <p>Ceefax-inspired pages, shipping forecast audio, old-computer charm and a healthy refusal to be beige.</p>
+                        <a href="bbcb-demo.html">Launch demo</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="about-band">
+                <div>
+                    <p class="eyebrow">What ties it together</p>
+                    <h2>Not just software. Not just hardware. The awkward bit in between.</h2>
+                </div>
+                <p>
+                    I like the point where code, data, electronics, mechanisms and people all have to agree.
+                    That has meant debugging car-stopping motorsport problems, keeping production platforms alive,
+                    building robots in a workshop, and asking the same question in different forms:
+                    how do we know this is really working?
+                </p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <strong>Daniel Bryars</strong>
+                <span id="buildInfo">Build info loading...</span>
             </div>
-        </div>
-
-        <div class="teletext-line color-cyan">
-            ════════════════════════════════════════════
-        </div>
-
-        <div class="teletext-line color-white">
-            <span class="color-yellow">►</span> WELCOME TO THE BBC MICRO STYLE PORTFOLIO
-        </div>
-
-        <div class="teletext-line color-white">
-            <span class="color-yellow">►</span> PRESS NUMBERS FOR NAVIGATION
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="pixel-art">
-    ████████████████████
-    ██              ██
-    ██  █████████  ██
-    ██  ██     ██  ██
-    ██  ██ ███ ██  ██
-    ██  ██     ██  ██
-    ██  █████████  ██
-    ██              ██
-    ████████████████████
-        </div>
-
-        <div class="teletext-menu">
-            <div class="menu-item">
-                <span class="menu-number">100</span>
-                <span class="menu-text"><a href="index.html">► MAIN INDEX</a></span>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/danielbryars/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/DanielBryars" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://stackoverflow.com/users/418246/daniel-james-bryars" target="_blank" rel="noreferrer">Stack Overflow</a>
+                <a href="mailto:seriouscallersonly@bryars.com">Email</a>
             </div>
-
-            <div class="menu-item">
-                <span class="menu-number">200</span>
-                <span class="menu-text"><a href="about.html">► ABOUT ME</a></span>
-            </div>
-
-            <div class="menu-item">
-                <span class="menu-number">300</span>
-                <span class="menu-text"><a href="cool-projects/index.html">► COOL PROJECTS</a></span>
-            </div>
-
-            <div class="menu-item">
-                <span class="menu-number">400</span>
-                <span class="menu-text"><a href="cv.html">► CURRICULUM VITAE</a></span>
-            </div>
-
-            <div class="menu-item">
-                <span class="menu-number">500</span>
-                <span class="menu-text"><a href="mailto:seriouscallersonly@bryars.com">► CONTACT</a></span>
-            </div>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="teletext-line color-magenta">
-            <span class="bg-magenta">                                        </span>
-        </div>
-
-        <div class="teletext-line color-white bg-blue">
-            ░ LATEST NEWS ░
-        </div>
-
-        <div class="teletext-line color-magenta">
-            <span class="bg-magenta">                                        </span>
-        </div>
-
-        <div class="teletext-line color-green">
-            ★ PORTFOLIO SITE UPDATED
-        </div>
-
-        <div class="teletext-line color-white">
-            New projects added. Check out the COOL
-        </div>
-
-        <div class="teletext-line color-white">
-            PROJECTS section for details.
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="teletext-line color-cyan">
-            <span class="flash-text">▓▓▓</span> FEATURED PROJECT <span class="flash-text">▓▓▓</span>
-        </div>
-
-        <div class="teletext-line color-white">
-            BEN EATER 8-BIT COMPUTER BUILD
-        </div>
-
-        <div class="teletext-line color-yellow">
-            A complete 8-bit breadboard computer
-        </div>
-
-        <div class="teletext-line color-yellow">
-            implementation following Ben Eater's
-        </div>
-
-        <div class="teletext-line color-yellow">
-            excellent tutorial series.
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="social-badges">
-            <div class="teletext-line color-white bg-blue" style="margin-bottom: 20px;">
-                ░ CONNECT WITH ME ░
-            </div>
-            <a href="https://stackoverflow.com/users/418246/daniel-james-bryars" target="_blank">
-                <img src="https://stackoverflow.com/users/flair/418246.png"
-                    alt="Stack Overflow profile for Daniel James Bryars"
-                    title="Stack Overflow profile for Daniel James Bryars">
-            </a>
-            <a href="https://www.linkedin.com/in/danielbryars/" target="_blank">
-                <img src="https://img.shields.io/badge/LinkedIn-danielbryars-blue?style=for-the-badge&logo=linkedin"
-                    alt="LinkedIn profile for Daniel Bryars"
-                    title="Connect with me on LinkedIn">
-            </a>
-            <a href="https://github.com/DanielBryars" target="_blank">
-                <img src="https://img.shields.io/badge/GitHub-DanielBryars-black?style=for-the-badge&logo=github"
-                    alt="GitHub profile for Daniel Bryars"
-                    title="Connect with me on GitHub">
-            </a>
-            <a href="mailto:seriouscallersonly@bryars.com">
-                <img src="https://img.shields.io/badge/Email-DanielBryars-red?style=for-the-badge&logo=gmail"
-                    alt="Email Daniel Bryars"
-                    title="Send me an email">
-            </a>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="teletext-line color-cyan">
-            ════════════════════════════════════════════
-        </div>
-
-        <div class="teletext-line color-white">
-            <span class="color-red">●</span> SYSTEM INFO:
-        </div>
-
-        <div class="teletext-line color-green">
-            MODE 7 | 40 COLS | TELETEXT GRAPHICS
-        </div>
-
-        <div class="teletext-line color-green">
-            ACORN OS 1.20 | BBC MICROCOMPUTER SYSTEM
-        </div>
-
-        <div class="footer">
-            <div style="margin-bottom: 10px;">
-                ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-            </div>
-            <div class="color-yellow">
-                CEEFAX STYLE PAGE | DANIEL BRYARS © 2025
-            </div>
-            <div id="buildInfo" style="margin-top: 10px; color: #00FFFF;"></div>
-        </div>
+        </footer>
     </div>
 
     <script>
-        // Add keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            const keyMap = {
-                '1': 'index.html',
-                '2': 'about.html',
-                '3': 'cool-projects/index.html',
-                '4': 'cv.html'
-            };
-
-            if (keyMap[e.key]) {
-                window.location.href = keyMap[e.key];
-            }
-        });
-
-        // Simulate CRT scanline effect
-        const container = document.querySelector('.teletext-container');
-        let scanline = document.createElement('div');
-        scanline.style.cssText = `
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: rgba(255, 255, 255, 0.1);
-            pointer-events: none;
-            z-index: 9999;
-        `;
-        document.body.appendChild(scanline);
-
-        let pos = 0;
-        setInterval(() => {
-            pos = (pos + 2) % window.innerHeight;
-            scanline.style.top = pos + 'px';
-        }, 16);
-
-        // Load and display build info
         fetch('build-info.json')
             .then(response => response.json())
             .then(data => {
                 const buildInfo = document.getElementById('buildInfo');
-                buildInfo.textContent = `Build: ${data.commitHash.substring(0, 7)} | ${new Date(data.buildDate).toLocaleDateString()}`;
+                const date = new Date(data.buildDate).toLocaleDateString();
+                buildInfo.textContent = `Build ${data.commitHash.substring(0, 7)} / ${date}`;
             })
-            .catch(error => console.error('Error loading build info:', error));
+            .catch(() => {
+                document.getElementById('buildInfo').textContent = 'Static GitHub Pages site';
+            });
     </script>
 </body>
 </html>
