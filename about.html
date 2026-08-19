@@ -3,33 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Daniel Bryars - engineer, founder, AI MSc, robotics tinkerer and lifelong BBC Micro enthusiast.">
     <title>About - Daniel Bryars</title>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container about-container">
-        <div class="about-content">
-            <h1>About Me</h1>
-            <div class="about-text">
-                <p>I'm Daniel Bryars, a grey haired software programmer, geek and engineer.</p>
-                
-                <div class="image-container">
-                    <img src="images/EveningShadows.png" alt="Daniel Bryars with friends" class="about-image">
-                    <p class="image-caption">I'm the one on the right.</p>
+<body class="about-page">
+    <div class="home-shell">
+        <header class="site-header" aria-label="Primary">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">DB</span>
+                <span>
+                    <strong>Daniel Bryars</strong>
+                    <small>about / origin story / blame the BBC Micro</small>
+                </span>
+            </a>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="cool-projects/index.html">Projects</a>
+                <a href="cv.html">CV</a>
+                <a href="mailto:seriouscallersonly@bryars.com">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-hero">
+                <div>
+                    <p class="eyebrow">About me</p>
+                    <h1>Grey-haired software programmer, geek, engineer, and builder of things that probably need another revision.</h1>
+                    <p>
+                        I have always liked the bit where computers meet the real world. The BBC Micro started it,
+                        mechatronics formalised it, motorsport made it noisy, SaaS made it serious, and AI/robotics
+                        has dragged all of it back into one place.
+                    </p>
                 </div>
+                <figure>
+                    <img src="images/EveningShadows.png" alt="Daniel Bryars with friends in evening shadows.">
+                    <figcaption>I'm the one on the right.</figcaption>
+                </figure>
+            </section>
 
-                <p>This is my personal website where I show off stuff that I think is cool (because it is cool). Some people put this on Instagram or Twitter, or whatever, they are wrong :)</p>
-
-                <p>I've always been a geek. I blame the BBCB my Dad bought me back in 1984. You had to type the listings for computer games into the computer from magazines and books like this:</p>
-
-                <div class="image-grid">
-                    <img src="images/image-1.png" alt="Computer game listings from a magazine" class="about-image">
-                    <img src="images/SpaceGames-710x1024.jpg" alt="Space Games book cover" class="about-image">
+            <section class="about-band">
+                <div>
+                    <p class="eyebrow">The pattern</p>
+                    <h2>How hard can it be? Then finding out properly.</h2>
                 </div>
+                <p>
+                    I like problems that start slightly ridiculous and then become engineering. A hovercraft at GCSE,
+                    a robot CD player at A level, an award-winning robotic chessboard at university, Formula One sensors
+                    and telemetry, production systems at scale, and now robot learning. Different tools, same itch.
+                </p>
+            </section>
+
+            <section class="origin-grid">
+                <article class="origin-copy">
+                    <p class="eyebrow">1984-ish</p>
+                    <h2>BBC Micro</h2>
+                    <p>
+                        My dad bought a BBC B, and I learned that computers were not sealed appliances. You could type
+                        a listing from a book, make a mistake, fix it, and suddenly a machine did something because
+                        you told it to.
+                    </p>
+                </article>
+                <article class="origin-copy">
+                    <img src="images/image-1.png" alt="Printed computer game listing from a magazine.">
+                </article>
+                <article>
+                    <img src="images/SpaceGames-710x1024.jpg" alt="Space Games book cover.">
+                </article>
+                <article>
+                    <p class="eyebrow">Now</p>
+                    <h2>Still the same disease</h2>
+                    <p>
+                        These days the parts are PyTorch, MuJoCo, CAN bus, cloud infrastructure, ESP32s, sensors,
+                        3D prints, notebooks, traces and occasionally a soldering iron. It is still basically:
+                        make the thing, understand the thing, improve the thing.
+                    </p>
+                </article>
+            </section>
+
+            <section class="project-lab">
+                <div class="section-intro">
+                    <p class="eyebrow">Personal operating notes</p>
+                    <h2>Things that matter to me.</h2>
+                </div>
+                <div class="lab-list">
+                    <article>
+                        <h3>Real evidence</h3>
+                        <p>I like knowing whether a system is genuinely better, not just whether the graph looks nicer.</p>
+                    </article>
+                    <article>
+                        <h3>Open teams</h3>
+                        <p>Trust, challenge, humour and people playing their position on the pitch.</p>
+                    </article>
+                    <article>
+                        <h3>Physical consequences</h3>
+                        <p>Software is more interesting when it moves hardware, handles real users or has to survive reality.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <strong>Daniel Bryars</strong>
+                <span>seriouscallersonly@bryars.com</span>
             </div>
-        </div>
-        <p class="back-link"><a href="index.html">&larr; Back to Home</a></p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="cool-projects/index.html">Projects</a>
+                <a href="cv.html">CV</a>
+                <a href="https://github.com/DanielBryars" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </footer>
     </div>
 </body>
-</html> 
+</html>

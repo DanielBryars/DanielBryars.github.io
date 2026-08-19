@@ -3,129 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel Bryars CV - AI, robotics, production systems, founder/CTO, Formula One R&D and workshop engineering projects.">
     <title>CV - Daniel Bryars</title>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container cv-container">
-        <div class="cv-box-container">
-            <img src="images/CV-Box.jpg" alt="CV in a software box" class="cv-box-image" title="My CV presented as a retro software box">
-        </div>
-        <div class="cv-content">
-            <pre class="python-code">
-<span class="comment"># Daniel Bryars</span>
-<span class="comment"># Contact: seriouscallersonly@bryars.com</span>
-<span class="comment"># Last updated: March 2025</span>
+<body class="cv-page">
+    <div class="cv-shell">
+        <header class="site-header" aria-label="Primary">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">DB</span>
+                <span>
+                    <strong>Daniel Bryars</strong>
+                    <small>curriculum vitae / source readable edition</small>
+                </span>
+            </a>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="cool-projects/index.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="mailto:seriouscallersonly@bryars.com">Contact</a>
+            </nav>
+        </header>
 
+        <main>
+            <section class="cv-hero">
+                <div>
+                    <p class="eyebrow">DanielBryars.py</p>
+                    <h1>Staff engineer, founder, AI MSc, robotics tinkerer, former Formula One R&D engineer.</h1>
+                    <p>
+                        I like systems where software, data, electronics, mechanisms and people all have to agree.
+                        The career version: 25 years building production platforms, physical systems and teams.
+                        The workshop version: robot arms, ESP32s, 3D printers, inverted pendulums and things that usually need a better enclosure.
+                    </p>
+                </div>
+                <aside class="cv-status-card" aria-label="Fast facts">
+                    <div class="screen-bar">
+                        <span>PROFILE</span>
+                        <span>ONLINE</span>
+                    </div>
+                    <dl>
+                        <div>
+                            <dt>Base</dt>
+                            <dd>Oxford, UK</dd>
+                        </div>
+                        <div>
+                            <dt>Current direction</dt>
+                            <dd>AI, robotics, research infrastructure</dd>
+                        </div>
+                        <div>
+                            <dt>Founder signal</dt>
+                            <dd>Scaled to 40 staff, GBP 8M ARR, successful exit</dd>
+                        </div>
+                        <div>
+                            <dt>Education</dt>
+                            <dd>MSc AI with Distinction, BEng Mechatronics</dd>
+                        </div>
+                    </dl>
+                </aside>
+            </section>
+
+            <section class="cv-console" aria-label="CV summary in code style">
+                <div class="screen-bar">
+                    <span>python3 daniel_bryars.py</span>
+                    <span>RUNNING</span>
+                </div>
+                <pre><code><span class="comment"># Not a generalist by accident. A generalist by repeated exposure to real systems.</span>
 <span class="keyword">class</span> <span class="class-name">DanielBryars</span>:
-    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="self">self</span>):
-        <span class="self">self</span>.profile = <span class="string">"""
-            Innovative and commercially-minded technologist with 25 years' experience delivering secure, scalable and 
-            high-performance platforms across SaaS, finance, telecoms and automotive. A hands-on problem-solver and 
-            deep technical generalist with a track record of translating complex requirements into elegant, cloud-native 
-            solutions. Currently completing an MSc in Artificial Intelligence with a focus on generative models, 
-            optimisation and applied machine learning.
-
-            Highly proficient in architecture, containerisation, microservices, observability and regulatory 
-            compliance. Passionate about using AI and modern systems design to solve real-world problems. Known for 
-            clarity of thought, strong execution, and bridging the gap between business goals and technical outcomes."""</span>
-
-    <span class="keyword">def</span> <span class="function">skills</span>(<span class="self">self</span>):
-        <span class="keyword">return</span> {
-            <span class="string">"Generative AI & ML"</span>: [
-                <span class="string">"Neural networks"</span>, <span class="string">"Transformers"</span>, <span class="string">"LLMs"</span>, <span class="string">"MLPs"</span>,
-                <span class="string">"RBFs"</span>, <span class="string">"OCR"</span>, <span class="string">"NLP"</span>, <span class="string">"Classification"</span>,
-                <span class="string">"Regression"</span>, <span class="string">"RL"</span>, <span class="string">"PyTorch"</span>, <span class="string">"Scikit-Learn"</span>
-            ],
-            <span class="string">"Architecture"</span>: [
-                <span class="string">"Microservices"</span>, <span class="string">"Kubernetes"</span>, <span class="string">"Docker"</span>,
-                <span class="string">"Distributed systems"</span>, <span class="string">"Observability"</span>, <span class="string">"SDLC"</span>,
-                <span class="string">"Terraform"</span>, <span class="string">"Helm"</span>, <span class="string">"Hybrid cloud"</span>,
-                <span class="string">"Serverless"</span>, <span class="string">"Real-time data"</span>
-            ],
-            <span class="string">"Programming"</span>: [
-                <span class="string">"Python"</span>, <span class="string">"C"</span>, <span class="string">"C++"</span>, <span class="string">"C#"</span>, <span class="string">"Lua"</span>,
-                <span class="string">"JS/TS"</span>, <span class="string">"Embedded systems"</span>, <span class="string">"Linux"</span>,
-                <span class="string">"Windows"</span>, <span class="string">"CI/CD"</span>, <span class="string">"SQL"</span>
-            ],
-            <span class="string">"Security"</span>: [
-                <span class="string">"PCI-DSS"</span>, <span class="string">"MiFID II"</span>, <span class="string">"ISO27001"</span>,
-                <span class="string">"BS10008"</span>, <span class="string">"GDPR"</span>, <span class="string">"Voice & data security"</span>
-            ]
-        }
-
-    <span class="keyword">def</span> <span class="function">career_highlights</span>(<span class="self">self</span>):
+    <span class="keyword">def</span> <span class="function">current_value</span>(<span class="self">self</span>):
         <span class="keyword">return</span> [
-            <span class="string">"Built and scaled PCI-compliant voice payment platform (50% UK MOTO utility payments)"</span>,
-            <span class="string">"Migrated 300+ production services to hybrid AWS architecture"</span>,
-            <span class="string">"Created no-code platform doubling revenue (£2M to £4M in 18 months)"</span>,
-            <span class="string">"Delivered £4M ARR mobile call recording system for top-tier banks"</span>,
-            <span class="string">"Architected O2's Wholesale SMS platform (12 months to 2 weeks onboarding)"</span>,
-            <span class="string">"Led Vodafone's Next Generation compliance solution (£3M ARR)"</span>,
-            <span class="string">"Contributed to FreeSWITCH open-source telephony"</span>,
-            <span class="string">"Delivered AI projects including OCR and novel loss functions"</span>
+            <span class="string">"Builds research and production systems that are observable, reliable and usable"</span>,
+            <span class="string">"Understands physical-world engineering: sensors, actuators, calibration, telemetry, test rigs"</span>,
+            <span class="string">"Can operate as a senior individual contributor, mentor and technical leader"</span>,
+            <span class="string">"Has founded, scaled and sold a company without losing the urge to make things"</span>,
         ]
 
-    <span class="keyword">def</span> <span class="function">experience</span>(<span class="self">self</span>):
-        <span class="keyword">return</span> [
-            {
-                <span class="string">"role"</span>: <span class="string">"Head of Technology and Strategy in EMEA"</span>,
-                <span class="string">"company"</span>: <span class="string">"Dubber"</span>,
-                <span class="string">"period"</span>: <span class="string">"2021 - 2024"</span>
-            },
-            {
-                <span class="string">"role"</span>: <span class="string">"Technical Director & Founder"</span>,
-                <span class="string">"company"</span>: <span class="string">"Speik"</span>,
-                <span class="string">"period"</span>: <span class="string">"2019 - 2021"</span>
-            },
-            {
-                <span class="string">"role"</span>: <span class="string">"Chief Technical Officer & Founder"</span>,
-                <span class="string">"company"</span>: <span class="string">"Aeriandi Limited"</span>,
-                <span class="string">"period"</span>: <span class="string">"2006 - 2019"</span>
-            },
-            {
-                <span class="string">"role"</span>: <span class="string">"Research and Design Engineer"</span>,
-                <span class="string">"company"</span>: <span class="string">"Red Bull Racing"</span>,
-                <span class="string">"period"</span>: <span class="string">"2005 - 2006"</span>
-            }
-        ]
+    <span class="keyword">def</span> <span class="function">favourite_question</span>(<span class="self">self</span>):
+        <span class="keyword">return</span> <span class="string">"How do we know this is really working?"</span></code></pre>
+            </section>
 
-    <span class="keyword">def</span> <span class="function">education</span>(<span class="self">self</span>):
-        <span class="keyword">return</span> [
-            {
-                <span class="string">"degree"</span>: <span class="string">"MSc Artificial Intelligence"</span>,
-                <span class="string">"institution"</span>: <span class="string">"University of Leeds"</span>,
-                <span class="string">"status"</span>: <span class="string">"Ongoing part-time, completion 2025"</span>
-            },
-            {
-                <span class="string">"degree"</span>: <span class="string">"BEng (Hons) Mechatronics"</span>,
-                <span class="string">"institution"</span>: <span class="string">"University of Leeds"</span>,
-                <span class="string">"year"</span>: <span class="string">"1997"</span>
-            }
-        ]
+            <section class="cv-grid">
+                <article class="cv-panel span-2">
+                    <p class="eyebrow">Current focus</p>
+                    <h2>AI and robot learning</h2>
+                    <p>
+                        Completed an MSc in Artificial Intelligence with Distinction, focused on robot learning.
+                        Built a MuJoCo robot-arm simulation, connected it to a 3D headset via OpenVR, collected
+                        teleoperation data, trained PyTorch policies, tracked experiments, managed checkpoints on
+                        Hugging Face, and tested policies on physical hardware.
+                    </p>
+                    <ul>
+                        <li>Research manuscript being reworked for ICRA 2027.</li>
+                        <li>Practical interest in evaluation: task success, reality gaps, resets, calibration, data quality and failure modes.</li>
+                        <li>Recent stack includes Python, PyTorch, LeRobot, ACT/ACT-ViT, MuJoCo, W&B and Hugging Face Hub.</li>
+                    </ul>
+                </article>
 
-    <span class="keyword">def</span> <span class="function">certifications</span>(<span class="self">self</span>):
-        <span class="keyword">return</span> [
-            <span class="string">"RabbitMQ Advanced Message Queuing (2022)"</span>,
-            <span class="string">"Failure modes and effects analysis (FMEA) (V) (2022)"</span>,
-            <span class="string">"Kubernetes Essentials (2021)"</span>,
-            <span class="string">"Linux Security and Isolation APIs (2019)"</span>
-        ]
+                <article class="cv-panel">
+                    <p class="eyebrow">Commercial proof</p>
+                    <h2>Founder to exit</h2>
+                    <p>
+                        Co-founded Aeriandi and helped scale it into a B2B SaaS business with 40 staff and GBP 8M ARR.
+                        Stayed hands-on as CTO and chief architect through product, platform, hiring, customer trust,
+                        compliance, reliability and acquisition.
+                    </p>
+                </article>
 
-    <span class="keyword">def</span> <span class="function">extras</span>(<span class="self">self</span>):
-        <span class="keyword">return</span> [
-            <span class="string">"Frequent speaker and trainer: observability, container security, and AI"</span>,
-            <span class="string">"ENTP (MBTI): thrives on innovation, strategy and multidisciplinary teamwork"</span>,
-            <span class="string">"Enjoys 3D design, teaching Python, squash, and engineering projects with family"</span>,
-            <span class="string">"Available for UK and international travel"</span>
-        ]
+                <article class="cv-panel">
+                    <p class="eyebrow">Physical systems</p>
+                    <h2>Motorsport and F1</h2>
+                    <p>
+                        Started in motorsport electronics: embedded C, engine controllers, sensors, wiring looms,
+                        CAN/serial integration, telemetry and high-pressure trackside debugging. Later worked in
+                        Formula One R&D on sensors, actuators, software, hardware and automated systems.
+                    </p>
+                </article>
+            </section>
 
-<span class="comment"># Initialize instance</span>
-awesome = <span class="class-name">DanielBryars</span>()
-            </pre>
-        </div>
-        <p class="back-link"><a href="index.html">&larr; Back to Home</a></p>
+            <section class="timeline-section">
+                <p class="eyebrow">Experience</p>
+                <h2>Selected career timeline</h2>
+                <div class="timeline">
+                    <article>
+                        <span>2026-present</span>
+                        <h3>Staff Engineer - NeoIntralogistics</h3>
+                        <p>Building warehouse systems coordinating autonomous mobile robots and Universal Robots arms.</p>
+                    </article>
+                    <article>
+                        <span>2021-2024</span>
+                        <h3>Head of Technology & Strategy, EMEA - Dubber</h3>
+                        <p>Owned technical strategy, platform reliability and compliance after acquisition of Speik.</p>
+                    </article>
+                    <article>
+                        <span>2019-2021</span>
+                        <h3>Technical Director & Founder - Speik</h3>
+                        <p>Merged Aeriandi with Voxygen and led technical strategy through acquisition by Dubber.</p>
+                    </article>
+                    <article>
+                        <span>2006-2019</span>
+                        <h3>Chief Technical Officer & Founder - Aeriandi</h3>
+                        <p>Co-founded and scaled a secure B2B SaaS company to GBP 8M ARR; chief architect and hands-on developer.</p>
+                    </article>
+                    <article>
+                        <span>2005-2006</span>
+                        <h3>Research and Design Engineer - Red Bull Racing</h3>
+                        <p>Delivered R&D software, hardware and automated systems in Formula One.</p>
+                    </article>
+                    <article>
+                        <span>2003-2005</span>
+                        <h3>Lead Programme Manager, F1 Build - Jaguar Racing</h3>
+                        <p>Programme-managed cross-functional design, manufacture and build of race-ready F1 cars.</p>
+                    </article>
+                    <article>
+                        <span>1997-2003</span>
+                        <h3>Pi Research / Cosworth</h3>
+                        <p>Applications engineering, embedded C, telemetry, sensor integration, wiring, CAN/serial systems, fuel simulation and engine-test automation.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="achievement-grid">
+                <article>
+                    <strong>300+</strong>
+                    <span>production services across hybrid AWS, Azure and on-prem infrastructure</span>
+                </article>
+                <article>
+                    <strong>100%</strong>
+                    <span>SLA compliance for several years after rebuilding reliability culture and failure analysis</span>
+                </article>
+                <article>
+                    <strong>50%+</strong>
+                    <span>of UK utilities' MOTO payments processed through a patented PCI voice-payment platform</span>
+                </article>
+                <article>
+                    <strong>2 weeks</strong>
+                    <span>onboarding time achieved for O2 Wholesale SMS, down from roughly 12 months</span>
+                </article>
+            </section>
+
+            <section class="cv-grid">
+                <article class="cv-panel">
+                    <p class="eyebrow">Engineering instincts</p>
+                    <h2>Reliability and debugging</h2>
+                    <ul>
+                        <li>Formal FMEA, explicit failure limits, incident response and operational learning.</li>
+                        <li>Cross-layer debugging from application symptoms down to network traces and platform behaviour.</li>
+                        <li>Observability, CI/CD, cloud migrations, Kubernetes, Terraform, Helm, Linux and production operations.</li>
+                    </ul>
+                </article>
+
+                <article class="cv-panel">
+                    <p class="eyebrow">Technical range</p>
+                    <h2>Languages and tools</h2>
+                    <ul>
+                        <li>Python, C, C++, C#, TypeScript/JavaScript, SQL, Bash and Lua.</li>
+                        <li>PyTorch, Scikit-learn, MuJoCo, W&B, Hugging Face, Docker and CUDA containers.</li>
+                        <li>AMQP/RabbitMQ, MQTT, APIs, data pipelines, distributed systems and observability.</li>
+                    </ul>
+                </article>
+
+                <article class="cv-panel">
+                    <p class="eyebrow">Compliance</p>
+                    <h2>Regulated systems</h2>
+                    <ul>
+                        <li>PCI DSS, MiFID II, ISO 27001, BS 10008 and GDPR contexts.</li>
+                        <li>Secure voice, financial and telecom workloads.</li>
+                        <li>Customer-facing technical leadership where trust matters as much as uptime.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="project-lab">
+                <div class="section-intro">
+                    <p class="eyebrow">Outside work</p>
+                    <h2>The workshop is part of the CV.</h2>
+                    <p>
+                        Some people have a neat hobbies line. I have a pile of parts, photos, notebooks and half a dozen
+                        things that were supposed to take one weekend.
+                    </p>
+                </div>
+                <div class="lab-list">
+                    <article>
+                        <h3>Robot arm</h3>
+                        <p>3D-printed arm, closed-loop steppers over CAN bus, robot-learning experiments and sim-to-real testing.</p>
+                    </article>
+                    <article>
+                        <h3>ESP32 speaker controller</h3>
+                        <p>Reverse-engineered a USB protocol with Wireshark to control Hypex-based active speakers.</p>
+                    </article>
+                    <article>
+                        <h3>Arduino inverted pendulum</h3>
+                        <p>A proper control-system rite of passage, made slightly less lonely with AI-assisted coding.</p>
+                    </article>
+                    <article>
+                        <h3>EV charger smart lead</h3>
+                        <p>Designing a PCB and ESP32-based system for home charging experiments.</p>
+                    </article>
+                    <article>
+                        <h3>CV in a Box</h3>
+                        <p>A physical software-box CV, because sometimes presentation should have a little nonsense in it.</p>
+                    </article>
+                    <article>
+                        <h3>House build</h3>
+                        <p>Principal-contractor delivery of a self-built family home: decisions, trades, risk, sequencing and learning fast.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="cv-grid">
+                <article class="cv-panel">
+                    <p class="eyebrow">Education</p>
+                    <h2>Qualifications</h2>
+                    <ul>
+                        <li>MSc Artificial Intelligence, Distinction - University of Leeds, 2026.</li>
+                        <li>BEng (Hons) Mechatronics - University of Leeds, 1997; award-winning robotic chessboard final-year project.</li>
+                        <li>AI Residency - ML Institute, London, 2025.</li>
+                        <li>GCSE French (A), now rusty but not dead.</li>
+                    </ul>
+                </article>
+
+                <article class="cv-panel">
+                    <p class="eyebrow">Patents</p>
+                    <h2>Built things with paperwork</h2>
+                    <p>
+                        European patents EP3230934B1 and EP3230933B1 for secure voice-payment technology.
+                    </p>
+                </article>
+
+                <article class="cv-panel">
+                    <p class="eyebrow">Human mode</p>
+                    <h2>How I like to work</h2>
+                    <p>
+                        Hands-on senior/staff engineer, happy mentoring and leading, but happiest still playing on the pitch.
+                        I like open, trusting, high-performing teams where difficult ideas can be explored without everyone
+                        pretending the work is simpler than it is.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <strong>Daniel Bryars</strong>
+                <span>seriouscallersonly@bryars.com</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="cool-projects/index.html">Projects</a>
+                <a href="https://github.com/DanielBryars" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/danielbryars/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+        </footer>
     </div>
 </body>
-</html> 
+</html>
