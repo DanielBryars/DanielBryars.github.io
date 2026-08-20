@@ -13,7 +13,7 @@ from collections import Counter
 
 from media_common import REPO, html_files, resolve
 
-LINK_RE = re.compile(r'\b(?:href|src|poster)="([^"]+)"', re.IGNORECASE)
+LINK_RE = re.compile(r'\b(?:href|src|poster|data-full)="([^"]+)"', re.IGNORECASE)
 SRCSET_RE = re.compile(r'\bsrcset="([^"]+)"', re.IGNORECASE)
 ID_RE = re.compile(r'\bid="([^"]+)"')
 IMG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)

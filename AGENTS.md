@@ -63,6 +63,14 @@ Consequences:
   recruiters. Built by `tools/build_danfest.py`, which resizes the originals on
   import (they are ~400MB in OneDrive and must not be committed at full size).
   The invitation itself lives at `danfest.bryars.com`, a separate site.
+
+  Three things make the gallery work, and all three are load-bearing:
+  the `.photo-grid` tiles use the 480/960 derivatives; each `<figure>` carries
+  an inline base64 16px version of its own frame as a background, so a blurred
+  version of the right photograph is there before anything downloads; and each
+  `<img>` has `data-full` pointing at the 2400px import, which
+  `image-lightbox.js` prefers over the srcset when you click. `check_site.py`
+  validates `data-full` like any other link.
 - `styles.css` - every rule for the main site; `fonts.css` holds `@font-face`
 
 There is one easter egg, in the homepage footer: a very faint line of shipping

@@ -1659,8 +1659,19 @@ h1 {
 
 .photo-grid figure {
     margin: 0;
+    /* Column layout so the caption can absorb the leftover height: figures
+       stretch to the tallest in their row, and any gap would show the blur-up
+       placeholder underneath. */
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.035);
+    background-color: rgba(255, 255, 255, 0.035);
+    /* Each figure carries an inline 16px base64 version of its own photograph,
+       so the tile shows a blurred version of the right frame while the real
+       one is still arriving. */
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -1675,7 +1686,11 @@ h1 {
 }
 
 .photo-grid figcaption {
+    flex: 1;
     padding: 9px 12px;
+    /* Opaque: the figure's blur-up placeholder sits behind this strip and
+       would otherwise show through and make the caption hard to read. */
+    background: #0e100d;
     color: var(--yellow);
     font-family: 'Pixelify Sans', 'VT323', monospace;
     font-size: 17px;

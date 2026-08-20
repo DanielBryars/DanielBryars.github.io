@@ -32,7 +32,7 @@ POSTER_RE = re.compile(r'\bposter="([^"]+)"', re.IGNORECASE)
 # whatever happens to sit near the tag in the source.
 WIDE_MARKERS = ("artifact-hero-image", "gallery-wide", "about-hero", "hero-panel",
                 "project-feature lead", "artifact-hero")
-THUMB_MARKERS = ("evidence-strip",)
+THUMB_MARKERS = ("evidence-strip", "photo-grid")
 SIZES_WIDE = "(max-width: 900px) 100vw, 600px"
 SIZES_GRID = "(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw"
 SIZES_THUMB = "(max-width: 620px) 50vw, (max-width: 900px) 33vw, 20vw"

@@ -589,8 +589,8 @@
     ]
   },
   "project-assets/danfest/20260807-081036.jpg": {
-    "height": 1800,
-    "width": 1800,
+    "height": 2400,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -598,8 +598,8 @@
     ]
   },
   "project-assets/danfest/20260807-105809.jpg": {
-    "height": 1800,
-    "width": 1800,
+    "height": 2400,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -607,8 +607,8 @@
     ]
   },
   "project-assets/danfest/aspall.jpg": {
-    "height": 1800,
-    "width": 1134,
+    "height": 2400,
+    "width": 1513,
     "widths": [
       480,
       960
@@ -620,8 +620,8 @@
     "widths": []
   },
   "project-assets/danfest/beer.jpg": {
-    "height": 1688,
-    "width": 1800,
+    "height": 2251,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -629,8 +629,8 @@
     ]
   },
   "project-assets/danfest/daddy-and-daughter.jpg": {
-    "height": 1522,
-    "width": 1800,
+    "height": 2030,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -638,8 +638,8 @@
     ]
   },
   "project-assets/danfest/dan-and-emma.jpg": {
-    "height": 1183,
-    "width": 1800,
+    "height": 1578,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -655,8 +655,8 @@
     ]
   },
   "project-assets/danfest/dan.jpg": {
-    "height": 1800,
-    "width": 1711,
+    "height": 2400,
+    "width": 2281,
     "widths": [
       480,
       960,
@@ -679,8 +679,8 @@
     ]
   },
   "project-assets/danfest/focus.jpg": {
-    "height": 1179,
-    "width": 1800,
+    "height": 1572,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -688,8 +688,8 @@
     ]
   },
   "project-assets/danfest/football.jpg": {
-    "height": 932,
-    "width": 1800,
+    "height": 1243,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -697,8 +697,8 @@
     ]
   },
   "project-assets/danfest/gang1.jpg": {
-    "height": 1450,
-    "width": 1800,
+    "height": 1933,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -706,32 +706,35 @@
     ]
   },
   "project-assets/danfest/good-chat.jpg": {
-    "height": 1800,
-    "width": 1271,
+    "height": 2400,
+    "width": 1694,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/im-tired.jpg": {
-    "height": 1800,
-    "width": 1551,
+    "height": 2400,
+    "width": 2069,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/in-conversation.jpg": {
-    "height": 1800,
-    "width": 1212,
+    "height": 2400,
+    "width": 1615,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/jake-and-dom.jpg": {
-    "height": 1496,
-    "width": 1800,
+    "height": 1995,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -748,16 +751,17 @@
     ]
   },
   "project-assets/danfest/kand-sj.jpg": {
-    "height": 1800,
-    "width": 1212,
+    "height": 2400,
+    "width": 1615,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/kanes-and-matt.jpg": {
-    "height": 1402,
-    "width": 1800,
+    "height": 1869,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -765,16 +769,17 @@
     ]
   },
   "project-assets/danfest/karie-and-sj.jpg": {
-    "height": 1800,
-    "width": 1420,
+    "height": 2249,
+    "width": 1774,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/kate-and-polly.jpg": {
-    "height": 1042,
-    "width": 1800,
+    "height": 1389,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -782,8 +787,8 @@
     ]
   },
   "project-assets/danfest/keith-keeping-awake.jpg": {
-    "height": 732,
-    "width": 1800,
+    "height": 975,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -791,16 +796,16 @@
     ]
   },
   "project-assets/danfest/kim.jpg": {
-    "height": 1800,
-    "width": 1082,
+    "height": 2400,
+    "width": 1442,
     "widths": [
       480,
       960
     ]
   },
   "project-assets/danfest/kiss.jpg": {
-    "height": 1201,
-    "width": 1800,
+    "height": 1601,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -808,15 +813,16 @@
     ]
   },
   "project-assets/danfest/kristin-and-jane.jpg": {
-    "height": 1800,
-    "width": 938,
+    "height": 2400,
+    "width": 1250,
     "widths": [
-      480
+      480,
+      960
     ]
   },
   "project-assets/danfest/ladies.jpg": {
-    "height": 1200,
-    "width": 1800,
+    "height": 1600,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -824,8 +830,8 @@
     ]
   },
   "project-assets/danfest/laser.jpg": {
-    "height": 1546,
-    "width": 1800,
+    "height": 2061,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -833,8 +839,8 @@
     ]
   },
   "project-assets/danfest/lights.jpg": {
-    "height": 516,
-    "width": 1800,
+    "height": 587,
+    "width": 2046,
     "widths": [
       480,
       960,
@@ -849,8 +855,8 @@
     ]
   },
   "project-assets/danfest/marcus-pulls-apint.jpg": {
-    "height": 546,
-    "width": 1800,
+    "height": 728,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -858,24 +864,26 @@
     ]
   },
   "project-assets/danfest/mg-8702.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8718.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8731.jpg": {
-    "height": 1200,
-    "width": 1800,
+    "height": 1600,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -883,16 +891,17 @@
     ]
   },
   "project-assets/danfest/mg-8743.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8786.jpg": {
-    "height": 1200,
-    "width": 1800,
+    "height": 1600,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -900,8 +909,8 @@
     ]
   },
   "project-assets/danfest/mg-8809.jpg": {
-    "height": 1200,
-    "width": 1800,
+    "height": 1600,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -909,80 +918,89 @@
     ]
   },
   "project-assets/danfest/mg-8870.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8882.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8889.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8901.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8924.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8932.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8973.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8977.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-8980.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mg-9021.jpg": {
-    "height": 1200,
-    "width": 1800,
+    "height": 1600,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -990,11 +1008,12 @@
     ]
   },
   "project-assets/danfest/mg-9038.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/mike-and-jim.jpg": {
@@ -1006,8 +1025,8 @@
     ]
   },
   "project-assets/danfest/monaco-challenge.jpg": {
-    "height": 1200,
-    "width": 1800,
+    "height": 1600,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -1015,8 +1034,8 @@
     ]
   },
   "project-assets/danfest/nat.jpg": {
-    "height": 1124,
-    "width": 1800,
+    "height": 1498,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -1024,8 +1043,8 @@
     ]
   },
   "project-assets/danfest/owen-and-marcus.jpg": {
-    "height": 1361,
-    "width": 1800,
+    "height": 1814,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -1041,16 +1060,17 @@
     ]
   },
   "project-assets/danfest/party.jpg": {
-    "height": 1800,
-    "width": 1525,
+    "height": 2400,
+    "width": 2033,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/party2.jpg": {
-    "height": 969,
-    "width": 1800,
+    "height": 1293,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -1058,16 +1078,17 @@
     ]
   },
   "project-assets/danfest/patrick.jpg": {
-    "height": 1800,
-    "width": 1516,
+    "height": 2400,
+    "width": 2022,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/perfect-pour.jpg": {
-    "height": 1800,
-    "width": 1104,
+    "height": 2400,
+    "width": 1472,
     "widths": [
       480,
       960
@@ -1091,8 +1112,8 @@
     ]
   },
   "project-assets/danfest/running.jpg": {
-    "height": 1350,
-    "width": 1800,
+    "height": 1800,
+    "width": 2400,
     "widths": [
       480,
       960,
@@ -1100,11 +1121,12 @@
     ]
   },
   "project-assets/danfest/saunders.jpg": {
-    "height": 1800,
-    "width": 1200,
+    "height": 2400,
+    "width": 1600,
     "widths": [
       480,
-      960
+      960,
+      1600
     ]
   },
   "project-assets/danfest/sean.jpg": {
@@ -1117,8 +1139,8 @@
     ]
   },
   "project-assets/danfest/serious.jpg": {
-    "height": 1053,
-    "width": 1800,
+    "height": 1404,
+    "width": 2400,
     "widths": [
       480,
       960,

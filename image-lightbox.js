@@ -25,6 +25,14 @@
     const closeButton = dialog.querySelector('.image-lightbox-close');
 
     const largestSrc = (image) => {
+        // A gallery can point at a bigger file than anything in its srcset:
+        // the party photographs keep a 2400px version that the grid never
+        // loads, so the lightbox shows the frame properly.
+        const full = image.getAttribute('data-full');
+        if (full) {
+            return full;
+        }
+
         const srcset = image.getAttribute('srcset');
         if (!srcset) {
             return image.currentSrc || image.src;

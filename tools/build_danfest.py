@@ -10,6 +10,8 @@ usual job on top. Point SOURCE at the folder and run:
 
 from __future__ import annotations
 
+import base64
+import io
 import re
 import sys
 from pathlib import Path
@@ -20,8 +22,18 @@ from media_common import REPO
 
 SOURCE = Path(r"C:\Users\bryar\OneDrive\Pictures\2026 DanFest\Final_Cropped")
 DEST = REPO / "project-assets" / "danfest"
-MAX_EDGE = 1800
+
+# Big enough to fill a laptop screen properly when the lightbox opens it. The
+# grid never loads this size - it uses the 480/960/1600 derivatives - so the
+# cost is only paid by someone who actually clicks a photograph.
+MAX_EDGE = 2400
 QUALITY = 82
+
+# A 16px-wide version of each frame, inlined as a base64 background on the
+# figure. It arrives with the HTML, so every tile shows a blurred version of
+# the right photograph immediately and the real one paints over it.
+LQIP_WIDTH = 16
+LQIP_QUALITY = 35
 
 # Ordered so the page runs roughly chronologically: setting up, the daylight
 # hours, food and drink, the people, then the evening. Captions come from what
@@ -115,9 +127,19 @@ def slug(name: str) -> str:
     return re.sub(r"-+", "-", stem).strip("-").lower()
 
 
-def import_photos() -> dict[str, str]:
+def make_lqip(im: Image.Image) -> str:
+    """A base64 data URI of a tiny version of the frame, for the blur-up."""
+    tiny = im.copy()
+    height = max(1, round(tiny.height * LQIP_WIDTH / tiny.width))
+    tiny = tiny.resize((LQIP_WIDTH, height), Image.LANCZOS)
+    buffer = io.BytesIO()
+    tiny.save(buffer, "JPEG", quality=LQIP_QUALITY, optimize=True)
+    return "data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode("ascii")
+
+
+def import_photos() -> dict[str, tuple[str, str]]:
     DEST.mkdir(parents=True, exist_ok=True)
-    mapping: dict[str, str] = {}
+    mapping: dict[str, tuple[str, str]] = {}
     for _, _, entries in SECTIONS:
         for original, _caption in entries:
             source = SOURCE / original
@@ -125,14 +147,13 @@ def import_photos() -> dict[str, str]:
                 print(f"  !! missing source: {original}")
                 continue
             target = DEST / f"{slug(original)}.jpg"
-            mapping[original] = target.name
-            if target.exists():
-                continue
             with Image.open(source) as im:
                 im = ImageOps.exif_transpose(im).convert("RGB")
                 im.thumbnail((MAX_EDGE, MAX_EDGE), Image.LANCZOS)
-                im.save(target, "JPEG", quality=QUALITY, optimize=True, progressive=True)
-            print(f"  photo {target.name}")
+                if not target.exists():
+                    im.save(target, "JPEG", quality=QUALITY, optimize=True, progressive=True)
+                    print(f"  photo {target.name}")
+                mapping[original] = (target.name, make_lqip(im))
     return mapping
 
 
@@ -218,13 +239,15 @@ def build_page(mapping: dict[str, str]) -> None:
             <section class="photo-grid" aria-label="{title} photographs">
 """)
         for original, caption in entries:
-            name = mapping.get(original)
-            if not name:
+            entry = mapping.get(original)
+            if not entry:
                 continue
+            name, lqip = entry
+            full = f"project-assets/danfest/{name}"
             alt = caption[0].lower() + caption[1:] if caption[:1].isupper() else caption
             parts.append(
-                f'                <figure>\n'
-                f'                    <img src="project-assets/danfest/{name}" '
+                f'                <figure style="background-image:url({lqip})">\n'
+                f'                    <img src="{full}" data-full="{full}" '
                 f'alt="DanFest: {alt}.">\n'
                 f"                    <figcaption>{caption}</figcaption>\n"
                 f"                </figure>\n"
