@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming for Data Science module notes from Daniel Bryars' MSc Artificial Intelligence at Leeds.">
+    <title>Programming for Data Science - Daniel Bryars</title>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="project-detail-page">
+    <div class="home-shell">
+        <header class="site-header" aria-label="Primary">
+            <a class="brand" href="../index.html"><span class="brand-mark">DB</span><span><strong>Daniel Bryars</strong><small>msc module / programming</small></span></a>
+            <nav class="top-nav"><a href="../index.html">Home</a><a href="MScAI.html">MSc AI</a><a href="/cool-projects/index.html">Projects</a><a href="../cv.html">CV</a></nav>
+        </header>
+        <main>
+            <section class="artifact-hero">
+                <div class="artifact-copy">
+                    <p class="eyebrow">OCOM5100M / Programming for Data Science</p>
+                    <h1>Text at Scale</h1>
+                    <p>
+                        My final assessment built a Python data-analysis pipeline around Project Gutenberg: bulk text
+                        ingestion, metadata joins, derived letter and word-length statistics, and visual analysis of a
+                        corpus large enough to force practical thinking.
+                    </p>
+                    <p>
+                        The useful lesson was not just syntax. It was how quickly data work becomes systems work:
+                        file formats, storage, repeatability, runtime, provenance and the small decisions that make an
+                        analysis trustworthy.
+                    </p>
+                </div>
+                <figure class="artifact-hero-image">
+                    <img src="../project-assets/msc-ai/p4ds-architecture-pipeline.jpg" alt="Architecture pipeline diagram for Project Gutenberg text analysis.">
+                    <figcaption>A Python pipeline for turning a public text corpus into analyzable features.</figcaption>
+                </figure>
+            </section>
+            <section class="artifact-story">
+                <article><p class="eyebrow">Assessment</p><h2>Book signatures.</h2><p>I analysed Project Gutenberg texts using metadata, letter counts and word-length features, with the slightly pleasing idea that books have statistical fingerprints.</p></article>
+                <article><p class="eyebrow">Tools</p><h2>Python as workshop kit.</h2><p>The module covered notebooks, pandas, NumPy, plotting, data loading, cleaning and producing reproducible analysis rather than one-off graph magic.</p></article>
+                <article><p class="eyebrow">Lesson</p><h2>Data is never “just there”.</h2><p>The bulk corpus needed careful handling: supported downloads, derived files, joins, storage costs and explicit assumptions about what the metadata did and did not contain.</p></article>
+                <article><p class="eyebrow">Carry-forward</p><h2>Practical data judgement.</h2><p>This became useful later in robotics and deep learning work, where dataset shape, provenance and derived features mattered as much as the model.</p></article>
+            </section>
+            <section class="artifact-gallery" aria-label="Programming for Data Science images">
+                <figure class="gallery-wide"><img src="../project-assets/msc-ai/p4ds-project-gutenberg-export.jpg" alt="Project Gutenberg export and derived data files."><figcaption>Project Gutenberg export, processed locally into analysis-ready data.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/p4ds-letter-frequencies.jpg" alt="Letter frequency chart from text analysis."><figcaption>Letter-frequency analysis from the derived corpus.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/p4ds-architecture-pipeline.jpg" alt="Pipeline diagram for the text analysis project."><figcaption>Pipeline view: download, clean, derive, analyse.</figcaption></figure>
+            </section>
+        </main>
+        <footer class="site-footer"><div><strong>Programming for Data Science</strong><span>Bulk text, Python pipelines and data provenance.</span></div><div class="footer-links"><a href="MScAI.html">MSc AI</a><a href="index.html">Projects</a></div></footer>
+    </div>
+</body>
+</html>

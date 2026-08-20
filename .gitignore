@@ -1,0 +1,7 @@
+# Claude Code working directories, including git worktrees. These must never be
+# committed: a worktree contains a full copy of the site's media.
+.claude/
+
+# Python bytecode from the scripts in tools/
+__pycache__/
+*.pyc

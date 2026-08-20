@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="3D Printers - Daniel Bryars project notes and images.">
-    <title>3D Printers - Daniel Bryars</title>
+    <meta name="description" content="Daniel Bryars builds an Original Prusa MK4 3D printer: assembly, wiring, calibration detail and finished machine photography.">
+    <title>3D Printer Build - Daniel Bryars</title>
     <link rel="stylesheet" href="../fonts.css">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="project-detail-page">
+    <!-- Source: \\192.168.1.13\Public\Video\Daniel\3dPrinter. Curated photos from Photos\DSC03389.JPG-DSC03416.JPG; clips from C0330, C0331, C0347, C0359 and C0381. See SOURCE_REFERENCES.md. -->
     <div class="home-shell">
         <header class="site-header" aria-label="Primary">
             <a class="brand" href="../index.html">
                 <span class="brand-mark">DB</span>
                 <span>
                     <strong>Daniel Bryars</strong>
-                    <small>project file / 3d-printers</small>
+                    <small>project file / 3d-printer-build</small>
                 </span>
             </a>
             <nav class="top-nav">
@@ -27,47 +28,145 @@
         </header>
 
         <main>
-            <section class="project-detail-hero">
-                <div>
-                    <p class="eyebrow">Machines that make machines</p>
-                    <h1>3D Printers</h1>
-                    <p>3D printer builds, tuning, modifications and the familiar loop of using the machine to improve the machine.</p>
-                </div>
-                <aside class="project-asset-note">
-                    <div class="screen-bar">
-                        <span>ASSET SLOT</span>
-                        <span>READY</span>
+            <section class="artifact-hero">
+                <div class="artifact-copy">
+                    <p class="eyebrow">Machines that make machines / Prusa MK4</p>
+                    <h1>Building the printer that prints the next problem.</h1>
+                    <p>
+                        A Christmas build of an Original Prusa MK4 kit: boxes, rods, printed brackets, bearings,
+                        wiring, screen, calibration and the slightly hypnotic pleasure of a machine becoming square,
+                        smooth and obedient one subassembly at a time.
+                    </p>
+                    <p>
+                        I like 3D printers because they sit in that perfect workshop zone between software, mechanics,
+                        electronics and immediate consequences. You can think in CAD in the morning and hold a useful
+                        bracket in the evening. Dangerous, frankly.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#videos">Watch the build</a>
+                        <a class="button" href="#gallery">Photo details</a>
                     </div>
-                    <p>Drop photos, sketches, screenshots or notes into:</p>
-                    <code>project-assets/3d-printers/</code>
-                </aside>
+                </div>
+                <figure class="artifact-hero-image">
+                    <img src="../project-assets/3d-printers/01-prusa-mk4-toolhead.jpg" alt="Close-up of the Original Prusa MK4 print head.">
+                    <figcaption>Orange plastic, black hardware and the beginning of a very useful domestic manufacturing problem.</figcaption>
+                </figure>
             </section>
 
-            <section class="cv-grid">
-                <article class="cv-panel span-2">
-                    <p class="eyebrow">To document</p>
-                    <h2>The story this page wants.</h2>
-                    <ul>
-                            <li>Printer setup, calibration and modifications.</li>
-                            <li>Useful for fast brackets, fixtures, enclosures and experimental parts.</li>
-                            <li>Good candidate for photos of prints, failures, upgrades and workshop setup.</li>
-                    </ul>
-                </article>
-                <article class="cv-panel">
-                    <p class="eyebrow">Status</p>
-                    <h2>Awaiting photos</h2>
+            <section class="media-feature" id="videos">
+                <div>
+                    <p class="eyebrow">Build arc</p>
+                    <h2>From flat-pack confidence to calibrated machine.</h2>
                     <p>
-                        This page now has the right shape. Once the images and rough notes are in the asset folder,
-                        we can turn it into a proper project write-up.
+                        The raw footage is full-length build material, so I pulled it down to a handful of short clips:
+                        unboxing, rods and rails, frame assembly, wiring and the finished printer. Enough to show the
+                        texture of the work without making anyone sit through hours of screw sorting.
+                    </p>
+                </div>
+                <video controls preload="metadata" poster="../project-assets/3d-printers/poster-frame-assembly.jpg">
+                    <source src="../project-assets/3d-printers/clip-frame-assembly.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="video-strip" aria-label="3D printer build videos">
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/3d-printers/poster-unboxing.jpg">
+                        <source src="../project-assets/3d-printers/clip-unboxing.mp4" type="video/mp4">
+                    </video>
+                    <h2>Christmas kit archaeology</h2>
+                    <p>Opening the boxes and finding the comforting promise of individually bagged parts.</p>
+                </article>
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/3d-printers/poster-rods-on-bench.jpg">
+                        <source src="../project-assets/3d-printers/clip-rods-on-bench.mp4" type="video/mp4">
+                    </video>
+                    <h2>Rods, rails and alignment</h2>
+                    <p>The satisfying stage where it starts looking less like a delivery and more like a precision machine.</p>
+                </article>
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/3d-printers/poster-wiring-electronics.jpg">
+                        <source src="../project-assets/3d-printers/clip-wiring-electronics.mp4" type="video/mp4">
+                    </video>
+                    <h2>Electronics entrails</h2>
+                    <p>Cable routing, controller wiring and the quiet hope that every connector is exactly where it should be.</p>
+                </article>
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/3d-printers/poster-finished-printer.jpg">
+                        <source src="../project-assets/3d-printers/clip-finished-printer.mp4" type="video/mp4">
+                    </video>
+                    <h2>It lives</h2>
+                    <p>The finished MK4 on the bench, ready to become part of the rest of the workshop ecosystem.</p>
+                </article>
+            </section>
+
+            <section class="artifact-story">
+                <article>
+                    <p class="eyebrow">Mechanics</p>
+                    <h2>Square matters.</h2>
+                    <p>
+                        A printer is a lovely little reminder that software cannot rescue bad geometry forever. Rods,
+                        bearings, belts and leadscrews all have to move cleanly before the clever bits get their turn.
                     </p>
                 </article>
+                <article>
+                    <p class="eyebrow">Electronics</p>
+                    <h2>Connectors are tiny commitments.</h2>
+                    <p>
+                        The wiring stage is classic me territory: route it properly, strain-relieve it, check it twice,
+                        then pretend the first power-on is emotionally neutral.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">Calibration</p>
+                    <h2>The machine teaches you its tolerances.</h2>
+                    <p>
+                        Bed, nozzle, belts and axes all become part of a feedback loop. It is not just assembly; it is
+                        learning how the machine reports its own state.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">Why useful</p>
+                    <h2>Prototype velocity.</h2>
+                    <p>
+                        For robot parts, brackets, fixtures, jigs and weird one-off workshop needs, a reliable printer
+                        changes the rhythm of a project. The idea gets physical faster.
+                    </p>
+                </article>
+            </section>
+
+            <section class="artifact-gallery" id="gallery" aria-label="3D printer build photos">
+                <figure class="gallery-wide">
+                    <img src="../project-assets/3d-printers/03-frame-and-print-head.jpg" alt="Prusa MK4 frame and print head during the build.">
+                    <figcaption>Frame, rods and toolhead: the machine starting to look like itself.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/3d-printers/02-heated-bed-closeup.jpg" alt="Close-up of the Original Prusa heated bed.">
+                    <figcaption>The heated bed, photographed with wholly unnecessary drama.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/3d-printers/04-toolhead-rods-detail.jpg" alt="Toolhead and smooth rods close-up.">
+                    <figcaption>Linear motion, orange brackets and the good kind of tolerances.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/3d-printers/05-extruder-hinges-detail.jpg" alt="Extruder hinge detail on the Prusa MK4.">
+                    <figcaption>Small hardware, big consequences.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/3d-printers/06-leadscrew-orange-block.jpg" alt="Leadscrew and orange printed bearing block.">
+                    <figcaption>The orange bits are doing a lot of visual heavy lifting, and I approve.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/3d-printers/07-control-screen.jpg" alt="Original Prusa MK4 control screen.">
+                    <figcaption>The little screen of imminent calibration optimism.</figcaption>
+                </figure>
             </section>
         </main>
 
         <footer class="site-footer">
             <div>
-                <strong>3D Printers</strong>
-                <span>Project notes waiting for the good bits.</span>
+                <strong>3D Printer Build</strong>
+                <span>Because the correct number of workshop machines is usually one more.</span>
             </div>
             <div class="footer-links">
                 <a href="index.html">Projects</a>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deep Learning module notes from Daniel Bryars' MSc Artificial Intelligence at Leeds.">
+    <title>Deep Learning - Daniel Bryars</title>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="project-detail-page">
+    <div class="home-shell">
+        <header class="site-header" aria-label="Primary">
+            <a class="brand" href="../index.html"><span class="brand-mark">DB</span><span><strong>Daniel Bryars</strong><small>msc module / deep-learning</small></span></a>
+            <nav class="top-nav"><a href="../index.html">Home</a><a href="MScAI.html">MSc AI</a><a href="/cool-projects/index.html">Projects</a><a href="../cv.html">CV</a></nav>
+        </header>
+        <main>
+            <section class="artifact-hero">
+                <div class="artifact-copy">
+                    <p class="eyebrow">OCOM5203M / Deep Learning</p>
+                    <h1>Image Captioning</h1>
+                    <p>
+                        My final assessment built an image-captioning system in PyTorch: a ResNet-style visual encoder,
+                        a sequence decoder, tokenisation, dataloaders, training loops, logging, evaluation and the
+                        awkward business of deciding whether a generated caption is any good.
+                    </p>
+                    <p>
+                        The module connected classic CNNs, backpropagation, optimisation, regularisation, sequence
+                        models and evaluation metrics with the practical grind of tensor shapes, checkpoints and
+                        debugging.
+                    </p>
+                </div>
+                <figure class="artifact-hero-image">
+                    <img src="../project-assets/msc-ai/dl-encoder-decoder.jpg" alt="Encoder-decoder diagram from image captioning assessment.">
+                    <figcaption>Vision in, words out. Easy sentence, non-trivial machine.</figcaption>
+                </figure>
+            </section>
+            <section class="artifact-story">
+                <article><p class="eyebrow">Assessment</p><h2>Caption generation.</h2><p>The project combined pretrained visual features with a trainable decoder to generate natural-language captions for images.</p></article>
+                <article><p class="eyebrow">Implementation</p><h2>PyTorch all the way down.</h2><p>I built datasets, dataloaders, model components, training loops, logging and checkpoint handling rather than treating the model as a black box.</p></article>
+                <article><p class="eyebrow">Evaluation</p><h2>Language metrics are slippery.</h2><p>BLEU and cosine similarity helped compare outputs, but the assessment made clear that caption quality is not reducible to one clean number.</p></article>
+                <article><p class="eyebrow">Lesson</p><h2>Debug the representation.</h2><p>Deep learning work is often less about one clever layer and more about data representation, tensor discipline and knowing where to inspect the pipeline.</p></article>
+            </section>
+            <section class="artifact-gallery" aria-label="Deep Learning selected outputs">
+                <figure class="gallery-wide"><img src="../project-assets/msc-ai/dl-encoder-decoder.jpg" alt="Encoder-decoder diagram."><figcaption>Encoder-decoder structure for image captioning.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/dl-bleu-bad-model.jpg" alt="BLEU evaluation plot from deep learning assessment."><figcaption>BLEU as one imperfect view of caption quality.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/dl-cosine-similarity.jpg" alt="Cosine similarity plot from deep learning assessment."><figcaption>Embedding similarity as a second evaluation lens.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/dl-resnet152-diagram.jpg" alt="ResNet152 model diagram."><figcaption>The large model graph, aggressively resized before it ate the page.</figcaption></figure>
+            </section>
+        </main>
+        <footer class="site-footer"><div><strong>Deep Learning</strong><span>PyTorch, vision-language models and evaluation.</span></div><div class="footer-links"><a href="MScAI.html">MSc AI</a><a href="index.html">Projects</a></div></footer>
+    </div>
+</body>
+</html>

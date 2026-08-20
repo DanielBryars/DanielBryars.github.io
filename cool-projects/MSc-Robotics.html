@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robotics module notes from Daniel Bryars' MSc Artificial Intelligence at Leeds.">
+    <title>Robotics - Daniel Bryars</title>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="project-detail-page">
+    <div class="home-shell">
+        <header class="site-header" aria-label="Primary">
+            <a class="brand" href="../index.html"><span class="brand-mark">DB</span><span><strong>Daniel Bryars</strong><small>msc module / robotics</small></span></a>
+            <nav class="top-nav"><a href="../index.html">Home</a><a href="MScAI.html">MSc AI</a><a href="/cool-projects/index.html">Projects</a><a href="../cv.html">CV</a></nav>
+        </header>
+        <main>
+            <section class="artifact-hero">
+                <div class="artifact-copy">
+                    <p class="eyebrow">OCOM5205M / Robotics</p>
+                    <h1>Learning to Navigate</h1>
+                    <p>
+                        The robotics assessment used ROS, Gazebo and TurtleBot-style simulation to explore
+                        reinforcement learning for navigation: state representation, laser-scan features, reward
+                        design, action-value methods and the very real pain of simulation plumbing.
+                    </p>
+                    <p>
+                        This was the taught module that most obviously fed into my later robot-learning work. It made
+                        reinforcement learning feel less like a tidy equation and more like a system with sensors,
+                        middleware, state, reward hacks and failure modes.
+                    </p>
+                </div>
+                <figure class="artifact-hero-image">
+                    <img src="../project-assets/msc-ai/robotics-rviz.jpg" alt="RViz screenshot from robotics assessment.">
+                    <figcaption>ROS and RViz: useful, powerful, and occasionally a character-building exercise.</figcaption>
+                </figure>
+            </section>
+            <section class="artifact-story">
+                <article><p class="eyebrow">Assessment</p><h2>TurtleBot reinforcement learning.</h2><p>I worked with a simulated robot environment, ROS/DDS connectivity, laser-scan state and value-based reinforcement-learning approaches.</p></article>
+                <article><p class="eyebrow">Representation</p><h2>The state is the interface.</h2><p>Laser readings had to become usable features. That forced the key robotics question: what does the robot know, and in what form?</p></article>
+                <article><p class="eyebrow">Reward</p><h2>Tell it what good means.</h2><p>Reward design was a practical lesson in specification: the agent optimises what you reward, not what you quietly hoped it understood.</p></article>
+                <article><p class="eyebrow">Lesson</p><h2>Robots are unfair to abstractions.</h2><p>The module made clear how much hidden engineering sits around the learning algorithm: simulation speed, middleware, resets, logging and repeatable experiments.</p></article>
+            </section>
+            <section class="artifact-gallery" aria-label="Robotics selected outputs">
+                <figure class="gallery-wide"><img src="../project-assets/msc-ai/robotics-rviz.jpg" alt="RViz robotics screenshot."><figcaption>Inspecting the robot and sensor world in RViz.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/robotics-world.jpg" alt="Robotics simulated world screenshot."><figcaption>The simulated environment: small world, plenty of ways to fail.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/robotics-reward-function.jpg" alt="Reward function notes from robotics assessment."><figcaption>Reward design, where intentions become numbers.</figcaption></figure>
+                <figure><img src="../project-assets/msc-ai/robotics-sarsa-learning.jpg" alt="Sarsa learning curve output from robotics assessment."><figcaption>Learning curves from SARSA-lambda style experiments.</figcaption></figure>
+            </section>
+        </main>
+        <footer class="site-footer"><div><strong>Robotics</strong><span>ROS, Gazebo, TurtleBot and reinforcement learning.</span></div><div class="footer-links"><a href="MScAI.html">MSc AI</a><a href="index.html">Projects</a></div></footer>
+    </div>
+</body>
+</html>

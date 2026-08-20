@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Robot Arm - Daniel Bryars project notes and images.">
+    <meta name="description" content="Daniel Bryars' work-in-progress robot arm project: 3D-printed mechanics, cycloidal joints, servo electronics, metalwork, control experiments and robot-learning ambitions.">
     <title>Robot Arm - Daniel Bryars</title>
     <link rel="stylesheet" href="../fonts.css">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="project-detail-page">
+    <!-- Source: \\192.168.1.13\Public\Video\Daniel\RobotArm. Curated photos from Pictures; clips from Printing, ServoMotors, Smaller Cycloidal and NotSure folders. See SOURCE_REFERENCES.md. -->
     <div class="home-shell">
         <header class="site-header" aria-label="Primary">
             <a class="brand" href="../index.html">
@@ -27,47 +28,161 @@
         </header>
 
         <main>
-            <section class="project-detail-hero">
-                <div>
-                    <p class="eyebrow">Robotics / AI</p>
-                    <h1>Robot Arm</h1>
-                    <p>A robot-arm platform for learning, experimenting and turning AI policy ideas into something that has to work on real hardware.</p>
-                </div>
-                <aside class="project-asset-note">
-                    <div class="screen-bar">
-                        <span>ASSET SLOT</span>
-                        <span>READY</span>
+            <section class="artifact-hero">
+                <div class="artifact-copy">
+                    <p class="eyebrow">Robotics / work in progress</p>
+                    <h1>A robot arm, because simulated robots are too well behaved.</h1>
+                    <p>
+                        This one is not finished, which is partly the point. It is a home-built robot-arm platform for
+                        learning where the real difficulty lives: printed mechanics, reducers, bearings, servo drives,
+                        wiring, calibration, control and eventually robot-learning experiments on hardware that can
+                        actually sulk.
+                    </p>
+                    <p>
+                        It connects directly to my MSc and robot-learning work: MuJoCo simulation, OpenVR teleoperation,
+                        data capture, policy training and the persistent question of what transfers when the robot is
+                        no longer made of perfect maths.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#videos">Watch progress</a>
+                        <a class="button" href="#gallery">Build details</a>
                     </div>
-                    <p>Drop photos, sketches, screenshots or notes into:</p>
-                    <code>project-assets/robot-arm/</code>
-                </aside>
+                </div>
+                <figure class="artifact-hero-image">
+                    <img src="../project-assets/robot-arm/07-cycloidal-joint-closeup.jpg" alt="Close-up of a robot arm cycloidal joint assembly.">
+                    <figcaption>Printed parts, bearings, reducers and that optimistic phrase: it should work.</figcaption>
+                </figure>
             </section>
 
-            <section class="cv-grid">
-                <article class="cv-panel span-2">
-                    <p class="eyebrow">To document</p>
-                    <h2>The story this page wants.</h2>
-                    <ul>
-                            <li>3D-printed mechanics and closed-loop steppers over CAN bus.</li>
-                            <li>MuJoCo simulation, OpenVR teleoperation, datasets and PyTorch policies.</li>
-                            <li>Document the reality gap: calibration, resets, evaluation and failures.</li>
-                    </ul>
-                </article>
-                <article class="cv-panel">
-                    <p class="eyebrow">Status</p>
-                    <h2>Awaiting photos</h2>
+            <section class="artifact-story">
+                <article>
+                    <p class="eyebrow">Mechanics</p>
+                    <h2>Printing the hard bits first.</h2>
                     <p>
-                        This page now has the right shape. Once the images and rough notes are in the asset folder,
-                        we can turn it into a proper project write-up.
+                        The build uses printed structural parts and joint components, which makes iteration fast but
+                        also forces the awkward questions early: stiffness, backlash, fit, tolerances and where plastic
+                        stops being charming.
                     </p>
                 </article>
+                <article>
+                    <p class="eyebrow">Actuation</p>
+                    <h2>Torque is where optimism goes to be tested.</h2>
+                    <p>
+                        Servo motors and compact reducers are the bridge between a CAD idea and a useful arm. The
+                        cycloidal sections are especially interesting because they turn the project into a mechanical
+                        experiment, not just an assembly exercise.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">Electronics</p>
+                    <h2>Every joint wants its own little argument.</h2>
+                    <p>
+                        The electronics and wiring work is about making motion controllable and repeatable. That means
+                        motor drives, feedback, connectors, power, signal integrity and enough instrumentation to know
+                        whether the problem is code, mechanics or a tiny connector being dramatic.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">Purpose</p>
+                    <h2>A physical test bed for learning.</h2>
+                    <p>
+                        The end goal is not just a nice moving sculpture. It is a platform for testing policies,
+                        collecting data, comparing simulation with hardware, and discovering the reality gap in the
+                        least theoretical way possible.
+                    </p>
+                </article>
+            </section>
+
+            <section class="media-feature" id="videos">
+                <div>
+                    <p class="eyebrow">Build loop</p>
+                    <h2>Print, assemble, wire, test, rethink.</h2>
+                    <p>
+                        The raw folder is a proper build diary, so the clips here are deliberately short: printing arm
+                        parts, laying out actuator components, bench electronics, hand-testing a joint, assembling the
+                        larger arm structure and a little metalwork from the later stages.
+                    </p>
+                    <p>
+                        It is very much a work in progress, but it already shows the thing I like most about robotics:
+                        you cannot hide from the physical system for long.
+                    </p>
+                </div>
+                <video controls preload="metadata" poster="../project-assets/robot-arm/poster-joint-hand-test.jpg">
+                    <source src="../project-assets/robot-arm/clip-joint-hand-test.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="video-strip" aria-label="Robot arm build videos">
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/robot-arm/poster-printing-arm-parts.jpg">
+                        <source src="../project-assets/robot-arm/clip-printing-arm-parts.mp4" type="video/mp4">
+                    </video>
+                    <h2>Printed mechanism parts</h2>
+                    <p>The 3D printer quietly manufacturing future problems, which is exactly why it is useful.</p>
+                </article>
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/robot-arm/poster-cycloidal-layout.jpg">
+                        <source src="../project-assets/robot-arm/clip-cycloidal-layout.mp4" type="video/mp4">
+                    </video>
+                    <h2>Cycloidal reducer layout</h2>
+                    <p>Bearings, printed lobes, fasteners and the little mechanical puzzle at the centre of the joint.</p>
+                </article>
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/robot-arm/poster-servo-electronics.jpg">
+                        <source src="../project-assets/robot-arm/clip-servo-electronics.mp4" type="video/mp4">
+                    </video>
+                    <h2>Servo electronics</h2>
+                    <p>Motor control on the bench: cables, boards, meters and the familiar ritual of checking what is actually moving.</p>
+                </article>
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/robot-arm/poster-arm-assembly.jpg">
+                        <source src="../project-assets/robot-arm/clip-arm-assembly.mp4" type="video/mp4">
+                    </video>
+                    <h2>Arm assembly</h2>
+                    <p>The point where separate clever pieces become one larger, less-forgiving machine.</p>
+                </article>
+                <article>
+                    <video controls preload="metadata" poster="../project-assets/robot-arm/poster-metalwork-welding.jpg">
+                        <source src="../project-assets/robot-arm/clip-metalwork-welding.mp4" type="video/mp4">
+                    </video>
+                    <h2>Metalwork cameo</h2>
+                    <p>Some later-stage fabrication energy, because the project refuses to stay purely plastic.</p>
+                </article>
+            </section>
+
+            <section class="artifact-gallery" id="gallery" aria-label="Robot arm selected photos">
+                <figure class="gallery-wide">
+                    <img src="../project-assets/robot-arm/05-workshop-wide.jpg" alt="Workshop with robot arm project parts and tools.">
+                    <figcaption>The natural habitat: parts, tools, machines, cables and at least three things asking to be calibrated.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/robot-arm/01-printer-making-arm-parts.jpg" alt="3D printer making robot arm components.">
+                    <figcaption>The MK4 earning its keep by printing robot-arm parts.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/robot-arm/02-printed-coupler-on-bed.jpg" alt="Printed robot arm coupler on a printer bed.">
+                    <figcaption>Printed part, fresh from the bed, before reality has had its say.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/robot-arm/06-rods-and-fasteners.jpg" alt="Robot arm rods and fasteners laid out on a cutting mat.">
+                    <figcaption>Rods and fasteners: small things that decide whether big things move properly.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/robot-arm/08-joint-side-by-side.jpg" alt="Two robot arm joint assemblies shown side by side.">
+                    <figcaption>Joint assemblies side by side, because one axis is never enough.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/robot-arm/04-workshop-context.jpg" alt="Workshop shelves and tools used for robot arm work.">
+                    <figcaption>The Victorian inventor's shed, but with better stepper drivers.</figcaption>
+                </figure>
             </section>
         </main>
 
         <footer class="site-footer">
             <div>
                 <strong>Robot Arm</strong>
-                <span>Project notes waiting for the good bits.</span>
+                <span>Still in progress, already full of useful lessons.</span>
             </div>
             <div class="footer-links">
                 <a href="index.html">Projects</a>
