@@ -58,8 +58,17 @@ Consequences:
 - `cool-projects/index.html` - project index: written-up projects as cards, the
   rest as a plain `.backlog` list
 - `cool-projects/*.html` - one page per project
-- `bbcb-demo.html` - self-contained teletext page with its own inline styles
+- `danfest.html` - photographs from Daniel's 50th. Marked `noindex`: it is full
+  of identifiable guests and is for friends, not for search engines or
+  recruiters. Built by `tools/build_danfest.py`, which resizes the originals on
+  import (they are ~400MB in OneDrive and must not be committed at full size).
+  The invitation itself lives at `danfest.bryars.com`, a separate site.
 - `styles.css` - every rule for the main site; `fonts.css` holds `@font-face`
+
+There is one easter egg, in the homepage footer: a very faint line of shipping
+forecast sea areas that plays `ShippingForecast.1stMin.ulaw.8k.wav` when
+clicked. It is meant to be almost invisible. Do not "improve" its contrast,
+label it, or explain it.
 
 ## Design system
 

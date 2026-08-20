@@ -1644,6 +1644,97 @@ h1 {
 }
 
 /* ---------------------------------------------------------------------------
+   Photo grid: a party album rather than a project gallery. Sixty-odd frames of
+   wildly mixed aspect ratio, so the tiles are a fixed shape and the originals
+   open in the lightbox. A definite image height, not height:100%, or the
+   caption gets pushed out of the figure and clipped.
+   --------------------------------------------------------------------------- */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 12px;
+    margin: 0 0 46px;
+}
+
+.photo-grid figure {
+    margin: 0;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.035);
+    overflow: hidden;
+}
+
+.photo-grid img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    /* Faces sit above centre more often than not. */
+    object-position: center 40%;
+    cursor: zoom-in;
+}
+
+.photo-grid figcaption {
+    padding: 9px 12px;
+    color: var(--yellow);
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 17px;
+    line-height: 1.15;
+}
+
+/* Five section headings on one page; the site default would swamp the photos. */
+.photo-section {
+    margin-bottom: 14px;
+}
+
+.photo-section h2 {
+    font-size: clamp(26px, 3vw, 38px);
+}
+
+@media (max-width: 620px) {
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .photo-grid img {
+        height: 150px;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+   Sea areas. Deliberately almost invisible: no button chrome, no underline,
+   no hint. Whoever it is for will spot it.
+   --------------------------------------------------------------------------- */
+
+.sea-areas {
+    display: block;
+    margin-top: 6px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: rgba(185, 181, 144, 0.32);
+    font: inherit;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    cursor: default;
+}
+
+.sea-areas:hover {
+    color: rgba(185, 181, 144, 0.6);
+}
+
+.sea-areas:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 3px;
+    color: var(--ink);
+}
+
+.sea-areas.listening {
+    color: var(--green);
+}
+
+/* ---------------------------------------------------------------------------
    Tools: the keyword block. One clearly labelled place, low down, so the rest
    of the CV can lead with what was actually done.
    --------------------------------------------------------------------------- */

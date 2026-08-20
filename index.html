@@ -260,6 +260,7 @@ unnecessary objects
                             numbers, block graphics, the lot. It is still up.
                         </p>
                         <a href="https://danfest.bryars.com" target="_blank" rel="noreferrer">Page 501</a>
+                        <a href="danfest.html">The photographs</a>
                     </div>
                 </article>
             </section>
@@ -298,6 +299,10 @@ unnecessary objects
             <div>
                 <strong>Daniel Bryars</strong>
                 <span id="buildInfo">Build info loading...</span>
+                <!-- If you know, you know. -->
+                <button class="sea-areas" type="button" data-shipping
+                        aria-label="Play the shipping forecast">Dogger. Fisher. German Bight.</button>
+                <audio id="shipping" preload="none" src="ShippingForecast.1stMin.ulaw.8k.wav"></audio>
             </div>
             <div class="footer-links">
                 <a href="https://www.linkedin.com/in/danielbryars/" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -319,6 +324,22 @@ unnecessary objects
             .catch(() => {
                 document.getElementById('buildInfo').textContent = 'Static GitHub Pages site';
             });
+
+        // Sea areas. Clicking them does what you would hope.
+        document.querySelectorAll('[data-shipping]').forEach(control => {
+            const audio = document.getElementById('shipping');
+            control.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play().catch(() => {});
+                } else {
+                    audio.pause();
+                    audio.currentTime = 0;
+                }
+            });
+            audio.addEventListener('play', () => control.classList.add('listening'));
+            ['pause', 'ended'].forEach(event =>
+                audio.addEventListener(event, () => control.classList.remove('listening')));
+        });
     </script>
 </body>
 </html>

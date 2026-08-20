@@ -19,13 +19,20 @@ CLASS_ATTR = re.compile(r'class="([^"]*)"')
 # Any quoted string in a script might be a class name handed to className or
 # classList; over-matching here only costs a few false "used" entries.
 JS_STRING_RE = re.compile(r"""['"]([A-Za-z_][\w -]*)['"]""")
+INLINE_SCRIPT_RE = re.compile(r"<script\b[^>]*>(.*?)</script>", re.DOTALL | re.IGNORECASE)
 
 
 def main() -> int:
     used: set[str] = set()
     for page in html_files():
-        for match in CLASS_ATTR.finditer(page.read_text(encoding="utf-8")):
+        text = page.read_text(encoding="utf-8")
+        for match in CLASS_ATTR.finditer(text):
             used.update(match.group(1).split())
+        # Inline scripts toggle classes too - the sea-areas easter egg on the
+        # home page is only ever "used" from a classList call in a <script>.
+        for block in INLINE_SCRIPT_RE.finditer(text):
+            for match in JS_STRING_RE.finditer(block.group(1)):
+                used.update(match.group(1).split())
 
     # Some classes only ever exist because a script creates the element, so
     # scan the JavaScript too rather than reporting those as dead.
