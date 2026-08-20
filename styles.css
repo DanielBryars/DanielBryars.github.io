@@ -809,6 +809,12 @@ h1 {
     object-fit: cover;
 }
 
+.artifact-hero-image img,
+.artifact-gallery img,
+.media-feature figure img {
+    cursor: zoom-in;
+}
+
 .artifact-hero-image {
     min-height: 620px;
 }
@@ -944,6 +950,66 @@ h1 {
     width: 100%;
     background: #000;
     border: 1px solid rgba(245, 242, 220, 0.18);
+}
+
+.image-lightbox {
+    width: min(94vw, 1500px);
+    max-width: none;
+    max-height: 94vh;
+    padding: 0;
+    color: var(--paper);
+    background: rgba(12, 13, 11, 0.98);
+    border: 1px solid rgba(245, 242, 220, 0.28);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
+}
+
+.image-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.82);
+}
+
+.image-lightbox-inner {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-height: 94vh;
+}
+
+.image-lightbox-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.image-lightbox-close {
+    min-width: 44px;
+    min-height: 44px;
+    color: var(--paper);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(245, 242, 220, 0.28);
+    font: inherit;
+    cursor: pointer;
+}
+
+.image-lightbox-close:hover,
+.image-lightbox-close:focus-visible {
+    color: #10120f;
+    background: var(--yellow);
+}
+
+.image-lightbox img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(94vh - 120px);
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.image-lightbox-caption {
+    margin: 0;
+    padding: 12px 16px 16px;
+    color: var(--yellow);
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.48);
 }
 
 .lathe-hero-image img {
