@@ -1771,21 +1771,21 @@ h1 {
 
     .print-name {
         margin: 0;
-        font-size: 23pt;
+        font-size: 23pt !important;
         font-weight: 400;
         letter-spacing: 0.06em;
     }
 
     .print-role {
         margin: 3pt 0 0;
-        font-size: 11pt;
+        font-size: 11pt !important;
         font-style: italic;
         color: #222 !important;
     }
 
     .print-contact {
         margin: 6pt 0 0;
-        font-size: 8.6pt;
+        font-size: 8.6pt !important;
         color: #333 !important;
     }
 
@@ -1889,7 +1889,7 @@ h1 {
     }
 
     .cv-summary {
-        font-size: 10.8pt;
+        font-size: 10.8pt !important;
     }
 
     .cv-status-card {
@@ -1916,13 +1916,13 @@ h1 {
 
     .cv-status-card dt {
         font-style: italic;
-        font-size: 9.6pt;
+        font-size: 9.6pt !important;
         color: #333 !important;
     }
 
     .cv-status-card dd {
         margin: 0;
-        font-size: 9.6pt;
+        font-size: 9.6pt !important;
     }
 
     /* --- the Python listing, set as a verbatim block --------------------- */
@@ -1988,7 +1988,7 @@ h1 {
     }
 
     .achievement-grid span {
-        font-size: 9.4pt;
+        font-size: 9.4pt !important;
         color: #000 !important;
         text-align: left;
     }
@@ -2035,7 +2035,7 @@ h1 {
 
     .timeline article > span {
         grid-row: 1;
-        font-size: 9.6pt;
+        font-size: 9.6pt !important;
         font-style: italic;
         color: #333 !important;
     }
@@ -2070,12 +2070,12 @@ h1 {
     .tool-list dt {
         font-family: inherit;
         font-style: italic;
-        font-size: 9.8pt;
+        font-size: 9.8pt !important;
         color: #333 !important;
     }
 
     .tool-list dd {
-        font-size: 9.8pt;
+        font-size: 9.8pt !important;
         text-align: left;
     }
 
