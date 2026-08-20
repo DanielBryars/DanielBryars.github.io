@@ -149,9 +149,9 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Selected clips:
   - `C0330.MP4`, around `00:00:50`, 30 seconds -> `clip-unboxing.mp4`
   - `C0331.MP4`, around `00:06:45`, 30 seconds -> `clip-rods-on-bench.mp4`
-  - `C0331.MP4`, from `00:04:40`, 30 seconds -> `clip-decoration-drilling-720.mp4`
-  - `C0331.MP4`, from `00:07:10`, 30 seconds -> `clip-decoration-base-fitting-720.mp4`
+  - `C0331.MP4`, from `00:01:35`, 45 seconds -> `clip-decoration-fixing-720.mp4`
   - `C0331.MP4`, from `00:09:25`, 30 seconds -> `clip-decoration-final-hook-720.mp4`
+  - `C0331.MP4`, from `00:16:25`, 45 seconds -> `clip-decoration-welding-720.mp4`
   - `C0347.MP4`, around `00:06:50`, 30 seconds -> `clip-frame-assembly.mp4`
   - `C0359.MP4`, around `00:00:50`, 30 seconds -> `clip-wiring-electronics.mp4`
   - `C0381.MP4`, around `00:00:55`, 30 seconds -> `clip-finished-printer.mp4`
