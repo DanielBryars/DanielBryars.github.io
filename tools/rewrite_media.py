@@ -27,11 +27,37 @@ ATTR_RE = re.compile(r'\s+(?:srcset|sizes|width|height|loading|decoding|fetchpri
 SRC_RE = re.compile(r'\bsrc="([^"]+)"', re.IGNORECASE)
 POSTER_RE = re.compile(r'\bposter="([^"]+)"', re.IGNORECASE)
 
-# Images that span most of the layout get a different `sizes` hint from the
-# ones sitting in a three-up grid.
-WIDE_MARKERS = ("artifact-hero-image", "gallery-wide", "about-hero", "hero-panel")
+# The `sizes` hint depends on how much of the layout the image occupies, which
+# is decided by the enclosing <section> (and sometimes the <figure>), not by
+# whatever happens to sit near the tag in the source.
+WIDE_MARKERS = ("artifact-hero-image", "gallery-wide", "about-hero", "hero-panel",
+                "project-feature lead", "artifact-hero")
+THUMB_MARKERS = ("evidence-strip",)
 SIZES_WIDE = "(max-width: 900px) 100vw, 600px"
 SIZES_GRID = "(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw"
+SIZES_THUMB = "(max-width: 620px) 50vw, (max-width: 900px) 33vw, 20vw"
+
+BLOCK_RE = re.compile(r"<(/?)(?:section|article|figure|aside)\b([^>]*)>", re.IGNORECASE)
+CLASS_RE = re.compile(r'class="([^"]*)"', re.IGNORECASE)
+
+
+def layout_context(text: str, position: int) -> str:
+    """Class names of the block elements actually containing `position`.
+
+    A byte window before the tag is not good enough: the fifth thumbnail in a
+    strip is thousands of characters from the <section> that sizes it, and a
+    plain <figure> in a gallery would otherwise inherit the class of the wide
+    one above it. So keep a real stack of open ancestors.
+    """
+    stack: list[str] = []
+    for match in BLOCK_RE.finditer(text, 0, position):
+        if match.group(1):
+            if stack:
+                stack.pop()
+        else:
+            found = CLASS_RE.search(match.group(2))
+            stack.append(found.group(1) if found else "")
+    return " ".join(stack)
 
 
 # A page that has already been rewritten points at derived/, so map those paths
@@ -81,7 +107,12 @@ def rewrite_img(tag: str, page: Path, is_first: bool, context: str) -> str:
             f"{rel_url(page, derived_path(target, f'-{w}.jpg'))} {w}w" for w in widths
         )
         fallback = rel_url(page, derived_path(target, f"-{max(widths)}.jpg"))
-        sizes = SIZES_WIDE if any(m in context for m in WIDE_MARKERS) else SIZES_GRID
+        if any(m in context for m in THUMB_MARKERS):
+            sizes = SIZES_THUMB
+        elif any(m in context for m in WIDE_MARKERS):
+            sizes = SIZES_WIDE
+        else:
+            sizes = SIZES_GRID
         tag = SRC_RE.sub(lambda _: f'src="{fallback}"', tag, count=1)
         extra = f' srcset="{srcset}" sizes="{sizes}"'
     else:
@@ -134,8 +165,7 @@ def main() -> int:
         cursor = 0
         for match in IMG_TAG_RE.finditer(text):
             out.append(text[cursor : match.start()])
-            # Look back far enough to catch the enclosing figure/aside class.
-            context = text[max(0, match.start() - 900) : match.start()]
+            context = layout_context(text, match.start())
             out.append(rewrite_img(match.group(0), page, not seen_first, context))
             seen_first = True
             cursor = match.end()

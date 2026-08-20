@@ -12,16 +12,30 @@ import re
 import sys
 from pathlib import Path
 
-from media_common import REPO, html_files
+from media_common import EXCLUDED_DIRS, REPO, html_files
 
 CLASS_IN_CSS = re.compile(r"\.([A-Za-z_][\w-]*)")
 CLASS_ATTR = re.compile(r'class="([^"]*)"')
+# Any quoted string in a script might be a class name handed to className or
+# classList; over-matching here only costs a few false "used" entries.
+JS_STRING_RE = re.compile(r"""['"]([A-Za-z_][\w -]*)['"]""")
 
 
 def main() -> int:
     used: set[str] = set()
     for page in html_files():
         for match in CLASS_ATTR.finditer(page.read_text(encoding="utf-8")):
+            used.update(match.group(1).split())
+
+    # Some classes only ever exist because a script creates the element, so
+    # scan the JavaScript too rather than reporting those as dead.
+    for script in sorted(REPO.rglob("*.js")):
+        if EXCLUDED_DIRS.intersection(script.relative_to(REPO).parts):
+            continue
+        text = script.read_text(encoding="utf-8")
+        for match in CLASS_ATTR.finditer(text):
+            used.update(match.group(1).split())
+        for match in JS_STRING_RE.finditer(text):
             used.update(match.group(1).split())
 
     for sheet in sorted(REPO.glob("**/*.css")):

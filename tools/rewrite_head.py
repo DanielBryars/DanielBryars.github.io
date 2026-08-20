@@ -71,7 +71,7 @@ PERSON_JSONLD = """    <script type="application/ld+json">
       "name": "Daniel Bryars",
       "url": "https://daniel.bryars.com/",
       "jobTitle": "Staff Engineer",
-      "description": "Engineer and founder working on AI, robotics and systems that have to survive contact with the physical world.",
+      "description": "Engineer, programmer and founder. Formula One R&D, a B2B SaaS company scaled and sold, an MSc in AI, and a workshop full of half-finished machines.",
       "address": { "@type": "PostalAddress", "addressLocality": "Oxford", "addressCountry": "GB" },
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Leeds" },
       "sameAs": [

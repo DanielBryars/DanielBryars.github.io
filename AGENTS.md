@@ -9,6 +9,47 @@ on GitHub Pages, no framework and no build step. It supports job applications,
 so it has to look considered and load quickly, but it is a personal site first
 and should sound like a person.
 
+## The premise
+
+**The site does not explain what category of engineer Daniel is. It demonstrates
+that categorising him is difficult.**
+
+That is the editorial rule everything else serves. He has done Formula One R&D,
+founded and sold a SaaS company, taken an MSc in AI, and built a spiral
+staircase, a drift trike and a house with curved walls. A positioning statement
+makes that career sound narrower than it is; the evidence makes it sound as odd
+as it actually is.
+
+Consequences:
+
+- The homepage headline is **"I build things."** Do not replace it with a
+  grand tagline. The previous one ("systems where software has to survive
+  contact with the physical world") was killed for being competent-sounding
+  LinkedIn language.
+- Photographs go high. The differentiator is that these objects exist, so the
+  `.evidence-strip` sits directly under the hero, above any prose.
+- Lead with the extraordinary: &pound;8M ARR and the exit, Formula One, the MSc
+  Distinction, robot learning. They are the story, not supporting detail.
+- **"How do we know this is really working?"** is the recurring motif. It ties
+  F1, SaaS reliability, AI evaluation and robotics together. It appears in the
+  homepage terminal panel, the About through-line and the CV summary.
+- What a reader should think after ten minutes: *he has done a lot of very
+  different things, and there is a common thread &mdash; he understands systems
+  deeply, wants to know how they really work, and builds rather than talks.*
+
+## Register per page
+
+- **Home and projects**: his corner of the internet. Character, photographs,
+  and things that are here because they are cool.
+- **About**: the narrative. BBC Micro &rarr; mechatronics &rarr; motorsport
+  &rarr; F1 &rarr; SaaS founder &rarr; exit &rarr; MSc AI &rarr; robotics
+  &rarr; workshop. Keep the BBC Micro origin story; never professionalise it
+  into "always been passionate about technology".
+- **CV**: brutally useful to someone deciding whether to hire him. Keep a
+  little personality, but let the rest of the site carry the eccentricity.
+  Accomplishments first, technology second &mdash; the keyword list lives in
+  one `.tool-list` block low on the page so it does not colour the document.
+
 ## Structure
 
 - `index.html` - landing page: hero, career signal strip, selected projects, contact
@@ -155,6 +196,28 @@ alt text on every image that carries meaning.
 
 All four rewrite scripts are idempotent. Run them over the whole site after
 adding pages.
+
+## The printed CV
+
+`cv.html` has a full `@media print` treatment that sets it like a LaTeX thesis:
+A4, serif face, justified with hyphenation, numbered sections, and a centred
+title block (`.print-titleblock`, hidden on screen) carrying name and contact
+details. Everything screen-only is removed.
+
+The screen rules are specific enough that print overrides need `!important` on
+sizes, and `main, main *` forces the serif face &mdash; otherwise Pixelify Sans
+leaks into headings, dates and definition terms.
+
+Check changes by rendering, not by reading:
+
+```bash
+"/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" \
+  --headless=new --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf=out.pdf file:///absolute/path/to/cv.html
+```
+
+The same binary screenshots pages with `--screenshot --window-size=1400,1200`,
+which is the only way to catch layout bugs in this repo.
 
 ## Deployment
 

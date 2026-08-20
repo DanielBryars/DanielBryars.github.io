@@ -45,13 +45,31 @@
         </header>
 
         <main id="main" tabindex="-1">
+            <!-- Title block for the printed edition only; the screen version
+                 gets its identity from the site header instead. -->
+            <div class="print-titleblock" aria-hidden="true">
+                <p class="print-name">Daniel Bryars</p>
+                <p class="print-role">Engineer, Programmer, Founder</p>
+                <p class="print-contact">
+                    Oxford, United Kingdom &middot; seriouscallersonly@bryars.com &middot;
+                    linkedin.com/in/danielbryars &middot; github.com/DanielBryars &middot; daniel.bryars.com
+                </p>
+            </div>
+
             <section class="cv-hero">
                 <div>
-                    <p class="eyebrow">DanielBryars.py</p>
-                    <h1>Staff engineer, founder, AI MSc, robotics tinkerer, former Formula One R&D engineer.</h1>
-                    <p>
-                        The career version: 29 years building production platforms, physical systems and teams.
-                        The workshop version: robot arms, ESP32s, 3D printers, inverted pendulums and things that usually need a better enclosure.
+                    <p class="eyebrow">Curriculum vitae</p>
+                    <h1>Daniel Bryars</h1>
+                    <p class="cv-summary">
+                        Engineer and founder, 29 years. I co-founded a secure B2B SaaS company, was its CTO
+                        through scaling to 40 staff and &pound;8M ARR, and sold it. Before that, Formula One
+                        R&amp;D and motorsport electronics. Since then, an MSc in AI with Distinction and a move
+                        into robotics.
+                    </p>
+                    <p class="cv-summary">
+                        Different industries, one job: systems that have to work in the physical world, and the
+                        question that follows them everywhere &mdash; <strong>how do we know this is really
+                        working?</strong>
                     </p>
                     <div class="hero-actions">
                         <a class="button primary" href="mailto:seriouscallersonly@bryars.com">Get in touch</a>
@@ -144,7 +162,7 @@
                     <p class="eyebrow">Commercial proof</p>
                     <h2>Founder to exit</h2>
                     <p>
-                        Co-founded Aeriandi and helped scale it into a B2B SaaS business with 40 staff and GBP 8M ARR.
+                        Co-founded Aeriandi and helped scale it into a B2B SaaS business with 40 staff and &pound;8M ARR.
                         Stayed hands-on as CTO and chief architect through product, platform, hiring, customer trust,
                         compliance, reliability and acquisition.
                     </p>
@@ -183,7 +201,7 @@
                     <article>
                         <span>2006-2019</span>
                         <h3>Chief Technical Officer & Founder - Aeriandi</h3>
-                        <p>Co-founded and scaled a secure B2B SaaS company to GBP 8M ARR; chief architect and hands-on developer.</p>
+                        <p>Co-founded and scaled a secure B2B SaaS company to &pound;8M ARR; chief architect and hands-on developer.</p>
                     </article>
                     <article>
                         <span>2005-2006</span>
@@ -209,18 +227,18 @@
                     <h2>Reliability and debugging</h2>
                     <ul>
                         <li>Formal FMEA, explicit failure limits, incident response and operational learning.</li>
-                        <li>Cross-layer debugging from application symptoms down to network traces and platform behaviour.</li>
-                        <li>Observability, CI/CD, cloud migrations, Kubernetes, Terraform, Helm, Linux and production operations.</li>
+                        <li>Cross-layer debugging: from an application symptom down to a network trace, a platform behaviour or a scope on a wire.</li>
+                        <li>Production operations at scale, across cloud and on-premises infrastructure.</li>
                     </ul>
                 </article>
 
                 <article class="cv-panel">
-                    <p class="eyebrow">Technical range</p>
-                    <h2>Languages and tools</h2>
+                    <p class="eyebrow">Leadership</p>
+                    <h2>Teams and strategy</h2>
                     <ul>
-                        <li>Python, C, C++, C#, TypeScript/JavaScript, SQL, Bash and Lua.</li>
-                        <li>PyTorch, Scikit-learn, MuJoCo, W&B, Hugging Face, Docker and CUDA containers.</li>
-                        <li>AMQP/RabbitMQ, MQTT, APIs, data pipelines, distributed systems and observability.</li>
+                        <li>Hired, built and led engineering teams from two people to forty.</li>
+                        <li>Owned technical strategy through a merger and two acquisitions.</li>
+                        <li>Happiest as a hands-on senior IC who can also lead, rather than a manager who used to build.</li>
                     </ul>
                 </article>
 
@@ -235,41 +253,18 @@
                 </article>
             </section>
 
-            <section class="project-lab">
-                <div class="section-intro">
+            <section class="about-band">
+                <div>
                     <p class="eyebrow">Outside work</p>
                     <h2>The workshop is part of the CV.</h2>
-                    <p>
-                        Some people have a neat hobbies line. I have a pile of parts, photos, notebooks and half a dozen
-                        things that were supposed to take one weekend.
-                    </p>
                 </div>
-                <div class="lab-list">
-                    <article>
-                        <h3>Robot arm</h3>
-                        <p>3D-printed arm, closed-loop steppers over CAN bus, robot-learning experiments and sim-to-real testing.</p>
-                    </article>
-                    <article>
-                        <h3>ESP32 speaker controller</h3>
-                        <p>Reverse-engineered a USB protocol with Wireshark to control Hypex-based active speakers.</p>
-                    </article>
-                    <article>
-                        <h3>Arduino inverted pendulum</h3>
-                        <p>A proper control-system rite of passage, made slightly less lonely with AI-assisted coding.</p>
-                    </article>
-                    <article>
-                        <h3>EV charger smart lead</h3>
-                        <p>Designing a PCB and ESP32-based system for home charging experiments.</p>
-                    </article>
-                    <article>
-                        <h3>CV in a Box</h3>
-                        <p>A physical software-box CV, because sometimes presentation should have a little nonsense in it.</p>
-                    </article>
-                    <article>
-                        <h3>House build</h3>
-                        <p>Principal-contractor delivery of a self-built family home, including curved walls and drawings kept in a GitHub repo.</p>
-                    </article>
-                </div>
+                <p>
+                    A robot arm with printed cycloidal joints. An ESP32 speaker controller built by
+                    reverse-engineering a USB protocol with Wireshark. An inverted pendulum, an EV charger smart
+                    lead, a self-built family home with curved walls, and a CV packaged like a 1990s software
+                    product. All written up, with photographs, on <a href="cool-projects/index.html">the
+                    projects page</a>.
+                </p>
             </section>
 
             <section class="cv-grid">
@@ -301,6 +296,28 @@
                         pretending the work is simpler than it is.
                     </p>
                 </article>
+            </section>
+
+            <section class="tool-list" aria-label="Tools and technologies">
+                <h2>Tools</h2>
+                <dl>
+                    <div>
+                        <dt>Languages</dt>
+                        <dd>Python, C, C++, C#, TypeScript/JavaScript, SQL, Bash, Lua</dd>
+                    </div>
+                    <div>
+                        <dt>AI and ML</dt>
+                        <dd>PyTorch, scikit-learn, MuJoCo, LeRobot, ACT/ACT-ViT, Weights &amp; Biases, Hugging Face</dd>
+                    </div>
+                    <div>
+                        <dt>Platform</dt>
+                        <dd>Linux, Docker, CUDA containers, Kubernetes, Terraform, Helm, AWS, Azure, CI/CD</dd>
+                    </div>
+                    <div>
+                        <dt>Data and messaging</dt>
+                        <dd>AMQP/RabbitMQ, MQTT, CAN, APIs, data pipelines, observability</dd>
+                    </div>
+                </dl>
             </section>
 
             <section class="contact-band" id="contact" aria-label="Contact">

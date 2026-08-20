@@ -657,8 +657,7 @@ h1 {
     overflow: hidden;
 }
 
-.about-hero img,
-.origin-grid img {
+.about-hero img {
     display: block;
     width: 100%;
     height: 100%;
@@ -671,33 +670,6 @@ h1 {
     font-family: 'Pixelify Sans', 'VT323', monospace;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.4);
-}
-
-.origin-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin: 16px 0 70px;
-}
-
-.origin-grid article {
-    min-height: 360px;
-    border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.035);
-    overflow: hidden;
-}
-
-.origin-grid .origin-copy {
-    padding: 28px;
-}
-
-.origin-grid h2 {
-    font-size: clamp(36px, 5vw, 60px);
-}
-
-.origin-grid p:not(.eyebrow) {
-    color: var(--muted);
-    font-size: 18px;
 }
 
 .project-directory {
@@ -1047,7 +1019,6 @@ h1 {
     .video-strip,
     .project-grid,
     .project-directory,
-    .origin-grid,
     .cv-grid,
     .achievement-grid,
     .lab-list {
@@ -1094,7 +1065,6 @@ h1 {
     .video-strip,
     .project-grid,
     .project-directory,
-    .origin-grid,
     .artifact-gallery,
     .cv-grid,
     .achievement-grid,
@@ -1376,74 +1346,603 @@ h1 {
 }
 
 /* ---------------------------------------------------------------------------
-   Print: the CV has to survive "save as PDF"
+   Evidence strip: photographs of actual objects, as high up the page as
+   possible. The differentiator is that these things exist.
    --------------------------------------------------------------------------- */
 
+.evidence-strip {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 8px 0 34px;
+}
+
+.evidence-strip figure {
+    position: relative;
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.evidence-strip img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.evidence-strip figcaption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 8px 10px;
+    color: var(--yellow);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0));
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 17px;
+}
+
+/* The hero's terminal panel no longer has a photograph under it. */
+.hero-panel {
+    grid-template-rows: auto;
+    align-content: start;
+}
+
+@media (max-width: 900px) {
+    .evidence-strip {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .evidence-strip figure:nth-child(n + 4) {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .evidence-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .evidence-strip figure:nth-child(n + 3) {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+   Project features: the front rank of the project index, sized by how much
+   they are worth looking at rather than by how finished the write-up is.
+   --------------------------------------------------------------------------- */
+
+/* The projects hero is a long sentence; at the site's default h1 size it
+   pushes the first project off the bottom of the screen. */
+.projects-hero h1 {
+    font-size: clamp(40px, 5.4vw, 74px);
+}
+
+.project-features {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.project-feature {
+    position: relative;
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 340px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.035);
+    overflow: hidden;
+}
+
+.project-feature.wide {
+    grid-column: span 3;
+}
+
+.project-feature.lead {
+    grid-column: span 6;
+    grid-template-rows: none;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    min-height: 420px;
+}
+
+/* A definite height, not height:100%. The grid rows here are auto-sized, so a
+   percentage height has nothing to resolve against and the image collapses. */
+.project-feature img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-feature.lead img {
+    height: 100%;
+    min-height: 420px;
+}
+
+.project-feature .feature-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22px;
+}
+
+.project-feature h2 {
+    font-size: clamp(30px, 3.4vw, 46px);
+    margin-bottom: 10px;
+}
+
+.project-feature h2 a {
+    text-decoration: none;
+}
+
+.project-feature h2 a:hover {
+    color: var(--cyan);
+}
+
+.project-feature p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.project-feature .feature-link {
+    margin-top: 14px;
+    color: var(--yellow);
+    font-weight: 700;
+    text-underline-offset: 4px;
+}
+
+.project-feature::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transition: border-color 0.15s ease;
+}
+
+.project-feature:hover::after {
+    border-color: var(--cyan);
+}
+
+@media (max-width: 900px) {
+    .project-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-feature,
+    .project-feature.wide {
+        grid-column: span 1;
+    }
+
+    .project-feature.lead {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .project-feature.lead img {
+        height: 260px;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .project-features {
+        grid-template-columns: 1fr;
+    }
+
+    .project-feature,
+    .project-feature.wide,
+    .project-feature.lead {
+        grid-column: span 1;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+   Life story: a single narrative column with a year gutter. Deliberately not
+   the CV timeline - this one is prose, and it is meant to be read.
+   --------------------------------------------------------------------------- */
+
+.story {
+    margin: 20px 0 40px;
+    border-top: 1px solid var(--line);
+}
+
+.story > article {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 28px;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.story .year {
+    margin: 0;
+    color: var(--green);
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 21px;
+    line-height: 1.1;
+}
+
+.story h2 {
+    margin-bottom: 12px;
+    font-size: clamp(28px, 3.2vw, 42px);
+}
+
+.story p:not(.year) {
+    max-width: 66ch;
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.story p:not(.year):last-child {
+    margin-bottom: 0;
+}
+
+.story strong {
+    color: var(--yellow);
+    font-weight: 400;
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 1.1em;
+}
+
+/* Needs to out-specify `.story > article`, which sets the year gutter. */
+.story > .story-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Long sentence, display face: without a cap this fills the first screen. */
+.about-hero h1 {
+    font-size: clamp(34px, 4.2vw, 58px);
+}
+
+.story-images figure {
+    margin: 0;
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+/* A fixed image height rather than a ratio on the figure, so the caption has
+   somewhere to go instead of being clipped off the bottom. */
+.story-images img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.story-images figcaption {
+    padding: 10px 12px;
+    color: var(--yellow);
+    background: rgba(0, 0, 0, 0.4);
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 17px;
+}
+
+.about-band strong {
+    color: var(--yellow);
+    font-weight: 400;
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 1.15em;
+}
+
+@media (max-width: 620px) {
+    .story > article {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .story-images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+   Tools: the keyword block. One clearly labelled place, low down, so the rest
+   of the CV can lead with what was actually done.
+   --------------------------------------------------------------------------- */
+
+.tool-list {
+    margin: 20px 0 10px;
+    padding: 26px 28px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.tool-list h2 {
+    margin-bottom: 16px;
+    font-size: clamp(28px, 3vw, 40px);
+}
+
+.tool-list dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4px 32px;
+    margin: 0;
+}
+
+.tool-list dl > div {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.tool-list dt {
+    color: var(--cyan);
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 19px;
+}
+
+.tool-list dd {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.cv-summary strong {
+    color: var(--yellow);
+    font-weight: 400;
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    font-size: 1.12em;
+}
+
+/* The printed title block has no business on screen. */
+.print-titleblock {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Print: the CV, set like a thesis rather than a screenshot of a website.
+
+   Serif face, justified measure, numbered sections, A4 with proper margins.
+   Everything that only makes sense on a screen is removed.
+   --------------------------------------------------------------------------- */
+
+@page {
+    size: A4;
+    margin: 20mm 18mm 20mm;
+}
+
 @media print {
+    html {
+        background: #fff;
+    }
+
     body {
         background: #fff;
         color: #000;
+        font-family: 'Latin Modern Roman', 'CMU Serif', 'Times New Roman', Times, serif;
+        font-size: 10.5pt;
+        line-height: 1.36;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     body::before,
     .site-header,
     .site-footer,
+    .skip-link,
     .hero-actions,
-    .skip-link {
+    .screen-bar,
+    .cv-status-card .screen-bar,
+    .contact-band .hero-actions {
         display: none !important;
+    }
+
+    /* The display faces are a screen idea. Nothing on paper keeps them, and
+       the on-screen rules are specific enough that they need forcing. */
+    main,
+    main * {
+        font-family: 'Latin Modern Roman', 'CMU Serif', 'Times New Roman', Times, serif !important;
+        letter-spacing: normal !important;
+        text-shadow: none !important;
+    }
+
+    .cv-console pre,
+    .cv-console pre * {
+        font-family: 'Latin Modern Mono', 'CMU Typewriter Text', Consolas, monospace !important;
     }
 
     .cv-shell,
     .home-shell {
         width: 100%;
+        margin: 0;
+        counter-reset: section;
     }
 
-    .cv-panel,
-    .cv-console,
-    .cv-status-card,
-    .timeline article,
-    .achievement-grid article,
-    .lab-list article,
-    .contact-band {
-        border: 1px solid #999;
-        background: #fff;
-        break-inside: avoid;
+    main {
+        display: block;
     }
 
-    .cv-hero h1 {
-        font-size: 28pt;
+    /* --- title block ---------------------------------------------------- */
+
+    .print-titleblock {
+        display: block;
+        margin: 0 0 14pt;
+        padding-bottom: 8pt;
+        border-bottom: 1.2pt solid #000;
+        text-align: center;
     }
 
-    h1,
-    h2,
-    h3 {
-        color: #000;
-        line-height: 1.15;
+    .print-name {
+        margin: 0;
+        font-size: 23pt;
+        font-weight: 400;
+        letter-spacing: 0.06em;
     }
 
-    .eyebrow,
-    .screen-bar {
-        color: #444;
+    .print-role {
+        margin: 3pt 0 0;
+        font-size: 11pt;
+        font-style: italic;
+        color: #222 !important;
+    }
+
+    .print-contact {
+        margin: 6pt 0 0;
+        font-size: 8.6pt;
+        color: #333 !important;
+    }
+
+    /* --- sections and headings ------------------------------------------ */
+
+    main section {
+        display: block;
+        margin: 0 0 6pt;
+        padding: 0;
+        border: 0;
         background: none;
-        border-bottom: 1px solid #999;
+        break-inside: auto;
+    }
+
+    main h1 {
+        display: none;
+    }
+
+    main h2 {
+        counter-increment: section;
+        margin: 10pt 0 3pt !important;
+        font-size: 12.5pt !important;
+        font-weight: 700;
+        line-height: 1.2 !important;
+        break-after: avoid;
+    }
+
+    main h2::before {
+        content: counter(section) "\00a0\00a0";
+    }
+
+    main h3 {
+        margin: 7pt 0 2pt !important;
+        font-size: 10.8pt !important;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 1.25 !important;
+        break-after: avoid;
+    }
+
+    /* The eyebrow becomes a running marginal note rather than a colour flash. */
+    .eyebrow {
+        margin: 8pt 0 0 !important;
+        font-size: 8.2pt !important;
+        font-style: italic;
+        color: #555 !important;
+        text-transform: uppercase;
+        break-after: avoid;
+    }
+
+    .eyebrow + h2 {
+        margin-top: 1pt !important;
     }
 
     p,
     li,
-    dd,
-    span {
-        color: #222 !important;
-        font-size: 10.5pt;
+    dd {
+        color: #000 !important;
+        font-size: 10.5pt !important;
+        line-height: 1.36 !important;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    main p {
+        margin: 0 0 5pt;
+        max-width: none;
+    }
+
+    ul {
+        margin: 3pt 0 6pt;
+        padding-left: 14pt;
+    }
+
+    li {
+        margin-bottom: 2pt;
     }
 
     a {
-        color: #000;
+        color: #000 !important;
         text-decoration: none;
     }
 
+    strong {
+        font-family: inherit !important;
+        font-size: inherit !important;
+        font-weight: 700;
+        color: #000 !important;
+    }
+
+    /* --- the abstract: summary plus fast facts --------------------------- */
+
+    .cv-hero {
+        display: block;
+        padding: 0;
+        margin-bottom: 10pt;
+    }
+
+    .cv-hero .eyebrow {
+        display: none;
+    }
+
+    .cv-summary {
+        font-size: 10.8pt;
+    }
+
+    .cv-status-card {
+        margin-top: 7pt;
+        padding: 6pt 0;
+        border-top: 0.5pt solid #999;
+        border-bottom: 0.5pt solid #999;
+        background: none;
+    }
+
+    .cv-status-card dl {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1pt 18pt;
+        margin: 0;
+    }
+
+    .cv-status-card dl > div {
+        display: grid;
+        grid-template-columns: 34mm 1fr;
+        border: 0;
+        padding: 1pt 0;
+    }
+
+    .cv-status-card dt {
+        font-style: italic;
+        font-size: 9.6pt;
+        color: #333 !important;
+    }
+
+    .cv-status-card dd {
+        margin: 0;
+        font-size: 9.6pt;
+    }
+
+    /* --- the Python listing, set as a verbatim block --------------------- */
+
+    .cv-console {
+        margin: 8pt 0 10pt;
+        padding: 6pt 8pt;
+        border: 0.5pt solid #999;
+        background: #fafafa;
+        break-inside: avoid;
+    }
+
     .cv-console pre {
+        margin: 0;
+        overflow: visible;
+        white-space: pre-wrap;
+        font-family: 'Latin Modern Mono', 'CMU Typewriter Text', Consolas, monospace;
+        font-size: 8.2pt;
+        line-height: 1.25;
         color: #000;
-        font-size: 9pt;
     }
 
     .cv-console .comment,
@@ -1453,5 +1952,147 @@ h1 {
     .cv-console .class-name,
     .cv-console .self {
         color: #000;
+    }
+
+    .cv-console .comment {
+        font-style: italic;
+        color: #444;
+    }
+
+    /* --- key figures ------------------------------------------------------ */
+
+    .achievement-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2pt 18pt;
+        margin: 6pt 0 10pt;
+        padding: 6pt 0;
+        border-top: 0.5pt solid #999;
+        border-bottom: 0.5pt solid #999;
+        break-inside: avoid;
+    }
+
+    .achievement-grid article {
+        display: grid;
+        grid-template-columns: 22mm 1fr;
+        gap: 6pt;
+        border: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .achievement-grid strong {
+        font-size: 11pt;
+        font-family: inherit !important;
+        color: #000 !important;
+    }
+
+    .achievement-grid span {
+        font-size: 9.4pt;
+        color: #000 !important;
+        text-align: left;
+    }
+
+    /* --- panels flow as prose, not as boxes ------------------------------ */
+
+    .cv-grid,
+    .lab-list,
+    .project-lab {
+        display: block;
+    }
+
+    .cv-panel,
+    .about-band,
+    .contact-band,
+    .tool-list {
+        display: block;
+        border: 0;
+        padding: 0;
+        margin: 0 0 8pt;
+        background: none;
+        break-inside: avoid;
+    }
+
+    .about-band > div,
+    .contact-band > div,
+    .section-intro {
+        display: block;
+    }
+
+    /* --- experience timeline --------------------------------------------- */
+
+    .timeline article {
+        display: grid;
+        grid-template-columns: 26mm 1fr;
+        column-gap: 6pt;
+        row-gap: 0;
+        margin-bottom: 5pt;
+        padding: 0;
+        border: 0;
+        background: none;
+        break-inside: avoid;
+    }
+
+    .timeline article > span {
+        grid-row: 1;
+        font-size: 9.6pt;
+        font-style: italic;
+        color: #333 !important;
+    }
+
+    .timeline article h3 {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0 !important;
+        font-style: normal;
+        font-size: 10.5pt !important;
+    }
+
+    .timeline article p {
+        grid-column: 2;
+        margin: 0 !important;
+    }
+
+    /* --- tools table ------------------------------------------------------ */
+
+    .tool-list dl {
+        display: block;
+    }
+
+    .tool-list dl > div {
+        display: grid;
+        grid-template-columns: 32mm 1fr;
+        gap: 6pt;
+        padding: 1.5pt 0;
+        border: 0;
+    }
+
+    .tool-list dt {
+        font-family: inherit;
+        font-style: italic;
+        font-size: 9.8pt;
+        color: #333 !important;
+    }
+
+    .tool-list dd {
+        font-size: 9.8pt;
+        text-align: left;
+    }
+
+    /* --- keep related things together ------------------------------------ */
+    /* Deliberately not .timeline-section: it is taller than a page, so
+       avoiding a break inside it just pushes the whole thing over and leaves
+       half a page empty. The individual entries are what must stay whole. */
+
+    .achievement-grid,
+    .cv-console,
+    .print-titleblock {
+        break-inside: avoid;
+    }
+
+    img,
+    video,
+    figure {
+        display: none;
     }
 }

@@ -33,7 +33,7 @@
                 <span class="brand-mark">DB</span>
                 <span>
                     <strong>Daniel Bryars</strong>
-                    <small>about / origin story / blame the BBC Micro</small>
+                    <small>the whole story, blame the BBC Micro</small>
                 </span>
             </a>
             <nav class="top-nav">
@@ -50,9 +50,14 @@
                     <p class="eyebrow">About me</p>
                     <h1>Grey-haired software programmer, geek, engineer, and builder of things that probably need another revision.</h1>
                     <p>
-                        I have always liked the bit where computers meet the real world. BBC Micro started it,
-                        mechatronics formalised it, motorsport made it noisy, SaaS made it serious. AI and
-                        robotics dragged all of it back into one place.
+                        This is my corner of the internet. It has my CV on it, because that is useful, but mostly
+                        it has stuff on it that I think is cool. Because it is cool.
+                    </p>
+                    <p>
+                        The short version of the story: a BBC Micro, then mechatronics, then motorsport
+                        electronics, then Formula One, then thirteen years building a software company and
+                        selling it, then an MSc in AI, and now robots. Throughout: a workshop, and a persistent
+                        inability to leave things alone.
                     </p>
                 </div>
                 <figure>
@@ -63,40 +68,163 @@
 
             <section class="about-band">
                 <div>
-                    <p class="eyebrow">The pattern</p>
+                    <p class="eyebrow">The through-line</p>
                     <h2>How hard can it be? Then finding out properly.</h2>
                 </div>
                 <p>
-                    I like problems that start slightly ridiculous and then turn into engineering. Hovercraft
-                    at GCSE. Robot CD player at A level. Robotic chessboard at university. Then F1 sensors,
-                    production systems at scale, and now robot learning.
+                    Every job on this page is a different industry, and they are all the same job. Something has
+                    to work in the real world, nobody is completely sure whether it does, and someone has to go
+                    and find out. Engine test rigs, payment platforms, robot policies: same question every time.
+                    <strong>How do we know this is really working?</strong>
                 </p>
             </section>
 
-            <section class="origin-grid">
-                <article class="origin-copy">
-                    <p class="eyebrow">1984-ish</p>
-                    <h2>BBC Micro</h2>
-                    <p>
-                        My dad bought a BBC B, and I learned that computers were not sealed appliances. You could type
-                        a listing from a book, make a mistake, fix it, and suddenly a machine did something because
-                        you told it to.
-                    </p>
-                </article>
-                <article class="origin-copy">
-                    <img src="derived/images/image-1-480.jpg" alt="Printed computer game listing from a magazine." srcset="derived/images/image-1-480.jpg 480w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw" width="500" height="356" loading="lazy" decoding="async">
-                </article>
+            <section class="story" aria-label="How I got here">
                 <article>
-                    <img src="derived/images/SpaceGames-710x1024-480.jpg" alt="Space Games book cover." srcset="derived/images/SpaceGames-710x1024-480.jpg 480w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw" width="710" height="1024" loading="lazy" decoding="async">
+                    <p class="year">1984-ish</p>
+                    <div>
+                        <h2>A BBC Micro, and a book of listings</h2>
+                        <p>
+                            My dad bought a BBC B. I learned that computers were not sealed appliances: you
+                            could type a listing out of a book, make a mistake, find the mistake, fix it, and
+                            then a machine did something because you had told it to.
+                        </p>
+                        <p>
+                            That is still the whole thing, really. Everything after this is the same loop with
+                            more expensive equipment.
+                        </p>
+                    </div>
                 </article>
+
+                <article class="story-images">
+                    <figure>
+                        <img src="derived/images/image-1-480.jpg" alt="A printed computer game listing from a magazine." srcset="derived/images/image-1-480.jpg 480w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw" width="500" height="356" loading="lazy" decoding="async">
+                        <figcaption>Type this in. Carefully.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="derived/images/SpaceGames-710x1024-480.jpg" alt="The cover of the book Space Games." srcset="derived/images/SpaceGames-710x1024-480.jpg 480w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw" width="710" height="1024" loading="lazy" decoding="async">
+                        <figcaption>The source material</figcaption>
+                    </figure>
+                </article>
+
                 <article>
-                    <p class="eyebrow">Now</p>
-                    <h2>Still the same disease</h2>
-                    <p>
-                        These days the parts are PyTorch, MuJoCo, CAN bus, cloud infrastructure, ESP32s, sensors,
-                        3D prints, notebooks, traces and occasionally a soldering iron. It is still basically:
-                        make the thing, understand the thing, improve the thing.
-                    </p>
+                    <p class="year">School</p>
+                    <div>
+                        <h2>A hovercraft, and a robot CD player</h2>
+                        <p>
+                            A hovercraft for GCSE. A robot CD player at A level. Both start as slightly
+                            ridiculous ideas and then turn into engineering somewhere around the point you
+                            realise the thing has to actually work on the day.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <p class="year">1997</p>
+                    <div>
+                        <h2>Mechatronics at Leeds</h2>
+                        <p>
+                            BEng in Mechatronics: the degree for people who cannot decide between mechanical,
+                            electronic and software engineering, and would rather not. My final-year project was
+                            a robotic chessboard, which won an award and moved the pieces itself.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <p class="year">1997&ndash;2003</p>
+                    <div>
+                        <h2>Motorsport electronics</h2>
+                        <p>
+                            Pi Research, later Cosworth. Embedded C, engine controllers, sensors, wiring looms,
+                            CAN and serial integration, telemetry, fuel simulation, engine-test automation.
+                        </p>
+                        <p>
+                            Trackside debugging is a particular education. The car is on the grid, the data says
+                            one thing, the engine says another, and there is no useful sense in which you can
+                            ask for more time.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <p class="year">2003&ndash;2006</p>
+                    <div>
+                        <h2>Formula One</h2>
+                        <p>
+                            Two years at Jaguar Racing programme-managing the cross-functional design,
+                            manufacture and build of race-ready cars, then R&amp;D at Red Bull Racing on
+                            sensors, actuators, software, hardware and automated systems.
+                        </p>
+                        <p>
+                            F1 is the most concentrated example I have seen of the thing I keep coming back to:
+                            an enormous number of specialists, one physical object, and a deadline that does not
+                            move.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <p class="year">2006&ndash;2019</p>
+                    <div>
+                        <h2>Co-founding Aeriandi</h2>
+                        <p>
+                            Thirteen years co-founding and building a secure B2B SaaS company, as CTO and chief
+                            architect, and hands-on the whole way. We ended up with 40 staff, &pound;8M ARR, and
+                            a patented PCI voice-payment platform carrying more than half of UK utilities' phone
+                            payments.
+                        </p>
+                        <p>
+                            I learned what a company actually is here, which is mostly: hiring, trust,
+                            compliance, and being the person who is awake when the platform is not.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <p class="year">2019&ndash;2024</p>
+                    <div>
+                        <h2>Merger, acquisition, and the other side of it</h2>
+                        <p>
+                            Aeriandi merged with Voxygen to become Speik, which was then acquired by Dubber,
+                            where I ran technical strategy, platform reliability and compliance for EMEA. Around
+                            300 production services across AWS, Azure and on-prem.
+                        </p>
+                        <p>
+                            Also, in parallel and slightly insanely, I was principal contractor on a self-built
+                            family home. The one with the curved walls.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <p class="year">2025&ndash;2026</p>
+                    <div>
+                        <h2>Going back to school on purpose</h2>
+                        <p>
+                            An AI residency at the ML Institute, then an MSc in Artificial Intelligence at
+                            Leeds, finished with Distinction. Nine taught modules and a dissertation on robot
+                            learning: MuJoCo simulation, teleoperation through a VR headset, PyTorch policies,
+                            and then the awkward business of testing them on hardware that has friction in it.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <p class="year">Now</p>
+                    <div>
+                        <h2>Robots, and a workshop</h2>
+                        <p>
+                            Staff engineer at NeoIntralogistics, building warehouse systems that coordinate
+                            autonomous mobile robots and Universal Robots arms. Which is, pleasingly, the BBC
+                            Micro problem again: make the machine do the thing, then work out whether it really
+                            did it.
+                        </p>
+                        <p>
+                            The rest of the time I am in the workshop, and that is what most of this site is
+                            about.
+                        </p>
+                    </div>
                 </article>
             </section>
 
@@ -121,6 +249,20 @@
                         <h3>Physical consequences</h3>
                         <p>Software is more interesting when it moves hardware, handles real users or has to survive reality.</p>
                     </article>
+                </div>
+            </section>
+
+            <section class="contact-band" id="contact" aria-label="Contact">
+                <p class="eyebrow">Contact</p>
+                <h2>Say hello.</h2>
+                <p>
+                    Oxford, UK. Happy to talk about robots, reliability, steel, or why your simulator is
+                    lying to you.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="mailto:seriouscallersonly@bryars.com">seriouscallersonly@bryars.com</a>
+                    <a class="button" href="https://www.linkedin.com/in/danielbryars/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a class="button" href="cool-projects/index.html">The things</a>
                 </div>
             </section>
         </main>
