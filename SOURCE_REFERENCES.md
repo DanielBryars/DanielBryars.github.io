@@ -136,6 +136,10 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `C0347.MP4`, around `00:06:50`, 14 seconds -> `clip-frame-assembly.mp4`
   - `C0359.MP4`, around `00:00:50`, 12 seconds -> `clip-wiring-electronics.mp4`
   - `C0381.MP4`, around `00:00:55`, 14 seconds -> `clip-finished-printer.mp4`
+- Related firmware-debugging references:
+  - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4465#issuecomment-2660022554`
+  - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4487#issuecomment-2665450594`
+  - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4465#issuecomment-2700234456`
 - Notes: source footage is very large 4K XAVC-style MP4; web clips were transcoded to 1280px-wide H.264/AAC with fast-start metadata.
 
 ### Robot Arm
