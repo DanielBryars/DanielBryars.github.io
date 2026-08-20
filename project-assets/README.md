@@ -9,3 +9,6 @@ Suggested loose convention:
 - `notes.md` for rough notes, story fragments, parts lists or things to explain later.
 
 The folders are intentionally broad and can be renamed or split as the project pages become more polished.
+
+House drawings repo:
+- https://github.com/DanielBryars/ChadHouse
