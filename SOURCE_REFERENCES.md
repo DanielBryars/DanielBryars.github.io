@@ -13,6 +13,12 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Shared stylesheet: `styles.css`
 - Notes: visual styling and page structure were updated in-place in the site repo. Treat this repo as the source of record for the final HTML/CSS, with project-specific sources listed below.
 
+### Extra media expansion pass
+
+- Extraction recipe: `tools\enrich_project_media.py`
+- Output folder: `derived\project-assets`
+- Notes: this script records the raw video path, timestamp and output filename for the extra clips and still frames added during the broad media expansion pass. It was used for Lathe Sparks, Motorised Standing Desk, Vintage String Lights, Spiral Staircase, Curving Skirting Board, Mega Book Case, Robot Arm and Drift Trike.
+
 ## Workshop and build projects
 
 ### CV in a Box
