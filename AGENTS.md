@@ -38,6 +38,31 @@ after removing markup.
 
 This is the part most easily got wrong.
 
+The reference is three rewrites Daniel did by hand. Match these before writing
+anything:
+
+| Too wordy | His version |
+| --- | --- |
+| "There is no lesson here. It looks fantastic, so I filmed it. That is the entire reason this page exists." | "There is no lesson here. Posted because I want to, it looks awesome" |
+| "No report, no write-up, no retrospective. It finishes with a child on the grass going sideways, which is the only outcome anyone involved cared about." | "Child on the grass going sideways, the only outcome I really care about." |
+| "The desk is fine. The better part was building it with my son: measuring, checking, and disagreeing about which way round the top should go." | "Desk is fine. Getting my son involved in building 'real things away from the virtual world' - awesome." |
+
+What those show:
+
+- **Half the words.** Mean paragraph length across the project pages is ~22
+  words. Cut every framing clause: "It finishes with", "The better part was",
+  "That is the reason", "This is the part where".
+- **Stop at the point.** Do not add a closing sentence explaining what you just
+  said. That closer is the single most reliable tell.
+- **Telegraphic.** "Desk is fine", not "The desk is fine". Drop articles and
+  subject pronouns wherever someone jotting a note would.
+- **First person, present tense, owned.** "the only outcome I really care
+  about", not "anyone involved cared about". Do not hide in the passive.
+- **Loose punctuation.** Comma splices and dashes are fine. Terminal full stops
+  on short fragments are optional.
+- **Enthusiasm is wanted.** "awesome" is his word. The ban is on self-praise,
+  not on warmth - an earlier pass stripped both and left the site flat.
+- **No tricolons, no colon-lists of process verbs.** That rhythm is not his.
 - Dry, specific, understated. British. First person.
 - **Never self-congratulate.** This is the one that keeps coming back. The copy
   must not award itself marks: nothing is done "properly", no project is

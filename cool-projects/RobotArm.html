@@ -51,15 +51,15 @@
                     <p class="eyebrow">Robotics / work in progress</p>
                     <h1>Robot Arm</h1>
                     <p>
-                        A home-built arm for running robot-learning experiments on something that is not a
-                        simulator. Printed structure, cycloidal reducers, servo drives, and the wiring and
-                        calibration that a simulated robot never makes you think about. It is unfinished, and
-                        will probably stay that way for a while.
+                        Home-built arm for running robot-learning experiments on something that is not a
+                        simulator. Printed structure, cycloidal reducers, servo drives, and all the wiring and
+                        calibration a simulated robot lets you ignore. Unfinished, and likely to stay that way
+                        a while.
                     </p>
                     <p>
-                        It picks up directly from my MSc work - MuJoCo simulation, OpenVR teleoperation, data
-                        capture, policy training - and asks the one question a simulator cannot answer: how
-                        much of this survives contact with a real, slightly wrong machine?
+                        Picks up from my MSc work - MuJoCo, OpenVR teleoperation, data capture, policy
+                        training - and asks the thing a simulator cannot: how much survives contact with a
+                        real, slightly wrong machine?
                     </p>
                     <div class="hero-actions">
                         <a class="button primary" href="#videos">Watch progress</a>
@@ -118,35 +118,35 @@
                     <p class="eyebrow">Mechanics</p>
                     <h2>Printed structure</h2>
                     <p>
-                        Structure and joints are printed, so a revision costs an evening rather than a machine
-                        shop. The trade is stiffness: printed parts flex, and flex shows up as position error
-                        at the end of a long arm.
+                        Structure and joints are printed, so a revision costs an evening instead of a machine
+                        shop. The trade is stiffness. Printed parts flex, and flex becomes position error at
+                        the end of a long arm.
                     </p>
                 </article>
                 <article>
                     <p class="eyebrow">Actuation</p>
                     <h2>Joints and reduction</h2>
                     <p>
-                        Each joint uses a printed cycloidal reducer rather than a belt drive or a bought
-                        harmonic drive: high ratio, compact, and printable at home. The cost is backlash,
-                        which I have not measured properly yet.
+                        Printed cycloidal reducer at each joint rather than belts or a bought harmonic drive.
+                        High ratio, compact, printable at home. Costs you backlash, which I have not measured
+                        properly yet.
                     </p>
                 </article>
                 <article>
                     <p class="eyebrow">Electronics</p>
                     <h2>Wiring and control</h2>
                     <p>
-                        Motor drives, position feedback, power and connectors, per joint, routed through a
-                        moving structure. The part worth building carefully is the instrumentation: without
-                        it, a bad connector and a bad control loop look identical.
+                        Motor drive, position feedback, power and connectors, per joint, routed through a
+                        moving structure. Build the instrumentation carefully - without it a bad connector and
+                        a bad control loop look identical.
                     </p>
                 </article>
                 <article>
                     <p class="eyebrow">Purpose</p>
                     <h2>What it is for</h2>
                     <p>
-                        The point is to have somewhere to run policies that were trained in MuJoCo and find
-                        out what the simulator was wrong about. Reality gap, measured rather than discussed.
+                        Somewhere to run policies trained in MuJoCo and find out what the simulator got wrong.
+                        Reality gap, measured rather than discussed.
                     </p>
                 </article>
             </section>
@@ -156,12 +156,12 @@
                     <p class="eyebrow">Build loop</p>
                     <h2>Print, assemble, wire, test, rethink</h2>
                     <p>
-                        Short clips from the build: printing parts, laying out the actuator components, bench
-                        electronics, hand-testing a joint, and assembling the larger structure.
+                        Short clips: printing parts, laying out actuators, bench electronics, hand-testing a
+                        joint, assembling the structure.
                     </p>
                     <p>
-                        Still in progress. Every one of these steps took longer than the plan said it would,
-                        which is roughly the pattern for the whole build.
+                        Still in progress. Every step took longer than the plan said, which is the pattern for
+                        the whole build.
                     </p>
                 </div>
                 <video preload="none" playsinline controls poster="../derived/project-assets/robot-arm/poster-joint-hand-test-960.jpg">
@@ -190,7 +190,10 @@
                         <source src="../derived/project-assets/robot-arm/clip-servo-electronics-720.mp4" type="video/mp4">
                     </video>
                     <h2>Servo electronics</h2>
-                    <p>Motor control on the bench: cables, boards, meters and the familiar ritual of checking what is actually moving.</p>
+                    <p>
+                        Motor control on the bench. Cables, boards, meters, and the usual checking of what is
+                        actually moving.
+                    </p>
                 </article>
                 <article>
                     <video preload="none" playsinline controls poster="../derived/project-assets/robot-arm/poster-arm-assembly-960.jpg">
