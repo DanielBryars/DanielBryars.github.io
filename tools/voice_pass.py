@@ -404,8 +404,6 @@ CAPTIONS = {
 SNIPPETS = {
     "<h1>A robot arm, because simulated robots are too well behaved.</h1>":
         "<h1>Robot Arm</h1>",
-    "<h1>Building the printer that prints the next problem.</h1>":
-        "<h1>3D Printer Build</h1>",
     "<h1>Power, Not Just Performance</h1>":
         "<h1>Power and Consequences</h1>",
     "<h2>Not just software. Not just hardware. The awkward bit in between.</h2>":
