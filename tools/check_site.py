@@ -18,6 +18,7 @@ SRCSET_RE = re.compile(r'\bsrcset="([^"]+)"', re.IGNORECASE)
 ID_RE = re.compile(r'\bid="([^"]+)"')
 IMG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 ALT_RE = re.compile(r'\balt="', re.IGNORECASE)
+EYEBROW_RE = re.compile(r'<p class="eyebrow">([^<]+)</p>\s*<h([23])>([^<]+)</h\2>')
 
 # Copy that was written for an editor rather than a reader.
 BANNED = [
@@ -82,6 +83,13 @@ def main() -> int:
                 problems.append(f"{rel}: head is missing {needed}")
         if 'class="skip-link"' not in text:
             problems.append(f"{rel}: no skip link")
+
+        # --- eyebrow repeating the heading under it ---------------------------
+        for match in EYEBROW_RE.finditer(text):
+            eyebrow = match.group(1).strip().lower().rstrip(".")
+            heading = match.group(3).strip().lower().rstrip(".")
+            if eyebrow == heading:
+                problems.append(f"{rel}: eyebrow duplicates its heading ({match.group(1)!r})")
 
         # --- editorial leftovers ----------------------------------------------
         lowered = text.lower()

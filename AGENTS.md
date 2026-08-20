@@ -39,17 +39,36 @@ after removing markup.
 This is the part most easily got wrong.
 
 - Dry, specific, understated. British. First person.
-- **Jokes are seasoning, not structure.** An earlier revision put a wry
-  one-liner in every single heading and caption, and the effect was numbing.
-  Roughly one in four captions should be plainly descriptive.
-- Never reuse a joke shape. Objects do not "have opinions", "choose violence",
-  or exhibit "perfectly normal X behaviour". If a construction already appears
-  once on the site, find a different one.
+- **Never self-congratulate.** This is the one that keeps coming back. The copy
+  must not award itself marks: nothing is done "properly", no project is
+  "exactly the kind of project I like", nothing is "satisfying", and an
+  unfinished thing is never "already full of useful lessons". Prefer admitting
+  the cost. Daniel's own correction is the reference:
+
+      "Still in progress, already full of useful lessons."
+      ->  "Still in progress. And taking longer than I thought!"
+
+- **No sentences that sound meaningful and say nothing.** "I like that this
+  project goes from simulation to physical work without changing personality"
+  is the canonical example of what not to write. If a sentence would survive
+  being moved to a different project's page, delete it.
+- **Headings are labels, not epigrams.** The site once had 149 headings that
+  were all short fragments ending in a full stop. Default to a plain noun
+  phrase with no full stop, naming the actual thing ("Cycloidal reducers",
+  "Building the steam box"). A handful of epigrams survive on purpose; check
+  `python tools/heading_shapes.py` before adding another.
+- **Jokes are seasoning, not structure.** Roughly one in four captions should
+  be plainly descriptive. Never reuse a joke shape: objects do not "have
+  opinions", "choose violence", or exhibit "perfectly normal X behaviour".
+- Ban the "not just X, it is Y" construction outright. It is always inflation.
 - Prefer a real fact to a wry observation. "24 V, 500 W hub motor" beats
-  "the useful end of the machine".
-- Never write copy addressed to a future editor: no "add photos here", no
-  "later we can", no "this page now has the right shape", no "we". If content
-  is missing, say so once in the reader's terms or say nothing.
+  "the useful end of the machine". Describe the thing, not the category of
+  thing: name the part, the choice and what it cost.
+- Never write copy addressed to a future editor, and never write about the page
+  itself: no "add photos here", no "later we can", no "the raw footage is", no
+  "I have kept the selection small", no "we". If content is missing, say so once
+  in the reader's terms or say nothing.
+- `python tools/voice_check.py` counts these tics; run it after editing copy.
 
 ## Content rules
 

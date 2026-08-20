@@ -49,17 +49,17 @@
             <section class="artifact-hero">
                 <div class="artifact-copy">
                     <p class="eyebrow">Robotics / work in progress</p>
-                    <h1>A robot arm, because simulated robots are too well behaved.</h1>
+                    <h1>Robot Arm</h1>
                     <p>
-                        This one is not finished, which is partly the point. It is a home-built robot-arm platform for
-                        learning where the real difficulty lives: printed mechanics, reducers, bearings, servo drives,
-                        wiring, calibration, control and eventually robot-learning experiments on hardware that can
-                        actually sulk.
+                        A home-built arm for running robot-learning experiments on something that is not a
+                        simulator. Printed structure, cycloidal reducers, servo drives, and the wiring and
+                        calibration that a simulated robot never makes you think about. It is unfinished, and
+                        will probably stay that way for a while.
                     </p>
                     <p>
-                        It connects directly to my MSc and robot-learning work: MuJoCo simulation, OpenVR teleoperation,
-                        data capture, policy training and the persistent question of what transfers when the robot is
-                        no longer made of perfect maths.
+                        It picks up directly from my MSc work - MuJoCo simulation, OpenVR teleoperation, data
+                        capture, policy training - and asks the one question a simulator cannot answer: how
+                        much of this survives contact with a real, slightly wrong machine?
                     </p>
                     <div class="hero-actions">
                         <a class="button primary" href="#videos">Watch progress</a>
@@ -68,7 +68,7 @@
                 </div>
                 <figure class="artifact-hero-image">
                     <img src="../derived/project-assets/robot-arm/07-cycloidal-joint-closeup-1600.jpg" alt="Close-up of a robot arm cycloidal joint assembly." srcset="../derived/project-assets/robot-arm/07-cycloidal-joint-closeup-480.jpg 480w, ../derived/project-assets/robot-arm/07-cycloidal-joint-closeup-960.jpg 960w, ../derived/project-assets/robot-arm/07-cycloidal-joint-closeup-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 600px" width="1800" height="1013" loading="eager" fetchpriority="high" decoding="async">
-                    <figcaption>Printed parts, bearings, reducers and that optimistic phrase: it should work.</figcaption>
+                    <figcaption>Printed parts, bearings and a cycloidal reducer, part-assembled</figcaption>
                 </figure>
             </section>
 
@@ -116,38 +116,37 @@
             <section class="artifact-story">
                 <article>
                     <p class="eyebrow">Mechanics</p>
-                    <h2>Printing the hard bits first.</h2>
+                    <h2>Printed structure</h2>
                     <p>
-                        The build uses printed structural parts and joint components, which makes iteration fast but
-                        also forces the awkward questions early: stiffness, backlash, fit, tolerances and where plastic
-                        stops being charming.
+                        Structure and joints are printed, so a revision costs an evening rather than a machine
+                        shop. The trade is stiffness: printed parts flex, and flex shows up as position error
+                        at the end of a long arm.
                     </p>
                 </article>
                 <article>
                     <p class="eyebrow">Actuation</p>
-                    <h2>Torque is where optimism goes to be tested.</h2>
+                    <h2>Joints and reduction</h2>
                     <p>
-                        Servo motors and compact reducers are the bridge between a CAD idea and a useful arm. The
-                        cycloidal sections are especially interesting because they turn the project into a mechanical
-                        experiment, not just an assembly exercise.
+                        Each joint uses a printed cycloidal reducer rather than a belt drive or a bought
+                        harmonic drive: high ratio, compact, and printable at home. The cost is backlash,
+                        which I have not measured properly yet.
                     </p>
                 </article>
                 <article>
                     <p class="eyebrow">Electronics</p>
-                    <h2>Every joint wants its own little argument.</h2>
+                    <h2>Wiring and control</h2>
                     <p>
-                        The electronics and wiring work is about making motion controllable and repeatable. That means
-                        motor drives, feedback, connectors, power, signal integrity and enough instrumentation to know
-                        whether the problem is code, mechanics or a tiny connector being dramatic.
+                        Motor drives, position feedback, power and connectors, per joint, routed through a
+                        moving structure. The part worth building carefully is the instrumentation: without
+                        it, a bad connector and a bad control loop look identical.
                     </p>
                 </article>
                 <article>
                     <p class="eyebrow">Purpose</p>
-                    <h2>A physical test bed for learning.</h2>
+                    <h2>What it is for</h2>
                     <p>
-                        The end goal is not just a nice moving sculpture. It is a platform for testing policies,
-                        collecting data, comparing simulation with hardware, and discovering the reality gap in the
-                        least theoretical way possible.
+                        The point is to have somewhere to run policies that were trained in MuJoCo and find
+                        out what the simulator was wrong about. Reality gap, measured rather than discussed.
                     </p>
                 </article>
             </section>
@@ -155,15 +154,14 @@
             <section class="media-feature" id="videos">
                 <div>
                     <p class="eyebrow">Build loop</p>
-                    <h2>Print, assemble, wire, test, rethink.</h2>
+                    <h2>Print, assemble, wire, test, rethink</h2>
                     <p>
-                        The raw folder is a proper build diary, so the clips here are deliberately short: printing arm
-                        parts, laying out actuator components, bench electronics, hand-testing a joint, assembling the
-                        larger arm structure and a little metalwork from the later stages.
+                        Short clips from the build: printing parts, laying out the actuator components, bench
+                        electronics, hand-testing a joint, and assembling the larger structure.
                     </p>
                     <p>
-                        It is very much a work in progress, but it already shows the thing I like most about robotics:
-                        you cannot hide from the physical system for long.
+                        Still in progress. Every one of these steps took longer than the plan said it would,
+                        which is roughly the pattern for the whole build.
                     </p>
                 </div>
                 <video preload="none" playsinline controls poster="../derived/project-assets/robot-arm/poster-joint-hand-test-960.jpg">
@@ -178,7 +176,7 @@
                         <source src="../derived/project-assets/robot-arm/clip-printing-arm-parts-720.mp4" type="video/mp4">
                     </video>
                     <h2>Printed mechanism parts</h2>
-                    <p>The 3D printer quietly manufacturing future problems, which is exactly why it is useful.</p>
+                    <p>The MK4 printing joint parts for the arm. Most revisions cost an evening.</p>
                 </article>
                 <article>
                     <video preload="none" playsinline controls poster="../derived/project-assets/robot-arm/poster-cycloidal-layout-960.jpg">
@@ -199,41 +197,47 @@
                         <source src="../derived/project-assets/robot-arm/clip-arm-assembly-720.mp4" type="video/mp4">
                     </video>
                     <h2>Arm assembly</h2>
-                    <p>The point where separate clever pieces become one larger, less-forgiving machine.</p>
+                    <p>
+                        Where the separate assemblies become one machine, and the tolerances start stacking
+                        up.
+                    </p>
                 </article>
                 <article>
                     <video preload="none" playsinline controls poster="../derived/project-assets/robot-arm/poster-metalwork-welding-960.jpg">
                         <source src="../derived/project-assets/robot-arm/clip-metalwork-welding-720.mp4" type="video/mp4">
                     </video>
                     <h2>Metalwork cameo</h2>
-                    <p>Some later-stage fabrication energy, because the project refuses to stay purely plastic.</p>
+                    <p>
+                        Later-stage metalwork, once it became clear that printed parts would not do
+                        everything.
+                    </p>
                 </article>
             </section>
 
             <section class="artifact-gallery" id="gallery" aria-label="Robot arm selected photos">
                 <figure class="gallery-wide">
                     <img src="../derived/project-assets/robot-arm/05-workshop-wide-1600.jpg" alt="Workshop with robot arm project parts and tools." srcset="../derived/project-assets/robot-arm/05-workshop-wide-480.jpg 480w, ../derived/project-assets/robot-arm/05-workshop-wide-960.jpg 960w, ../derived/project-assets/robot-arm/05-workshop-wide-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 600px" width="1800" height="1013" loading="lazy" decoding="async">
-                    <figcaption>The natural habitat: parts, tools, machines, cables and at least three things asking to be calibrated.</figcaption>
+                    <figcaption>The bench it lives on</figcaption>
                 </figure>
                 <figure>
                     <img src="../derived/project-assets/robot-arm/01-printer-making-arm-parts-1600.jpg" alt="3D printer making robot arm components." srcset="../derived/project-assets/robot-arm/01-printer-making-arm-parts-480.jpg 480w, ../derived/project-assets/robot-arm/01-printer-making-arm-parts-960.jpg 960w, ../derived/project-assets/robot-arm/01-printer-making-arm-parts-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 600px" width="1800" height="1013" loading="lazy" decoding="async">
-                    <figcaption>The MK4 earning its keep by printing robot-arm parts.</figcaption>
+                    <figcaption>The MK4 earning its keep by printing robot-arm parts</figcaption>
                 </figure>
                 <figure>
                     <img src="../derived/project-assets/robot-arm/02-printed-coupler-on-bed-1600.jpg" alt="Printed robot arm coupler on a printer bed." srcset="../derived/project-assets/robot-arm/02-printed-coupler-on-bed-480.jpg 480w, ../derived/project-assets/robot-arm/02-printed-coupler-on-bed-960.jpg 960w, ../derived/project-assets/robot-arm/02-printed-coupler-on-bed-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 600px" width="1800" height="1013" loading="lazy" decoding="async">
-                    <figcaption>Printed part, fresh from the bed, before reality has had its say.</figcaption>
+                    <figcaption>A joint part straight off the bed, before cleanup</figcaption>
                 </figure>
                 <figure>
                     <img src="../derived/project-assets/robot-arm/06-rods-and-fasteners-1600.jpg" alt="Robot arm rods and fasteners laid out on a cutting mat." srcset="../derived/project-assets/robot-arm/06-rods-and-fasteners-480.jpg 480w, ../derived/project-assets/robot-arm/06-rods-and-fasteners-960.jpg 960w, ../derived/project-assets/robot-arm/06-rods-and-fasteners-1600.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw" width="1800" height="1013" loading="lazy" decoding="async">
-                    <figcaption>Rods and fasteners: small things that decide whether big things move properly.</figcaption>
+                    <figcaption>Rods and fasteners for the joints</figcaption>
                 </figure>
                 <figure>
                     <img src="../derived/project-assets/robot-arm/08-joint-side-by-side-1600.jpg" alt="Two robot arm joint assemblies shown side by side." srcset="../derived/project-assets/robot-arm/08-joint-side-by-side-480.jpg 480w, ../derived/project-assets/robot-arm/08-joint-side-by-side-960.jpg 960w, ../derived/project-assets/robot-arm/08-joint-side-by-side-1600.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw" width="1800" height="1013" loading="lazy" decoding="async">
-                    <figcaption>Joint assemblies side by side, because one axis is never enough.</figcaption>
+                    <figcaption>Two joint assemblies side by side</figcaption>
                 </figure>
                 <figure>
                     <img src="../derived/project-assets/robot-arm/04-workshop-context-1600.jpg" alt="Workshop shelves and tools used for robot arm work." srcset="../derived/project-assets/robot-arm/04-workshop-context-480.jpg 480w, ../derived/project-assets/robot-arm/04-workshop-context-960.jpg 960w, ../derived/project-assets/robot-arm/04-workshop-context-1600.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 46vw, 30vw" width="1800" height="1013" loading="lazy" decoding="async">
-                    <figcaption>The Victorian inventor's shed, but with better stepper drivers.</figcaption>
+                    <figcaption>The Victorian inventor's shed, but with better stepper drivers</figcaption>
                 </figure>
             </section>
         </main>
@@ -241,7 +245,7 @@
         <footer class="site-footer">
             <div>
                 <strong>Robot Arm</strong>
-                <span>Still in progress, already full of useful lessons.</span>
+                <span>Still in progress. And taking longer than I thought!</span>
             </div>
             <div class="footer-links">
                 <a href="index.html">Projects</a>
