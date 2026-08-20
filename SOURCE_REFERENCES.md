@@ -147,24 +147,28 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `DSC03412.JPG` -> `15-leadscrew-thread-detail.jpg`
   - `DSC03415.JPG` -> `16-control-display-closeup.jpg`
 - Selected clips:
-  - `C0330.MP4`, around `00:00:50`, 12 seconds -> `clip-unboxing.mp4`
-  - `C0331.MP4`, around `00:06:45`, 12 seconds -> `clip-rods-on-bench.mp4`
-  - `C0347.MP4`, around `00:06:50`, 14 seconds -> `clip-frame-assembly.mp4`
-  - `C0359.MP4`, around `00:00:50`, 12 seconds -> `clip-wiring-electronics.mp4`
-  - `C0381.MP4`, around `00:00:55`, 14 seconds -> `clip-finished-printer.mp4`
+  - `C0330.MP4`, around `00:00:50`, 30 seconds -> `clip-unboxing.mp4`
+  - `C0331.MP4`, around `00:06:45`, 30 seconds -> `clip-rods-on-bench.mp4`
+  - `C0347.MP4`, around `00:06:50`, 30 seconds -> `clip-frame-assembly.mp4`
+  - `C0359.MP4`, around `00:00:50`, 30 seconds -> `clip-wiring-electronics.mp4`
+  - `C0381.MP4`, around `00:00:55`, 30 seconds -> `clip-finished-printer.mp4`
 - Additional detail clips added after full video scan:
-  - `C0335.MP4`, from `00:20:10`, 12 seconds -> `clip-main-frame-uprights-720.mp4`
-  - `C0340.MP4`, from `00:15:45`, 12 seconds -> `clip-stepper-connector-detail-720.mp4`
-  - `C0341.MP4`, from `00:00:14`, 10 seconds -> `clip-bearing-macro-720.mp4`
-  - `C0342.MP4`, from `00:12:00`, 12 seconds -> `clip-orange-parts-assembly-720.mp4`
-  - `C0344.MP4`, from `00:15:40`, 12 seconds -> `clip-x-axis-carriage-720.mp4`
-  - `C0348.MP4`, from `00:19:35`, 12 seconds -> `clip-toolhead-install-720.mp4`
-  - `C0353.MP4`, from `00:08:55`, 10 seconds -> `clip-hotend-small-parts-720.mp4`
-  - `C0356.MP4`, from `00:17:08`, 12 seconds -> `clip-extruder-fan-detail-720.mp4`
-  - `C0357.MP4`, from `00:01:55`, 12 seconds -> `clip-toolhead-mounted-720.mp4`
-  - `C0361.MP4`, from `00:02:10`, 12 seconds -> `clip-heatbed-wiring-720.mp4`
-  - `C0379.MP4`, from `00:21:10`, 12 seconds -> `clip-rear-loom-routing-720.mp4`
-  - `C0380.MP4`, from `00:12:15`, 12 seconds -> `clip-final-cable-routing-720.mp4`
+  - `C0335.MP4`, from `00:20:10`, 60 seconds -> `clip-main-frame-uprights-720.mp4`
+  - `C0340.MP4`, from `00:15:45`, 30 seconds -> `clip-stepper-connector-detail-720.mp4`
+  - `C0341.MP4`, from `00:00:14`, 30 seconds -> `clip-bearing-macro-720.mp4`
+  - `C0341.MP4`, from `00:00:20`, 100 seconds -> `clip-printer-turntable-bearing-720.mp4`
+  - `C0342.MP4`, from `00:12:00`, 45 seconds -> `clip-orange-parts-assembly-720.mp4`
+  - `C0344.MP4`, from `00:15:40`, 30 seconds -> `clip-x-axis-carriage-720.mp4`
+  - `C0348.MP4`, from `00:19:35`, 30 seconds -> `clip-toolhead-install-720.mp4`
+  - `C0353.MP4`, from `00:08:55`, 30 seconds -> `clip-hotend-small-parts-720.mp4`
+  - `C0356.MP4`, from `00:17:08`, 30 seconds -> `clip-extruder-fan-detail-720.mp4`
+  - `C0357.MP4`, from `00:01:55`, 30 seconds -> `clip-toolhead-mounted-720.mp4`
+  - `C0361.MP4`, from `00:02:10`, 30 seconds -> `clip-heatbed-wiring-720.mp4`
+  - `C0379.MP4`, from `00:21:10`, 30 seconds -> `clip-rear-loom-routing-720.mp4`
+  - `C0380.MP4`, from `00:12:15`, 30 seconds -> `clip-final-cable-routing-720.mp4`
+  - `C0380.MP4`, from `00:10:45`, 45 seconds -> `clip-late-underframe-detail-720.mp4`
+  - `C0381.MP4`, from `00:34:40`, 60 seconds -> `clip-finished-turntable-rotation-720.mp4`
+  - `C0381.MP4`, from `00:44:40`, 60 seconds -> `clip-final-bench-rotation-720.mp4`
   - Poster frames generated from the same source clips into `derived\project-assets\3d-printers`.
 - Related firmware-debugging references:
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4465#issuecomment-2660022554`
