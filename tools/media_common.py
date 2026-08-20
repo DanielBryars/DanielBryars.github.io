@@ -39,11 +39,16 @@ EXCLUDED_DIRS = {".git", ".claude", DERIVED, "node_modules"}
 
 
 def html_files() -> list[Path]:
-    """Every page on the site, in a stable order."""
+    """Every page on the site, in a stable order.
+
+    Matching is on the path *relative to the repo*, so this still works when
+    the repo itself lives under an excluded name - which it does inside a
+    .claude worktree.
+    """
     return sorted(
         p
         for p in REPO.rglob("*.html")
-        if not EXCLUDED_DIRS.intersection(p.parts)
+        if not EXCLUDED_DIRS.intersection(p.relative_to(REPO).parts)
     )
 
 
