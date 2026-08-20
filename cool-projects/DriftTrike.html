@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Drift Trike - Daniel Bryars project notes and images.">
+    <meta name="description" content="Drift Trike - Daniel Bryars built an electric drift trike with fabrication, welding, electronics and proper garden testing.">
     <title>Drift Trike - Daniel Bryars</title>
     <link rel="stylesheet" href="../fonts.css">
     <link rel="stylesheet" href="../styles.css">
@@ -20,60 +20,338 @@
             </a>
             <nav class="top-nav">
                 <a href="../index.html">Home</a>
-                <a href="index.html">Projects</a>
+                <a href="/cool-projects/index.html">Projects</a>
                 <a href="../cv.html">CV</a>
                 <a href="../about.html">About</a>
             </nav>
         </header>
 
         <main>
-            <section class="project-detail-hero">
-                <div>
-                    <p class="eyebrow">Vehicle / fun</p>
+            <section class="artifact-hero">
+                <div class="artifact-copy">
+                    <p class="eyebrow">Vehicle / welding / electronics / controlled silliness</p>
                     <h1>Drift Trike</h1>
-                    <p>A custom drift trike build, filed under practical fabrication with an obvious grin at the end.</p>
-                </div>
-                <aside class="project-asset-note">
-                    <div class="screen-bar">
-                        <span>ASSET SLOT</span>
-                        <span>READY</span>
+                    <p>
+                        An electric drift trike built from workshop fabrication, motor-mount problem solving,
+                        controller wiring, welding-filter footage and the extremely important requirement that it
+                        makes a child grin while going sideways.
+                    </p>
+                    <p>
+                        This is exactly the kind of project I like: steel, wheels, motors, wiring, testing, noise,
+                        sparks, and a final machine that has to survive real use rather than just look plausible
+                        on the bench.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#drive">Watch the test run</a>
+                        <a class="button" href="#welding">See the welding</a>
                     </div>
-                    <p>Drop photos, sketches, screenshots or notes into:</p>
-                    <code>project-assets/drift-trike/</code>
-                </aside>
+                </div>
+                <figure class="artifact-hero-image">
+                    <img src="../project-assets/drift-trike/01-finished-trike-on-grass.jpg" alt="Finished electric drift trike photographed on grass.">
+                    <figcaption>Finished enough for the only test that matters: hand it to the test driver.</figcaption>
+                </figure>
             </section>
 
-            <section class="cv-grid">
-                <article class="cv-panel span-2">
-                    <p class="eyebrow">To document</p>
-                    <h2>The story this page wants.</h2>
-                    <ul>
-                            <li>Frame, wheels, balance and robustness.</li>
-                            <li>Great candidate for action photos or video.</li>
-                            <li>The success criterion is partly engineering and partly controlled mischief.</li>
-                    </ul>
-                </article>
-                <article class="cv-panel">
-                    <p class="eyebrow">Status</p>
-                    <h2>Awaiting photos</h2>
+            <section class="media-feature" id="drive">
+                <div>
+                    <p class="eyebrow">Payoff</p>
+                    <h2>The 30-second grin test.</h2>
                     <p>
-                        This page now has the right shape. Once the images and rough notes are in the asset folder,
-                        we can turn it into a proper project write-up.
+                        This is the bit from the source footage that had to lead the page: Lincoln driving it from
+                        about 30 to 60 seconds into the clip. At this point the design review is very simple.
+                        It goes. It turns. It slides. Excellent.
+                    </p>
+                </div>
+                <video controls preload="metadata" poster="../project-assets/drift-trike/poster-son-driving.jpg">
+                    <source src="../project-assets/drift-trike/clip-son-driving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="video-strip" aria-label="Lincoln workshop videos">
+                <article>
+                    <p class="eyebrow">Family workshop</p>
+                    <h2>Lincoln fitting the wheels.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-lincoln-wheel-fitting.jpg">
+                        <source src="../project-assets/drift-trike/clip-lincoln-wheel-fitting.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Learning</p>
+                    <h2>Tapping a thread, properly.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-lincoln-learning-to-tap.jpg">
+                        <source src="../project-assets/drift-trike/clip-lincoln-learning-to-tap.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
+
+            <section class="media-feature">
+                <div>
+                    <p class="eyebrow">First signs of life</p>
+                    <h2>Motor electronics on the bench.</h2>
+                    <p>
+                        Before anything gets ridden, the drive system has to behave as a system: motor, chain,
+                        controller, wiring, display and all the small choices that decide whether power becomes
+                        motion or just an educational smell.
+                    </p>
+                </div>
+                <video controls preload="metadata" poster="../project-assets/drift-trike/poster-initial-motor-electronics-test.jpg">
+                    <source src="../project-assets/drift-trike/clip-initial-motor-electronics-test.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="video-strip" aria-label="Drift trike electronics videos">
+                <article>
+                    <p class="eyebrow">Wiring</p>
+                    <h2>Making the heavy wires behave.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-making-wires.jpg">
+                        <source src="../project-assets/drift-trike/clip-making-wires.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Controls</p>
+                    <h2>Testing the box before the glory run.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-control-box-testing.jpg">
+                        <source src="../project-assets/drift-trike/clip-control-box-testing.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
+
+            <section class="media-feature" id="welding">
+                <div>
+                    <p class="eyebrow">Green welding</p>
+                    <h2>The welding filter earns its keep.</h2>
+                    <p>
+                        The earlier clip on this page looked green but did not really show the weld. This one does:
+                        active torch, filler rod, bead forming, and the pleasingly alien view through the welding
+                        filter.
+                    </p>
+                </div>
+                <video controls preload="metadata" poster="../project-assets/drift-trike/poster-green-welding-long-pass.jpg">
+                    <source src="../project-assets/drift-trike/clip-green-welding-long-pass.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="video-strip" aria-label="Drift trike welding videos">
+                <article>
+                    <p class="eyebrow">First pass</p>
+                    <h2>Actual green welding, no impostors.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-green-welding-first-pass.jpg">
+                        <source src="../project-assets/drift-trike/clip-green-welding-first-pass.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Close bead</p>
+                    <h2>A tighter pass through green glass.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-green-welding-close-bead.jpg">
+                        <source src="../project-assets/drift-trike/clip-green-welding-close-bead.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Another pass</p>
+                    <h2>Small, hot, slightly hypnotic.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-green-welding-bead.jpg">
+                        <source src="../project-assets/drift-trike/clip-green-welding-bead.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
+
+            <section class="video-strip" aria-label="Drift trike fabrication videos">
+                <article>
+                    <p class="eyebrow">Wide welding</p>
+                    <h2>Helmet on, drivetrain visible.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-wide-workshop-welding.jpg">
+                        <source src="../project-assets/drift-trike/clip-wide-workshop-welding.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Plasma cutting</p>
+                    <h2>Sparks down, trike frame on the bench.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-plasma-cutting.jpg">
+                        <source src="../project-assets/drift-trike/clip-plasma-cutting.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
+
+            <section class="media-feature">
+                <div>
+                    <p class="eyebrow">Motor mount</p>
+                    <h2>The unglamorous bit that decides whether it works.</h2>
+                    <p>
+                        The motor mount is where the project stops being a toy-shaped idea and becomes a mechanical
+                        system. Alignment, clearances, fasteners, loads and serviceability all turn up at once,
+                        wearing steel-toe boots.
+                    </p>
+                </div>
+                <video controls preload="metadata" poster="../project-assets/drift-trike/poster-motor-mount-drilling.jpg">
+                    <source src="../project-assets/drift-trike/clip-motor-mount-drilling.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="video-strip" aria-label="Drift trike cutting, drilling and sanding videos">
+                <article>
+                    <p class="eyebrow">Drilling</p>
+                    <h2>Slow motion swarf therapy.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-slow-motion-drilling.jpg">
+                        <source src="../project-assets/drift-trike/clip-slow-motion-drilling.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Belt sander</p>
+                    <h2>Making bracket edges less objectionable.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-belt-sanding.jpg">
+                        <source src="../project-assets/drift-trike/clip-belt-sanding.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
+
+            <section class="video-strip" aria-label="Drift trike fabrication detail videos">
+                <article>
+                    <p class="eyebrow">Detail</p>
+                    <h2>Clean holes, because the bolts care.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-machined-hole-detail.jpg">
+                        <source src="../project-assets/drift-trike/clip-machined-hole-detail.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Drive end</p>
+                    <h2>Motor, axle and the useful end of the machine.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-motor-axle-assembly.jpg">
+                        <source src="../project-assets/drift-trike/clip-motor-axle-assembly.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
+
+            <section class="video-strip" aria-label="Drift trike finishing videos">
+                <article>
+                    <p class="eyebrow">Assembly</p>
+                    <h2>From bench problem to rolling object.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-workshop-assembly.jpg">
+                        <source src="../project-assets/drift-trike/clip-workshop-assembly.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+                <article>
+                    <p class="eyebrow">Walkaround</p>
+                    <h2>The finished machine, before it gets muddy.</h2>
+                    <video controls preload="metadata" poster="../project-assets/drift-trike/poster-finished-walkaround.jpg">
+                        <source src="../project-assets/drift-trike/clip-finished-walkaround.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
+
+            <section class="artifact-story">
+                <article>
+                    <p class="eyebrow">Systems</p>
+                    <h2>Small vehicle, full stack.</h2>
+                    <p>
+                        It still needs the same thinking as a bigger machine: mechanical structure, drivetrain,
+                        wiring, controls, packaging, testing and the awkward business of making everything survive
+                        vibration and enthusiastic use.
                     </p>
                 </article>
+                <article>
+                    <p class="eyebrow">Fabrication</p>
+                    <h2>The metal had opinions.</h2>
+                    <p>
+                        Cutting, drilling, welding, tapping and mounting all had to happen in the right order,
+                        with enough adjustment left in the design to recover from reality doing its usual little
+                        performance.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">Electronics</p>
+                    <h2>Not just a frame with wheels.</h2>
+                    <p>
+                        The controller and wiring are part of the build, not an afterthought. The fun bit only works
+                        because the quiet electrical details behave when the machine starts moving.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">Success</p>
+                    <h2>Measured in sideways motion.</h2>
+                    <p>
+                        Some projects finish with a neat report. This one finishes with a test driver on the grass,
+                        a working electric trike, and the satisfying evidence that the idea made it all the way into
+                        the physical world.
+                    </p>
+                </article>
+            </section>
+
+            <section class="artifact-gallery" id="gallery" aria-label="Drift trike selected gallery">
+                <figure class="gallery-wide">
+                    <img src="../project-assets/drift-trike/10-son-driving-grass.jpg" alt="Lincoln driving the finished drift trike on grass.">
+                    <figcaption>The proper acceptance test.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/02-finished-trike-workshop-wide.jpg" alt="Finished drift trike photographed in the workshop.">
+                    <figcaption>Finished trike in the workshop.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/03-control-box-and-seat.jpg" alt="Control box and seat area on the drift trike.">
+                    <figcaption>The control box living where the rider can actually use it.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/04-axle-and-motor-detail.jpg" alt="Axle and motor detail on the rear of the drift trike.">
+                    <figcaption>Drive-end hardware doing the honest work.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/05-axle-bearing-detail.jpg" alt="Close view of axle bearing hardware on the drift trike.">
+                    <figcaption>Bearing and axle detail.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/06-controller-board.jpg" alt="Electronic controller board for the drift trike.">
+                    <figcaption>Controller board before it disappears into the box.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/12-finished-weld-detail.jpg" alt="Finished weld detail on the drift trike frame.">
+                    <figcaption>Finished weld detail, post-green-glow.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/07-green-welding-filter.jpg" alt="Green filtered welding image from the drift trike build.">
+                    <figcaption>The welding filter earns its keep.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/08-frame-on-welding-table.jpg" alt="Drift trike frame parts on a welding table.">
+                    <figcaption>Frame parts on the table, still pretending this will be simple.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/09-drive-wheel-on-table.jpg" alt="Drive wheel and frame detail on the workshop table.">
+                    <figcaption>Drive wheel and frame detail.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../project-assets/drift-trike/11-filtered-weld-sparks.jpg" alt="Bright welding sparks from the drift trike build.">
+                    <figcaption>Gratuitous, but also structurally relevant.</figcaption>
+                </figure>
             </section>
         </main>
 
         <footer class="site-footer">
             <div>
                 <strong>Drift Trike</strong>
-                <span>Project notes waiting for the good bits.</span>
+                <span>Electric drive, welding, wiring and the final grin test.</span>
             </div>
             <div class="footer-links">
                 <a href="index.html">Projects</a>
                 <a href="../index.html">Home</a>
                 <a href="../cv.html">CV</a>
-                <a href="../about.html">About</a>
             </div>
         </footer>
     </div>
