@@ -1,106 +1,78 @@
-# DanielBryars.github.io
+# daniel.bryars.com
 
-Personal portfolio website hosted on GitHub Pages with a retro BBC Teletext aesthetic.
+Personal site of Daniel Bryars: CV, project write-ups and a workshop full of
+things that were supposed to take one weekend.
 
-## Overview
+Static HTML and CSS, no framework, no build step. Hosted on GitHub Pages at
+[daniel.bryars.com](https://daniel.bryars.com) (see `CNAME`), deployed
+automatically on every push to `master`.
 
-This repository hosts the personal portfolio website of Daniel Bryars, featuring a unique design inspired by classic BBC Teletext graphics. The site includes a CV, about page, and demo projects.
+## Layout
 
-## Design Theme
+| Path | What it is |
+| --- | --- |
+| `index.html` | Landing page: intro, selected projects, contact |
+| `cv.html` | CV, with a print stylesheet so it saves to a sensible PDF |
+| `about.html` | Background and origin story |
+| `cool-projects/` | Project index and one page per project |
+| `bbcb-demo.html` | A Ceefax-style teletext page, standalone styles |
+| `styles.css` | Every stylesheet rule for the main site |
+| `fonts.css` | Local `@font-face` declarations (VT323) |
+| `project-assets/` | Original photos and video, one folder per project |
+| `derived/` | Generated web-sized images and 720p video (do not edit by hand) |
+| `tools/` | Python maintenance scripts, see below |
+| `images/` | Site-level images, share card, touch icon |
+| `ontology/`, `video/`, `*.wav` | Odds and ends used by individual pages |
 
-The website recreates the distinctive look and feel of 1980s BBC Teletext/Ceefax:
-- Black background with yellow text
-- Pixelated "Pixelify Sans" font
-- Block graphics and simple layouts
-- Retro computing aesthetic
+## Design
 
-## Pages
+Dark editorial layout: Pixelify Sans headings, VT323 for terminal panels, a
+yellow/cyan/green accent set defined as custom properties at the top of
+`styles.css`. The retro-computing references are deliberate but kept to a few
+places, so they read as a choice rather than a theme.
 
-- **index.html**: Main landing page with navigation
-- **cv.html**: Professional CV and experience
-- **about.html**: Personal information and background
-- **bbcb-demo.html**: BBC-related demo content
+## Adding a project
 
-## Technical Details
+1. Drop the original photos and clips into `project-assets/<project-name>/`.
+2. Copy an existing page in `cool-projects/` as a starting point, and add a
+   card to `cool-projects/index.html`.
+3. Regenerate and wire up the media:
 
-- **Static Site**: Pure HTML/CSS, no build process
-- **GitHub Pages**: Hosted via `danielbryars.com` custom domain (CNAME)
-- **Build Info**: Automated build timestamp tracking with `update-build-info.sh`
-- **Responsive**: Mobile-friendly responsive design
+   ```bash
+   python tools/make_derivatives.py    # resize images, transcode video
+   python tools/rewrite_media.py       # srcset, width/height, lazy loading
+   python tools/rewrite_head.py        # canonical, share card, icons
+   python tools/rewrite_skiplink.py    # skip-to-content link
+   ```
 
-## Assets
+   All four are idempotent, so running them over the whole site is safe.
+4. Fill in the `BUILD SPEC` block. Pages still carrying placeholders are listed
+   by `grep -l 'data-spec="draft"' cool-projects/*.html`.
+5. Refresh the footer build stamp with `./update-build-info.sh`.
 
-- **Audio Files**: BBC Shipping Forecast recordings (μ-law encoded WAV)
-- **Custom Fonts**: Google Fonts integration for retro typography
-- **Stylesheets**:
-  - `styles.css`: Main stylesheet
-  - `fonts.css`: Font definitions
+## Tools
 
-## Build System
+| Script | Does |
+| --- | --- |
+| `make_derivatives.py` | Writes 480/960/1600px JPEGs and 720p MP4s into `derived/` |
+| `rewrite_media.py` | Points `<img>`/`<video>` at the derivatives, adds dimensions and lazy loading |
+| `rewrite_head.py` | Canonical URL, Open Graph and Twitter cards, icons, JSON-LD |
+| `rewrite_skiplink.py` | Adds the skip link and `id="main"` |
+| `find_dead_css.py` | Lists CSS classes no page uses any more |
+| `add_spec_sheets.py` | Inserts the build-spec block into a project page |
+| `tone_pass.py`, `stub_copy.py`, `stub_headings.py` | One-off copy edits, kept for reference |
 
-The site includes a simple build information system:
-- `update-build-info.sh`: Shell script to generate build metadata
-- `build-info.json`: Contains build timestamp and version info
+Requires Python with Pillow, and `ffmpeg` on the path for video.
 
-## Custom Domain
-
-The site is accessible via a custom domain configured through:
-```
-CNAME → danielbryars.com
-```
-
-## Development
-
-To modify the site:
-
-1. Clone the repository
-2. Edit HTML/CSS files directly
-3. Test locally by opening HTML files in a browser
-4. Push changes to `main` branch
-5. GitHub Pages automatically deploys updates
-
-## Special Features
-
-### Teletext-Style Graphics
-The design uses CSS to recreate the blocky, low-resolution aesthetic of Teletext, including:
-- Monospace typography
-- Limited color palette
-- Character-based layouts
-- Retro navigation elements
-
-### Agents Documentation
-- `AGENTS.md`: Documentation for AI agents or automated systems
-
-## Browser Compatibility
-
-Works in all modern browsers supporting:
-- CSS Grid
-- Flexbox
-- Google Fonts
-- HTML5 audio (for wav files)
-
-## Inspiration
-
-The design pays homage to:
-- BBC Teletext / Ceefax
-- Retro computing interfaces
-- 1980s information services
-- British broadcasting history
-
-## Local Development
+## Local preview
 
 ```bash
-# Clone the repository
-git clone https://github.com/DanielBryars/DanielBryars.github.io.git
-
-# Open in browser
-open index.html
+python -m http.server
 ```
 
-## Deployment
+Then open <http://localhost:8000>. Opening the files directly works too, but
+root-relative paths and `fetch` for the build stamp will not.
 
-Automatically deployed via GitHub Pages when pushing to the main branch. No build step required.
+## Licence
 
-## License
-
-Personal portfolio website - content and design © Daniel Bryars
+Content and design © Daniel Bryars.

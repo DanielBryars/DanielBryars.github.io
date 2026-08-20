@@ -1,104 +1,104 @@
 # AGENTS.md
 
-This file provides guidance to AI coding agents when working with code in this repository.
+Guidance for AI coding agents working in this repository.
 
-## Project Overview
+## What this is
 
-This is a static GitHub Pages portfolio website for Daniel Bryars (danielbryars.github.io). The site showcases personal projects, CV, and contact information with a retro-terminal aesthetic using the VT323 monospace font.
+The personal site of Daniel Bryars, at `daniel.bryars.com`. Static HTML and CSS
+on GitHub Pages, no framework and no build step. It supports job applications,
+so it has to look considered and load quickly, but it is a personal site first
+and should sound like a person.
 
-## Site Structure
+## Structure
 
-### Core Pages
-- **index.html** - Landing page with rotating background images (Sparks1-6.jpg), navigation menu, social badges, and build info
-- **about.html** - About page
-- **cv.html** - CV formatted as syntax-highlighted Python code in a terminal-style dark theme
-- **cool-projects/index.html** - Project gallery using flip cards (front/back) with "i" info buttons
+- `index.html` - landing page: hero, career signal strip, selected projects, contact
+- `cv.html` - CV; `@media print` in `styles.css` makes it save to a decent PDF
+- `about.html` - background
+- `cool-projects/index.html` - project index: written-up projects as cards, the
+  rest as a plain `.backlog` list
+- `cool-projects/*.html` - one page per project
+- `bbcb-demo.html` - self-contained teletext page with its own inline styles
+- `styles.css` - every rule for the main site; `fonts.css` holds `@font-face`
 
-### Project Pages
-Individual project HTML files in `cool-projects/` directory:
-- MegaBookCase.html, RobotArm.html, SpiralStairCase.html, VintageStringLights.html
-- OtterSurfboard.html, ShadowPrinting.html, SpeedBoat.html, DriftTrike.html
-- HiscotsLights.html, MGEVProject.html, BenEater8BitComputer.html, ClockProject.html
-- CurvingSkirtingBoard.html, CVInABox.html, 3DPrinters.html
+## Design system
 
-## Styling Architecture
+Colours are custom properties at the top of `styles.css` (`--ink`, `--muted`,
+`--paper`, `--line`, `--green`, `--cyan`, `--yellow`, `--pink`). Headings use
+Pixelify Sans; terminal panels use VT323; body copy is a plain sans.
 
-### CSS Organization
-- **fonts.css** - Custom font definitions
-- **styles.css** - Global styles including:
-  - Background layers with fade transitions
-  - Menu navigation positioning and hover effects
-  - CV terminal theme (syntax highlighting: comments, keywords, strings, functions, class names)
-  - Social badges positioning (fixed bottom-right)
-  - Build info display (fixed bottom-right)
-  - CV box container with 3D perspective transforms
-  - Responsive mobile styles
-- **cool-projects/styles.css** - Project-specific styles:
-  - CSS grid layout for project tiles (auto-fit, minmax 300px)
-  - 3D flip card mechanics (perspective: 1000px, rotateY transform)
-  - Info button styling with green matrix-style glow effects
-  - Terminal/cyberpunk aesthetic (dark backgrounds, green accents)
+Recurring components: `.site-header` / `.top-nav`, `.hero`, `.signal-strip`,
+`.project-card`, `.directory-card`, `.artifact-hero`, `.media-feature`,
+`.video-strip`, `.artifact-gallery`, `.artifact-story`, `.cv-panel`,
+`.spec-sheet`, `.backlog`, `.contact-band`, `.screen-bar`.
 
-### Visual Theme
-- Retro terminal aesthetic with VT323 monospace font
-- Dark backgrounds with rgba overlays for transparency
-- Matrix-style green (#00ff00) accent colors with glow effects
-- 3D transforms and perspective effects for interactive elements
-- Background image rotation system on landing page (30-second intervals)
+Reuse these before inventing new ones. Check `python tools/find_dead_css.py`
+after removing markup.
 
-## Build System
+## Tone
 
-### Build Info Generation
-Run `./update-build-info.sh` to update build metadata:
-- Generates `build-info.json` with current git commit hash and timestamp
-- Displayed on landing page as small badge (bottom-right corner)
-- Format: "Build: [7-char hash] | [date]"
+This is the part most easily got wrong.
 
-### Asset Locations
-- Images: `images/` directory (includes Sparks1-6.jpg for rotating backgrounds)
-- Fonts: `fonts/` directory
-- Videos: `video/` directory
-- Audio: Root directory (ShippingForecast WAV files)
-- Ontology data: `ontology/` directory
+- Dry, specific, understated. British. First person.
+- **Jokes are seasoning, not structure.** An earlier revision put a wry
+  one-liner in every single heading and caption, and the effect was numbing.
+  Roughly one in four captions should be plainly descriptive.
+- Never reuse a joke shape. Objects do not "have opinions", "choose violence",
+  or exhibit "perfectly normal X behaviour". If a construction already appears
+  once on the site, find a different one.
+- Prefer a real fact to a wry observation. "24 V, 500 W hub motor" beats
+  "the useful end of the machine".
+- Never write copy addressed to a future editor: no "add photos here", no
+  "later we can", no "this page now has the right shape", no "we". If content
+  is missing, say so once in the reader's terms or say nothing.
 
-## Key Interactive Features
+## Content rules
 
-### Landing Page (index.html)
-- Two-layer background system for crossfading images (bgLayer1, bgLayer2)
-- Image rotation every 30 seconds (BACKGROUND_ROTATION_INTERVAL_MS)
-- Images cycle through Sparks1.jpg to Sparks6.jpg
-- Social badges fixed to bottom-right (Stack Overflow, LinkedIn, GitHub, Email)
-- Build info loaded via fetch and displayed dynamically
+- Every project page should carry a `.spec-sheet` block. Placeholders show
+  `DRAFT` in the screen bar and `class="tbc"` on unfilled values. Daniel fills
+  these in by hand; do not invent specifications, costs or timings.
+- Pages with no real content get `<meta name="robots" content="noindex">` and
+  stay out of the project index until they have something to show.
+- Factual claims must agree across pages. Career length is derived from the CV
+  timeline starting in 1997.
 
-### Project Gallery (cool-projects/index.html)
-- Grid of flip cards using 3D CSS transforms
-- "i" button in top-right corner triggers card flip (180deg rotateY)
-- Front shows project title with link, back shows description
-- JavaScript adds click listeners to all `.info-button` elements
-- Clicking info button toggles `.flipped` class on `.card-inner`
+## Media
 
-### CV Page (cv.html)
-- CV formatted as Python code with VS Code dark theme syntax highlighting
-- Color classes: .comment, .keyword, .string, .function, .class-name, .self
-- Terminal-style container (#1e1e1e background)
+Originals live in `project-assets/<project>/`. Never reference them directly
+from a page and never resize them in place. Instead:
 
-## Development Commands
+```bash
+python tools/make_derivatives.py    # 480/960/1600px JPEG, 720p MP4 -> derived/
+python tools/rewrite_media.py       # srcset, sizes, width/height, loading
+```
 
-Since this is a static site with no build process:
-- **Local development**: Open HTML files directly in browser or use a local server (e.g., `python -m http.server`)
-- **Update build info**: `./update-build-info.sh` (generates build-info.json)
-- **Deploy**: Push to master branch (GitHub Pages auto-deploys)
+`rewrite_media.py` points every `<img>` at `derived/`, adds intrinsic
+dimensions, marks the first image on a page `eager`/`fetchpriority=high` and
+everything else `lazy`, and switches `<video>` to the 720p transcode with
+`preload="none"`.
 
-## Git Workflow
+## Head and accessibility
 
-- **Main branch**: master
-- **Deployment**: Automatic via GitHub Pages on push to master
-- **CNAME file**: Points to bryars.com domain
+`tools/rewrite_head.py` owns the block between `<!-- head:meta -->` and
+`<!-- /head:meta -->`: canonical URL, Open Graph, Twitter card, icons, and the
+Person JSON-LD on the landing page. Edit the script, not the generated block.
+Per-page share images are registered in its `PAGE_IMAGES` map.
 
-## Important Conventions
+`tools/rewrite_skiplink.py` adds the skip link and `id="main"`.
 
-- All project pages should maintain consistent structure with global styles
-- Social badges use shields.io badges for consistency
-- Background images must be named Sparks[1-6].jpg and placed in images/ directory
-- Project cards require both card-front and card-back divs with info-button
-- Terminal aesthetic should use VT323 font and maintain green/dark color scheme
+Keep: visible `:focus-visible` outlines, the `prefers-reduced-motion` block
+(`bbcb-demo.html` has its own copy for its blink and flash animations), and
+alt text on every image that carries meaning.
+
+All four rewrite scripts are idempotent. Run them over the whole site after
+adding pages.
+
+## Deployment
+
+Push to `master`; GitHub Pages does the rest. Run `./update-build-info.sh`
+first so the footer stamp matches the commit.
+
+## Repository size
+
+`project-assets/` holds full-size originals and is already several hundred MB,
+with `derived/` on top. Before adding a large batch, consider whether the
+originals belong in the repository at all.

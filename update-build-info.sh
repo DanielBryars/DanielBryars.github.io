@@ -1,15 +1,18 @@
 #!/bin/bash
+# Stamps the current commit into build-info.json, which the footer reads.
+# Run this before committing a deploy.
+set -euo pipefail
 
-# Get the current commit hash
+cd "$(dirname "$0")"
+
 COMMIT_HASH=$(git rev-parse HEAD)
-
-# Get current date in ISO format
 BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-# Create the JSON file
-cat > build-info.json << EOF
+cat > build-info.json <<JSON
 {
     "commitHash": "${COMMIT_HASH}",
     "buildDate": "${BUILD_DATE}"
 }
-EOF 
+JSON
+
+echo "build-info.json -> ${COMMIT_HASH:0:7} ${BUILD_DATE}"
