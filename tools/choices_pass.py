@@ -39,7 +39,18 @@ CHOICES = {
     "<h2>Absence is not falsehood</h2>": "<h2>Do not mistake absence for falsehood</h2>",
     "<h2>The model is only part of the system</h2>": "<h2>Systems around the model</h2>",
     # kept as assertions by his choice: "Meaning needs engineering" (KRR),
-    # "Training is an engineering problem" (MLX)
+    # "Training is an engineering problem" (MLX), "A curved edge is not a
+    # straight problem" and "Analysis, then sparks" (corten), "Memorable beats
+    # compliant" (CV in a box)
+    "<h2>From flat-pack confidence to calibrated machine</h2>":
+        "<h2>Kit to calibrated machine</h2>",
+    "<figcaption>Linear motion, orange brackets, and the good kind of tolerances</figcaption>":
+        "<figcaption>Linear rails and printed brackets</figcaption>",
+
+    # His own line for the home page's "what ties it together" band. Spelled
+    # "in between" as two words; he typed "inbetween".
+    "<h2>Not software. Not hardware. The awkward bit in between.</h2>":
+        "<h2>I like software, hardware, and the awkward parts in between.</h2>",
 
     # --- captions: he picked character, or wrote his own --------------------
     # kept as-is: "The Victorian inventor's shed, but with better stepper drivers"
