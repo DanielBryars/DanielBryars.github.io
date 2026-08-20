@@ -38,6 +38,26 @@ after removing markup.
 
 This is the part most easily got wrong.
 
+**Judge every line on its own. Do not apply the rules below as a filter.**
+
+An earlier revision ran pattern-based passes over the whole site - "objects do
+not have feelings", "headings are labels", "cull the wry ending" - and they
+destroyed as many good lines as bad ones, because a rule cannot tell a joke
+that makes a point from a joke that is only decoration. Daniel's correction:
+
+    "A robot arm, because simulated robots are too well behaved."
+    ->  "A robot arm, because simulated robots are ... well, too perfect."
+
+He did not want it removed. He wanted the ending fixed. **The test is: does
+this line make a point, and does it sound like a person?** If yes, keep it and
+sharpen the wording. Only flatten a line that was carrying nothing.
+
+Character is wanted. "Building the printer that prints the next problem",
+"The kitchen was not finished. The steel was.", "Deeply unnecessary, which is
+not the same thing as wrong" - all keepers, all technically matching a banned
+pattern. Everything below is a description of habits to watch for, not a
+list of strings to search and destroy.
+
 The reference is three rewrites Daniel did by hand. Match these before writing
 anything:
 
