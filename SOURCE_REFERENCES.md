@@ -140,6 +140,11 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4465#issuecomment-2660022554`
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4487#issuecomment-2665450594`
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4465#issuecomment-2700234456`
+- GitHub attachment images copied locally from Daniel's ARCTOS gear comment:
+  - `https://github.com/user-attachments/assets/63b1e905-b220-405f-a598-9b13e7cc0005` -> `project-assets\3d-printers\firmware-62-layer-shift-result.jpg`
+  - `https://github.com/user-attachments/assets/7ecef519-a56e-4b9f-b573-c4b864e5a49c` -> `project-assets\3d-printers\firmware-613-success-result.jpg`
+  - `https://github.com/user-attachments/assets/c96e7413-e60a-4282-b1a5-038f58956f53` -> `project-assets\3d-printers\firmware-arctos-gears-comparison.jpg`
+  - Web versions generated in `derived\project-assets\3d-printers` at 480px, 960px and 1600px widths.
 - Notes: source footage is very large 4K XAVC-style MP4; web clips were transcoded to 1280px-wide H.264/AAC with fast-start metadata.
 
 ### Robot Arm
