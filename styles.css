@@ -988,6 +988,35 @@ h1 {
     min-height: 520px;
 }
 
+.video-strip {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 18px 0;
+}
+
+.video-strip article {
+    padding: 22px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.video-strip h2 {
+    font-size: clamp(30px, 4vw, 46px);
+    margin-bottom: 14px;
+}
+
+.video-strip video {
+    display: block;
+    width: 100%;
+    background: #000;
+    border: 1px solid rgba(245, 242, 220, 0.18);
+}
+
+.lathe-hero-image img {
+    object-position: center;
+}
+
 @media (max-width: 900px) {
     .site-header,
     .site-footer {
@@ -1016,6 +1045,7 @@ h1 {
 
     .signal-strip,
     .artifact-story,
+    .video-strip,
     .project-grid,
     .project-directory,
     .origin-grid,
@@ -1062,6 +1092,7 @@ h1 {
 
     .signal-strip,
     .artifact-story,
+    .video-strip,
     .project-grid,
     .project-directory,
     .origin-grid,
