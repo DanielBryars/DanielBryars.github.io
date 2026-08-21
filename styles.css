@@ -1382,6 +1382,35 @@ h1 {
     font-size: 17px;
 }
 
+/* Each tile links to its project. The anchor wraps only the <img> so the
+   <figcaption> stays a direct child of <figure> and the markup stays valid;
+   this stretches the hit area over the whole tile, caption included. Nothing
+   changes at rest - the affordance is hover and focus only. */
+.evidence-strip a {
+    display: block;
+}
+
+.evidence-strip a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.evidence-strip figure:has(a:hover),
+.evidence-strip figure:has(a:focus-visible) {
+    border-color: var(--cyan);
+}
+
+.evidence-strip figure:has(a:hover) img,
+.evidence-strip figure:has(a:focus-visible) img {
+    filter: brightness(1.08);
+}
+
+.evidence-strip figure:has(a:focus-visible) {
+    outline: 3px solid var(--cyan);
+    outline-offset: 2px;
+}
+
 /* The hero's terminal panel no longer has a photograph under it. */
 .hero-panel {
     grid-template-rows: auto;
