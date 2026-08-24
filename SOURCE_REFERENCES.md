@@ -406,9 +406,18 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - Related public repo: `https://github.com/DanielBryars/word2vec`
 - Notes: source used was README/code/repo metadata, not course PDFs. The architecture image was generated specifically for the site as an original summary graphic.
 
+### Shadow Printing
+
+- Page: `cool-projects\ShadowPrinting.html`
+- Curated assets: `project-assets\shadow-printing`
+- Cross-chat source: `New Toy Idea` (`61a1dfda-4513-4bd2-b4ed-c26f0e30e2ce`)
+  - Original idea: choose a picture, use software to calculate 3D-printable block geometry, then illuminate it with a torch or the sun so the cast shadow reveals the chosen silhouette.
+  - Related clock variant: cast clock digits or hands as shadows, with possible naming directions including LightCast and TimeInShadows.
+- Notes: page remains noindex/draft until actual generated models, prints or photos exist.
+
 ## Empty project folders prepared for later
 
-These project asset folders were created as placeholders so images/media can be dropped in later. They do not yet have a meaningful raw-source trail in this file:
+These remaining project asset folders were created as placeholders so images/media can be dropped in later. They do not yet have a meaningful raw-source trail in this file:
 
 - `project-assets\arduino-inverted-pendulum`
 - `project-assets\bbc-micro-teletext`
@@ -420,5 +429,4 @@ These project asset folders were created as placeholders so images/media can be 
 - `project-assets\otter-surfboard`
 - `project-assets\physical-design-and-analysis`
 - `project-assets\robot-learning-msc`
-- `project-assets\shadow-printing`
 - `project-assets\speed-boat`
