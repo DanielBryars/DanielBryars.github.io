@@ -65,6 +65,10 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Page: `cool-projects\MotorisedStandingDesk.html`
 - Curated assets: `project-assets\desk-project`
 - Original media source: `F:\video\desk-project`
+- Cross-chat source: `Standing desk design specs` (`691860c7-e7d0-8325-99d4-d60b397c9619`)
+  - Original design discussion covered a more ambitious DIY sit-stand mechanism before the bought-frame build: linear actuator on each leg versus a pulley/gear/screw arrangement, cable-routing holes, programmable heights, optional tilt, desk size, height range and load capacity.
+  - Follow-up spec considered very heavy glass or concrete tops: approximately 35-40kg for 12mm toughened glass, around 110-120kg for a 40mm concrete slab, realistic moving mass around 160-180kg, and a design target around 250kg dynamic / 400kg static.
+  - Mechanical notes included four lifting points, a rigid perimeter frame, bracing against racking, uniform support for concrete, spreader pads for glass, and slower/heavier actuation if the top became a serious slab.
 - Important correction: the media labelled "Motor wiring" was actually robot-arm work, not the desk project, and should not be used as desk evidence.
 - Cross-chat/session correction: `derived\project-assets\desk-project\extra-finished-detail.jpg` was also identified as robot-arm/VR work rather than desk work and was removed from the public desk page.
 - Current task chat notes: standing-desk page was specifically critiqued against the sharpened 3D-printer page. The public page keeps the short hero line "Height-adjustable desk.", the father/son workshop angle, 32mm plywood, laminate-flooring work surface, 1800mm x 800mm top, curved corners, Desktronic dual-motor frame, routed laminate edge and visible lacquered ply edge.
