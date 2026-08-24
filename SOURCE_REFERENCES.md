@@ -69,6 +69,10 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - Original design discussion covered a more ambitious DIY sit-stand mechanism before the bought-frame build: linear actuator on each leg versus a pulley/gear/screw arrangement, cable-routing holes, programmable heights, optional tilt, desk size, height range and load capacity.
   - Follow-up spec considered very heavy glass or concrete tops: approximately 35-40kg for 12mm toughened glass, around 110-120kg for a 40mm concrete slab, realistic moving mass around 160-180kg, and a design target around 250kg dynamic / 400kg static.
   - Mechanical notes included four lifting points, a rigid perimeter frame, bracing against racking, uniform support for concrete, spreader pads for glass, and slower/heavier actuation if the top became a serious slab.
+- Cross-chat source: `Cool Desk Ideas` (`698de958-e150-8394-bfae-cf9a1189ac55`)
+  - Surface-material exploration before/during the desk work: glass plus an interstitial layer plus orange linoleum, then a simpler Marmoleum-on-plywood direction.
+  - Practical details discussed: furniture/cabinet-grade birch ply, BB/BB plywood being suitable under linoleum, 18-24mm thickness depending on span, R3-R5 edge round-over, R25 corners, raw sanded plywood under the adhesive, underside sealing, threaded inserts, linoleum adhesives, J-roller use and A2/B1-style trowel notch sizing.
+  - Public page keeps this as a design-process detour only. The actual published build currently says 32mm plywood with laminate flooring as the working surface.
 - Important correction: the media labelled "Motor wiring" was actually robot-arm work, not the desk project, and should not be used as desk evidence.
 - Cross-chat/session correction: `derived\project-assets\desk-project\extra-finished-detail.jpg` was also identified as robot-arm/VR work rather than desk work and was removed from the public desk page.
 - Current task chat notes: standing-desk page was specifically critiqued against the sharpened 3D-printer page. The public page keeps the short hero line "Height-adjustable desk.", the father/son workshop angle, 32mm plywood, laminate-flooring work surface, 1800mm x 800mm top, curved corners, Desktronic dual-motor frame, routed laminate edge and visible lacquered ply edge.
@@ -104,6 +108,10 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `LastFew.jpg`
   - `Screenshot 2025-03-27 201258.png` for the FEA/design check
 - Notes: selected images were organised and unused images removed after the CR2 was converted.
+- Cross-chat source: `.NET Expertise Summary` (`68008fa0-0214-8001-80bf-ff6067dfdd40`)
+  - Short CV/project evidence: bespoke Corten steel balustrade, including FEA and structural sign-off.
+- Cross-chat source: `CV: Programming Skills Highlighted` (`80ac0fa4-b756-405e-97b0-a405555de456`)
+  - Earlier CV wording describes Daniel designing and TIG welding the balustrade as part of the family-home build.
 
 ### Vintage String Lights
 
@@ -160,6 +168,8 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `C1106.MP4`, around `01:02`: belt sanding
   - `C1126.MP4`, from `04:28` to `04:40`: plasma cutting
 - Notes: the first green welding candidate did not show enough welding; user then supplied better clip/time references.
+- Cross-chat source: `.NET Expertise Summary` (`68008fa0-0214-8001-80bf-ff6067dfdd40`)
+  - Short CV/project evidence: drift trike built with Daniel's son, incorporating electronics, inrush protection and hands-on engineering education.
 
 ### 3D Printer Build
 
