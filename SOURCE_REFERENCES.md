@@ -66,6 +66,19 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Cross-chat/session correction: `derived\project-assets\desk-project\extra-finished-detail.jpg` was also identified as robot-arm/VR work rather than desk work and was removed from the public desk page.
 - Notes: page was assembled from mixed photos/videos and curated into a smaller set.
 
+### Active Speakers ESP32 Controller
+
+- Page: `cool-projects\ActiveSpeakersESP32Controller.html`
+- Curated assets: `project-assets\active-speakers-esp32-controller`
+- Cross-chat source: `RCA to XLR Converters`
+  - Sonifex RB-UL2 gain matching and unity-gain calibration notes.
+  - DAC/preamp selection notes around Topping E70, DacMagic 200M, SMSL DL200 and Topping DX5 II.
+  - Audio chain notes: DJM/minDSP/Toslink/Topping/balanced XLR/Hypex.
+- Cross-chat source: `Topping to Hypex Debug`
+  - Hypex active-speaker debugging notes: XLR/RCA selection, mute/volume state, Topping analogue output testing and isolating the silent-speaker fault.
+  - ESP32/Hypex USB-controller context: reverse-engineered USB protocol with Wireshark and a physical volume/input controller.
+- Notes: page is a noindex draft until photos and the actual controller hardware are added.
+
 ### Corten Balustrade
 
 - Page: `cool-projects\CortenBalustrade.html`
@@ -346,8 +359,6 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 These project asset folders were created as placeholders so images/media can be dropped in later. They do not yet have a meaningful raw-source trail in this file:
 
-- `project-assets\active-speakers-esp32-controller`
-- Chat reference for later: `Topping to Hypex Debug` contains the Hypex/Topping/miniDSP debugging context and USB-controller clues.
 - `project-assets\arduino-inverted-pendulum`
 - `project-assets\bbc-micro-teletext`
 - `project-assets\ben-eater-8-bit-computer`
