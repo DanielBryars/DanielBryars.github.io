@@ -13,6 +13,14 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Shared stylesheet: `styles.css`
 - Notes: visual styling and page structure were updated in-place in the site repo. Treat this repo as the source of record for the final HTML/CSS, with project-specific sources listed below.
 
+### Cross-chat references reviewed
+
+- `Improve Website Copy` chat: supplied the main site-positioning direction now used on the home/about pages: "Engineer. Programmer. Founder.", "I build things.", the BBC Micro to mechatronics to motorsport/F1 to SaaS to AI/robots arc, and the recurring "How do we know this is really working?" theme.
+- `Website tagline comparison` chat: reinforced the unfinished-project tone, especially "Still in progress" rather than over-selling incomplete work.
+- `Topping to Hypex Debug` chat: useful future material for the active-speakers/ESP32 controller project. Details include vinyl -> preamp -> miniDSP -> Toslink -> Topping -> XLR -> Hypex, XLR/RCA input debugging, Hypex input selection, mute/volume state, and using Wireshark/reverse engineering around the USB controller.
+- `EV Charger Near TA15` chat and current job-search/site chat: useful future material for the MG EV / smart-lead project. Published page now mentions the ESP32/custom-circuit-board smart-lead idea; the charger-location chat itself is travel context, not build evidence.
+- `Pilot hole advice` chat: useful future material for house/pergola writeups if they appear. It mentions 6mm Timberwolf structural timber screws, C24 softwood, and pergola-sized timbers.
+
 ### Extra media expansion pass
 
 - Extraction recipe: `tools\enrich_project_media.py`
@@ -55,6 +63,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Curated assets: `project-assets\desk-project`
 - Original media source: `F:\video\desk-project`
 - Important correction: the media labelled "Motor wiring" was actually robot-arm work, not the desk project, and should not be used as desk evidence.
+- Cross-chat/session correction: `derived\project-assets\desk-project\extra-finished-detail.jpg` was also identified as robot-arm/VR work rather than desk work and was removed from the public desk page.
 - Notes: page was assembled from mixed photos/videos and curated into a smaller set.
 
 ### Corten Balustrade
@@ -338,12 +347,14 @@ Do not publish files from the source folders blindly. Some sources are personal 
 These project asset folders were created as placeholders so images/media can be dropped in later. They do not yet have a meaningful raw-source trail in this file:
 
 - `project-assets\active-speakers-esp32-controller`
+- Chat reference for later: `Topping to Hypex Debug` contains the Hypex/Topping/miniDSP debugging context and USB-controller clues.
 - `project-assets\arduino-inverted-pendulum`
 - `project-assets\bbc-micro-teletext`
 - `project-assets\ben-eater-8-bit-computer`
 - `project-assets\clock-project`
 - `project-assets\diffvantage`
 - `project-assets\ev-charger-smart-lead`
+- Chat reference for later: MG EV / smart-lead notes mention an ESP32-based system, a custom circuit board, and a home EV charger lead.
 - `project-assets\hiscots-lights`
 - `project-assets\house-build`
 - `project-assets\mg-ev-project`
