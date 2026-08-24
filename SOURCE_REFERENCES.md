@@ -256,6 +256,16 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `NotSure\C1503.MP4`, around `00:29:55`, 12 seconds -> `clip-metalwork-welding.mp4`
 - Notes: this page is intentionally framed as work in progress. Avoid implying the robot arm is a finished product until more completion/demo media is added.
 
+### MG EV Project / Smart Lead
+
+- Page: `cool-projects\MGEVProject.html`
+- Curated assets: `project-assets\mg-ev-project`
+- Placeholder assets: `project-assets\ev-charger-smart-lead`
+- Cross-chat source: `Crimp vs Solder Terminals` (`6a60927d-0a14-83eb-9322-df0e1c1cab7c`)
+  - Smart-lead details: Duosida Type 2 contacts, CP/PP signal contacts, 2.5mm and 6mm power conductors, ratchet crimper versus hydraulic crimper versus soldering, and the Duosida/Evalbo guidance around non-insulated terminal tooling.
+  - Practical process notes: good solder wetting, avoiding solder wicking too far up the conductor, proper strain relief, no excess solder on the contact, pull-testing, sectioning a crimp when using a new tool, and staged thermal/current testing at 10-16A before 32A.
+- Current task/site notes: page remains noindex and sketch-like; public copy should treat the ESP32/custom PCB smart-lead as an in-progress idea, not a finished product.
+
 ## Academic and AI work
 
 ### MSc Artificial Intelligence overview
@@ -387,11 +397,8 @@ These project asset folders were created as placeholders so images/media can be 
 - `project-assets\ben-eater-8-bit-computer`
 - `project-assets\clock-project`
 - `project-assets\diffvantage`
-- `project-assets\ev-charger-smart-lead`
-- Chat reference for later: MG EV / smart-lead notes mention an ESP32-based system, a custom circuit board, and a home EV charger lead.
 - `project-assets\hiscots-lights`
 - `project-assets\house-build`
-- `project-assets\mg-ev-project`
 - `project-assets\otter-surfboard`
 - `project-assets\physical-design-and-analysis`
 - `project-assets\robot-learning-msc`
