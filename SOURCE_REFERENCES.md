@@ -20,6 +20,9 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - `Topping to Hypex Debug` chat: useful future material for the active-speakers/ESP32 controller project. Details include vinyl -> preamp -> miniDSP -> Toslink -> Topping -> XLR -> Hypex, XLR/RCA input debugging, Hypex input selection, mute/volume state, and using Wireshark/reverse engineering around the USB controller.
 - `EV Charger Near TA15` chat and current job-search/site chat: useful future material for the MG EV / smart-lead project. Published page now mentions the ESP32/custom-circuit-board smart-lead idea; the charger-location chat itself is travel context, not build evidence.
 - `Pilot hole advice` chat: useful future material for house/pergola writeups if they appear. It mentions 6mm Timberwolf structural timber screws, C24 softwood, and pergola-sized timbers.
+- `Interview Prep` chat: useful for future CV/interview positioning around robot learning, but be careful with it on the website. It includes final-project/dissertation details such as VLA-style ambitions, local inference limits, simplifying toward ACT, spatial coordinates, debugging tooling, simulated-to-real evaluation and physical benchmark thinking. Do not paste this into the MSc module pages without Daniel explicitly deciding to publish final-project material.
+- `Explain VLA Models` and `Explain DDP FSDP DeepSpeed` chats: useful learning notes for Daniel, but not original project evidence. Treat them as background only unless a future page explicitly explains what Daniel studied.
+- `URScript result returns` chat: useful future material for professional robotics/control notes. It discusses using URScript return values internally, socket result messages, and RTDE registers for command/result state.
 
 ### Extra media expansion pass
 
@@ -73,7 +76,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Cross-chat source: `RCA to XLR Converters`
   - Sonifex RB-UL2 gain matching and unity-gain calibration notes.
   - DAC/preamp selection notes around Topping E70, DacMagic 200M, SMSL DL200 and Topping DX5 II.
-  - Audio chain notes: DJM/minDSP/Toslink/Topping/balanced XLR/Hypex.
+  - Audio chain notes: DJM/miniDSP/Toslink/Topping/balanced XLR/Hypex.
 - Cross-chat source: `Topping to Hypex Debug`
   - Hypex active-speaker debugging notes: XLR/RCA selection, mute/volume state, Topping analogue output testing and isolating the silent-speaker fault.
   - ESP32/Hypex USB-controller context: reverse-engineered USB protocol with Wireshark and a physical volume/input controller.
