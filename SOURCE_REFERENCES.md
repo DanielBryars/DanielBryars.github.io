@@ -120,6 +120,9 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Page: `cool-projects\MegaBookCase.html`
 - Curated assets: `project-assets\mega-book-case`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\Book Case`
+- Cross-chat source: `CV Assistance: Structure, Content` (`dbf9778f-2880-485a-8ead-391e237bb605`)
+  - Daniel described the bookcase as part of a broader interests/hobbies section alongside the family house, home automation, TIG-welded balustrade and curved wooden stairs.
+  - The older CV wording called it a recent "massive set of bookcases" with a sliding ladder, around 3.6m tall. The public page keeps the later site-session measurement of 5m x 3.4m.
 - Current task chat/site notes: the page already carries the main design/build detail extracted during the site session: 5m x 3.4m full-height case, MDF carcass, oak shelves, hollow 18mm/18mm/18mm uprights, Rigifix M8 wall anchors, Domino DF500 joinery, sprayed Dulux MDF primer and anthracite eggshell, low console, cable routing, existing window constraint, and the rolling ladder as its own sub-project.
 - Ladder details: bought ladder reinforced with angle iron and painted to match; rail made from 25mm steel bar welded to angle-iron brackets; Delrin rollers turned on the Chipmaster; inline skate wheels; under GBP 100 for the homemade hardware.
 - Notes: this was treated as a large project page with multiple construction stages, videos and photos. User planned to add more final hero photos later.
@@ -211,7 +214,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `https://github.com/user-attachments/assets/7ecef519-a56e-4b9f-b573-c4b864e5a49c` -> `project-assets\3d-printers\firmware-613-success-result.jpg`
   - `https://github.com/user-attachments/assets/c96e7413-e60a-4282-b1a5-038f58956f53` -> `project-assets\3d-printers\firmware-arctos-gears-comparison.jpg`
   - Web versions generated in `derived\project-assets\3d-printers` at 480px, 960px and 1600px widths.
-- FreeCAD/source notes: Daniel reported multiple FreeCAD/3D-printing conversations, but no separately titled FreeCAD/3D-printing chat was visible in the exposed 50-thread list. The public FreeCAD section is based on site/session facts already present here: Daniel draws his own parts in FreeCAD; prints robot parts, brackets, workshop jigs, dust-extractor adapters, cabinet fittings and repairs; uses heat-set inserts; prefers open tools; and chose Prusa over Bambu partly because the Prusa ecosystem remains more inspectable.
+- FreeCAD/source notes: Daniel reported multiple FreeCAD/3D-printing conversations. Searches in the logged-in ChatGPT chat-history modal for `FreeCAD`, `3D printer`, `Prusa MK4`, `Prusa`, `heat-set inserts`, `ARCTOS`, `slicer`, `PETG`, `Bambu`, `CAD`, `inserts` and `MK4 kit` did not return a dedicated old conversation. The public FreeCAD section is therefore based on site/session facts already present here: Daniel draws his own parts in FreeCAD; prints robot parts, brackets, workshop jigs, dust-extractor adapters, cabinet fittings and repairs; uses heat-set inserts; prefers open tools; and chose Prusa over Bambu partly because the Prusa ecosystem remains more inspectable.
 - Notes: source footage is very large 4K XAVC-style MP4; web clips were transcoded to 1280px-wide H.264/AAC with fast-start metadata.
 
 ### Robot Arm
