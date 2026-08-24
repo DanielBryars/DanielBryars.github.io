@@ -66,19 +66,20 @@
                     <h2>The useful version of the diagram.</h2>
                     <p>
                         Vinyl through preamp and miniDSP, out over Toslink to a Topping DX5 II, then balanced
-                        XLR into the Hypex modules. The same setup also made RCA versus XLR, fixed versus
-                        variable output, and 96 kHz versus 192 kHz less abstract than they sound on spec
-                        sheets.
+                        XLR into the Hypex FA503 modules. The miniDSP establishes the ADC/DSP sample rate, the
+                        DX5 II acts as DAC and preamp, and the Hypex modules still have their own input, volume
+                        and mute state. That is the kind of diagram that looks simple until it goes quiet.
                     </p>
                 </article>
                 <article class="cv-panel">
                     <p class="eyebrow">Debugging</p>
                     <h2>When silence is still a signal.</h2>
                     <p>
-                        The Hypex side has its own input, mute and volume state, separate from whatever the DAC
-                        is showing. Debugging it meant working down the chain rather than guessing: prove the
-                        Topping has signal, test RCA against XLR, check the Hypex input selection, then measure
-                        or trace what is actually coming out.
+                        The Topping could show healthy input levels while the room remained silent, which means
+                        the problem was downstream of the digital input. The useful tests were boring in the
+                        best way: play a fixed tone, measure XLR pins 2 and 3 for AC voltage, try RCA into the
+                        Hypex, explicitly select the Hypex input, then check mute and gain instead of assuming
+                        the amplifier was broken.
                     </p>
                 </article>
                 <article class="cv-panel">
@@ -89,6 +90,16 @@
                         Wireshark, then building something physical to drive volume and source selection. It
                         sits somewhere between hi-fi, embedded systems, and the special kind of stubbornness
                         caused by wanting a proper knob.
+                    </p>
+                </article>
+                <article class="cv-panel">
+                    <p class="eyebrow">Hardware choices</p>
+                    <h2>Balanced when it matters.</h2>
+                    <p>
+                        A lot of the surrounding work was choosing the boringly-correct bits: balanced XLR where
+                        possible, short RCA where not, line-level conversion rather than mystery audio boxes, and
+                        a neat controller connection that could use USB-C on the box while talking to the Hypex
+                        Mini-USB port.
                     </p>
                 </article>
             </section>

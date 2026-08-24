@@ -84,7 +84,11 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - Audio chain notes: DJM/miniDSP/Toslink/Topping/balanced XLR/Hypex.
 - Cross-chat source: `Topping to Hypex Debug`
   - Hypex active-speaker debugging notes: XLR/RCA selection, mute/volume state, Topping analogue output testing and isolating the silent-speaker fault.
+  - Specific debug chain from the old chat: `Vinyl -> PreAmp -> MiniDSP -> TosLink -> Topping -> XLR -> Hypex`, with the Topping showing good levels but the Hypex silent. Suggested isolation steps included selecting XLR explicitly on the Hypex, checking Hypex mute/volume state, disconnecting the USB controller while testing, playing a fixed 100Hz/1kHz tone and measuring AC voltage across XLR pins 2 and 3, then trying Topping RCA into Hypex RCA.
+  - Thread ID: `6a81ff7e-f550-83ed-9743-10d7a5ff4a2a`.
   - ESP32/Hypex USB-controller context: reverse-engineered USB protocol with Wireshark and a physical volume/input controller.
+- Cross-chat source: `Mini USB Cable Length`
+  - Hypex FA503 controller note: the amplifier is a USB peripheral, so the controller can expose USB-C and use a USB-C to Mini-USB cable to the FA503; USB 2.0 only needs D+, D-, VBUS and ground plus the USB-C CC handling.
 - Notes: page is a noindex draft until photos and the actual controller hardware are added.
 
 ### Corten Balustrade
@@ -214,7 +218,12 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `https://github.com/user-attachments/assets/7ecef519-a56e-4b9f-b573-c4b864e5a49c` -> `project-assets\3d-printers\firmware-613-success-result.jpg`
   - `https://github.com/user-attachments/assets/c96e7413-e60a-4282-b1a5-038f58956f53` -> `project-assets\3d-printers\firmware-arctos-gears-comparison.jpg`
   - Web versions generated in `derived\project-assets\3d-printers` at 480px, 960px and 1600px widths.
-- FreeCAD/source notes: Daniel reported multiple FreeCAD/3D-printing conversations. Searches in the logged-in ChatGPT chat-history modal for `FreeCAD`, `3D printer`, `Prusa MK4`, `Prusa`, `heat-set inserts`, `ARCTOS`, `slicer`, `PETG`, `Bambu`, `CAD`, `inserts` and `MK4 kit` did not return a dedicated old conversation. The public FreeCAD section is therefore based on site/session facts already present here: Daniel draws his own parts in FreeCAD; prints robot parts, brackets, workshop jigs, dust-extractor adapters, cabinet fittings and repairs; uses heat-set inserts; prefers open tools; and chose Prusa over Bambu partly because the Prusa ecosystem remains more inspectable.
+- FreeCAD/source notes: Daniel reported multiple FreeCAD/3D-printing conversations. The logged-in ChatGPT chat-history search later found several relevant old chats:
+  - `3D Printing with FreeCAD` (`6a6cad90-b728-83eb-aec4-fdcb216d7c14`): importing SVG as geometry, using Inkscape to clean SVG paths, FreeCAD Draft/Part workflows, extruding faces into printable plaques, and the Body-vs-Part "Selected object must belong to the active body" trap.
+  - `Side Hole in Cylinder` (`69877019-7a00-8387-a52a-41d5c79d7e58`): radial side holes, datum-plane confusion, projecting cylinder axes, pocket direction, symmetric through-cuts, pads for bosses, and using `Up to face` plus offset for bosses protruding from curved surfaces.
+  - `Barbed hose bung FreeCAD` (`689f220b-baec-8331-b556-1e1e94fd060e`): single-sketch-and-revolve workflow for a barbed hose bung, including barb angles, small oversize for sealing, PETG/TPU material choice and 100% infill.
+  - `Thicken Edges in PrusaSlicer` (`696c17a6-38cc-832b-a7d5-16de472e1c0f`): reinforcing insert holes with modifier meshes, high perimeters and 100% infill, while noting that proper bosses and chamfers are better done in CAD first.
+- Public FreeCAD section also uses site/session facts already present here: Daniel draws his own parts in FreeCAD; prints robot parts, brackets, workshop jigs, dust-extractor adapters, cabinet fittings and repairs; uses heat-set inserts; prefers open tools; and chose Prusa over Bambu partly because the Prusa ecosystem remains more inspectable.
 - Notes: source footage is very large 4K XAVC-style MP4; web clips were transcoded to 1280px-wide H.264/AAC with fast-start metadata.
 
 ### Robot Arm

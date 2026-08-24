@@ -154,6 +154,35 @@
                         is that a bad part is usually only one revision away from a better one.
                     </p>
                 </article>
+                <article>
+                    <p class="eyebrow">Actual modelling</p>
+                    <h2>FreeCAD is a workshop tool</h2>
+                    <p>
+                        Some jobs are proper parametric parts: a barbed hose bung drawn as a half-profile and
+                        revolved, bosses and side holes on cylinders, brackets with holes for heat-set inserts.
+                        Others are scruffier and faster, like pulling SVG geometry through Inkscape and FreeCAD
+                        to make a printable badge or plaque.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">The awkward bits</p>
+                    <h2>Curved faces are where the learning happens</h2>
+                    <p>
+                        The useful FreeCAD lesson was not a magic button. It was the mental model: sketches live
+                        on planes, pads start at the sketch plane, pockets need a direction, and if a side hole
+                        or boss has to follow a cylinder then you either use a sensible global plane, project the
+                        axis, or let Pad stop "up to face" with an offset.
+                    </p>
+                </article>
+                <article>
+                    <p class="eyebrow">Slicer reality</p>
+                    <h2>Do the strength in CAD first</h2>
+                    <p>
+                        PrusaSlicer can help with modifier meshes, extra perimeters and local 100% infill, but
+                        holes for inserts are better designed properly: a real boss, enough plastic around the
+                        insert, a lead-in chamfer, then slicing settings as backup rather than the structure.
+                    </p>
+                </article>
             </section>
 
             <section class="video-strip" id="videos" aria-label="3D printer build videos">
