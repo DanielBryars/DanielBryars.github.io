@@ -67,6 +67,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Original media source: `F:\video\desk-project`
 - Important correction: the media labelled "Motor wiring" was actually robot-arm work, not the desk project, and should not be used as desk evidence.
 - Cross-chat/session correction: `derived\project-assets\desk-project\extra-finished-detail.jpg` was also identified as robot-arm/VR work rather than desk work and was removed from the public desk page.
+- Current task chat notes: standing-desk page was specifically critiqued against the sharpened 3D-printer page. The public page keeps the short hero line "Height-adjustable desk.", the father/son workshop angle, 32mm plywood, laminate-flooring work surface, 1800mm x 800mm top, curved corners, Desktronic dual-motor frame, routed laminate edge and visible lacquered ply edge.
 - Notes: page was assembled from mixed photos/videos and curated into a smaller set.
 
 ### Active Speakers ESP32 Controller
@@ -115,6 +116,8 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Page: `cool-projects\MegaBookCase.html`
 - Curated assets: `project-assets\mega-book-case`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\Book Case`
+- Current task chat/site notes: the page already carries the main design/build detail extracted during the site session: 5m x 3.4m full-height case, MDF carcass, oak shelves, hollow 18mm/18mm/18mm uprights, Rigifix M8 wall anchors, Domino DF500 joinery, sprayed Dulux MDF primer and anthracite eggshell, low console, cable routing, existing window constraint, and the rolling ladder as its own sub-project.
+- Ladder details: bought ladder reinforced with angle iron and painted to match; rail made from 25mm steel bar welded to angle-iron brackets; Delrin rollers turned on the Chipmaster; inline skate wheels; under GBP 100 for the homemade hardware.
 - Notes: this was treated as a large project page with multiple construction stages, videos and photos. User planned to add more final hero photos later.
 
 ### Curving Skirting Board
@@ -204,6 +207,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `https://github.com/user-attachments/assets/7ecef519-a56e-4b9f-b573-c4b864e5a49c` -> `project-assets\3d-printers\firmware-613-success-result.jpg`
   - `https://github.com/user-attachments/assets/c96e7413-e60a-4282-b1a5-038f58956f53` -> `project-assets\3d-printers\firmware-arctos-gears-comparison.jpg`
   - Web versions generated in `derived\project-assets\3d-printers` at 480px, 960px and 1600px widths.
+- FreeCAD/source notes: Daniel reported multiple FreeCAD/3D-printing conversations, but no separately titled FreeCAD/3D-printing chat was visible in the exposed 50-thread list. The public FreeCAD section is based on site/session facts already present here: Daniel draws his own parts in FreeCAD; prints robot parts, brackets, workshop jigs, dust-extractor adapters, cabinet fittings and repairs; uses heat-set inserts; prefers open tools; and chose Prusa over Bambu partly because the Prusa ecosystem remains more inspectable.
 - Notes: source footage is very large 4K XAVC-style MP4; web clips were transcoded to 1280px-wide H.264/AAC with fast-start metadata.
 
 ### Robot Arm
