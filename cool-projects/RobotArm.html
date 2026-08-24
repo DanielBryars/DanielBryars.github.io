@@ -93,7 +93,7 @@
                         </div>
                         <div>
                             <dt>Bus and firmware</dt>
-                            <dd class="tbc">&mdash;</dd>
+                            <dd>Makerbase closed-loop stepper drivers; CAN bus notes still being worked through.</dd>
                         </div>
                         <div>
                             <dt>Payload and reach</dt>
@@ -139,6 +139,11 @@
                         Motor drive, position feedback, power and connectors, per joint, routed through a
                         moving structure. Build the instrumentation carefully - without it a bad connector and
                         a bad control loop look identical.
+                    </p>
+                    <p>
+                        The controller side has already involved the kind of detail that makes hardware real:
+                        closed-loop stepper drives, CAN bus setup, baud-rate uncertainty, and deciding what to
+                        measure before assuming the motor is at fault.
                     </p>
                 </article>
                 <article>

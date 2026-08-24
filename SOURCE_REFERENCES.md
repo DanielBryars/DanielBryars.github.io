@@ -255,6 +255,9 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `Smaller Cycloidal\C1424.MP4`, around `00:05:55`, 14 seconds -> `clip-arm-assembly.mp4`
   - `NotSure\C1503.MP4`, around `00:29:55`, 12 seconds -> `clip-metalwork-welding.mp4`
 - Notes: this page is intentionally framed as work in progress. Avoid implying the robot arm is a finished product until more completion/demo media is added.
+- Cross-chat source: `Makerbase CAN baud rate` (`67c05191-8510-8001-bf1d-66f92dc55c77`)
+  - Hardware/control note for the robot-arm page: Daniel was investigating Makerbase closed-loop stepper drivers over CAN bus, including the practical problem that the default baud rate was not obvious and might need to be discovered by trying common CAN rates or using the vendor configuration tools.
+  - Keep this as a modest electronics/control note. Richer robot-learning chats were found, but many overlap with MSc final-project/dissertation/CORL work and should not be published unless Daniel explicitly chooses to expose that material.
 
 ### MG EV Project / Smart Lead
 
@@ -264,6 +267,11 @@ Do not publish files from the source folders blindly. Some sources are personal 
 - Cross-chat source: `Crimp vs Solder Terminals` (`6a60927d-0a14-83eb-9322-df0e1c1cab7c`)
   - Smart-lead details: Duosida Type 2 contacts, CP/PP signal contacts, 2.5mm and 6mm power conductors, ratchet crimper versus hydraulic crimper versus soldering, and the Duosida/Evalbo guidance around non-insulated terminal tooling.
   - Practical process notes: good solder wetting, avoiding solder wicking too far up the conductor, proper strain relief, no excess solder on the contact, pull-testing, sectioning a crimp when using a new tool, and staged thermal/current testing at 10-16A before 32A.
+- Cross-chat source: `Fake Battery Load Methods` (`6a6132bb-a3e4-83ed-abd1-9bb84c680067`)
+  - The useful direction was a fake EV rather than a fake battery: Type 2 EVSE testing only needs CP/PP behaviour for AC charging, with selectable States A/B/C, a switched diode, PP cable-rating resistance, and optional ESP32 measurement of pilot voltage, PWM duty cycle and advertised current.
+  - IEC 61851 detail captured for future writeup: EVSE uses a +/-12V 1kHz control-pilot signal; duty cycle advertises current limit; voltage level/resistor state indicates whether the vehicle is connected and ready.
+- Cross-chat source: `OpenEVSE Wiring Issue` (`6a677096-b6d0-83eb-82f7-3d9ca8895ce6`)
+  - Fault-finding notes: OpenEVSE detected the EV and closed the contactor before reporting GFCI. Likely checks included Live and Neutral both passing through the GFCI toroid once, Earth/CP/PP not passing through the toroid, CT connector placement, Type 2 soldering inspection, and continuity/isolation checks around PE, L, N, CP and PP.
 - Current task/site notes: page remains noindex and sketch-like; public copy should treat the ESP32/custom PCB smart-lead as an in-progress idea, not a finished product.
 
 ## Academic and AI work

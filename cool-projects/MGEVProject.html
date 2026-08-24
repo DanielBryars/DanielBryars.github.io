@@ -86,6 +86,39 @@
                         instead of just assuming the cable is a passive thing between the car and the wall.
                     </p>
                 </article>
+                <article class="cv-panel">
+                    <p class="eyebrow">Bench testing</p>
+                    <h2>The fake car.</h2>
+                    <p>
+                        A useful side quest was not a fake battery, but a fake EV: a small Type 2 test box
+                        that can present the charger with the right CP and PP behaviour without needing the
+                        car on the drive. For AC charging that means selectable pilot states, a diode check,
+                        cable-rating resistors, and a way of showing what current the charger is actually
+                        advertising.
+                    </p>
+                </article>
+                <article class="cv-panel">
+                    <p class="eyebrow">IEC 61851</p>
+                    <h2>One wire doing two jobs.</h2>
+                    <p>
+                        The control pilot is pleasingly robust engineering: a 1kHz signal tells the car the
+                        available current by duty cycle, while the voltage level tells the charger whether a
+                        vehicle is connected and ready. A little ESP32 analyser could display pilot state,
+                        duty cycle and advertised current, which is exactly the kind of thing that turns a
+                        confusing charging problem into something observable.
+                    </p>
+                </article>
+                <article class="cv-panel">
+                    <p class="eyebrow">Fault finding</p>
+                    <h2>When the charger says GFCI.</h2>
+                    <p>
+                        The OpenEVSE debugging was classic physical-system work: the car was detected, the
+                        contactor closed, then the GFCI fault appeared. That points away from the logic layer
+                        and towards the power path: Live and Neutral through the differential toroid exactly
+                        once, Earth and CP/PP outside it, then continuity and isolation checks before blaming
+                        anything clever.
+                    </p>
+                </article>
             </section>
         </main>
 
