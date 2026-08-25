@@ -54,11 +54,11 @@ def clip_from_video(src: str, out: Path, poster: Path, at: str, duration: str = 
                 "-t",
                 duration,
                 "-vf",
-                "scale=-2:'min(720,ih)'",
+                "scale=-2:'min(1080,ih)'",
                 "-c:v",
                 "libx264",
                 "-crf",
-                "27",
+                "23",
                 "-preset",
                 "fast",
                 "-pix_fmt",
@@ -66,7 +66,7 @@ def clip_from_video(src: str, out: Path, poster: Path, at: str, duration: str = 
                 "-c:a",
                 "aac",
                 "-b:a",
-                "96k",
+                "192k",
                 "-movflags",
                 "+faststart",
                 str(out),
@@ -77,6 +77,26 @@ def clip_from_video(src: str, out: Path, poster: Path, at: str, duration: str = 
 
 def main() -> None:
     recipes = [
+        {
+            "slug": "3d-printers",
+            "media": [
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0332.MP4", "00:00:05", "extra-piece-to-camera.mp4", "extra-piece-to-camera-poster.jpg", "40"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0333.MP4", "00:00:45", "extra-unboxing-overhead.mp4", "extra-unboxing-overhead-poster.jpg", "35"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0336.MP4", "00:04:30", "extra-frame-uprights-overhead.mp4", "extra-frame-uprights-overhead-poster.jpg", "30"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0339.MP4", "00:20:30", "extra-electronics-board.mp4", "extra-electronics-board-poster.jpg", "30"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0343.MP4", "00:07:20", "extra-bearings-on-rods.mp4", "extra-bearings-on-rods-poster.jpg", "30"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0345.MP4", "00:01:20", "extra-x-axis-overhead.mp4", "extra-x-axis-overhead-poster.jpg", "30"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0346.MP4", "00:02:30", "extra-orange-parts-overhead.mp4", "extra-orange-parts-overhead-poster.jpg", "30"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0349.MP4", "00:14:30", "extra-loom-connectors.mp4", "extra-loom-connectors-poster.jpg", "40"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0355.MP4", "00:15:30", "extra-extruder-assembly.mp4", "extra-extruder-assembly-poster.jpg", "35"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0355.MP4", "00:18:20", "extra-extruder-mounting.mp4", "extra-extruder-mounting-poster.jpg", "30"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0358.MP4", "00:19:00", "extra-display-module.mp4", "extra-display-module-poster.jpg", "40"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0360.MP4", "00:00:15", "extra-machine-complete.mp4", "extra-machine-complete-poster.jpg", "30"),
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0378.MP4", "00:06:30", "extra-heatbed-wiring-overhead.mp4", "extra-heatbed-wiring-overhead-poster.jpg", "30"),
+                # re-cut: this one came out of the first pass with no audio track
+                ("video", r"\\192.168.1.13\Public\Video\Daniel\3dPrinter\C0353.MP4", "00:08:55", "clip-hotend-small-parts.mp4", "clip-hotend-small-parts-poster.jpg", "60"),
+            ],
+        },
         {
             "slug": "lathe-sparks",
             "media": [

@@ -240,6 +240,29 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `C0380.MP4`, from `00:10:45`, 45 seconds -> `clip-late-underframe-detail-720.mp4`
   - `C0381.MP4`, from `00:44:40`, 60 seconds -> `clip-final-bench-rotation-720.mp4`
   - Poster frames generated from the same source clips into `projects\3d-printers\media`.
+- Second clip pass, cut from previously unused footage on the same share:
+  - `C0332.MP4`, from `00:00:05`, 40 seconds -> `extra-piece-to-camera.mp4`
+  - `C0333.MP4`, from `00:00:45`, 35 seconds -> `extra-unboxing-overhead.mp4`
+  - `C0336.MP4`, from `00:04:30`, 30 seconds -> `extra-frame-uprights-overhead.mp4`
+  - `C0339.MP4`, from `00:20:30`, 30 seconds -> `extra-electronics-board.mp4`
+  - `C0343.MP4`, from `00:07:20`, 30 seconds -> `extra-bearings-on-rods.mp4`
+  - `C0345.MP4`, from `00:01:20`, 30 seconds -> `extra-x-axis-overhead.mp4`
+  - `C0346.MP4`, from `00:02:30`, 30 seconds -> `extra-orange-parts-overhead.mp4`
+  - `C0349.MP4`, from `00:14:30`, 40 seconds -> `extra-loom-connectors.mp4`
+  - `C0355.MP4`, from `00:15:30`, 35 seconds -> `extra-extruder-assembly.mp4`
+  - `C0355.MP4`, from `00:18:20`, 30 seconds -> `extra-extruder-mounting.mp4`
+  - `C0358.MP4`, from `00:19:00`, 40 seconds -> `extra-display-module.mp4`
+  - `C0360.MP4`, from `00:00:15`, 30 seconds -> `extra-machine-complete.mp4`
+  - `C0378.MP4`, from `00:06:30`, 30 seconds -> `extra-heatbed-wiring-overhead.mp4`
+  - `C0353.MP4`, from `00:08:55`, 60 seconds -> `clip-hotend-small-parts.mp4`, re-cut
+    because the first pass produced a file with no audio track.
+- These are cut by `tools/enrich_project_media.py`, which now writes clips to
+  `projects/<slug>/videos/` and stills to `projects/<slug>/images/` as 1080p
+  sources with audio. The 720p web copies in `media/` come from
+  `tools/make_derivatives.py`.
+- Raw footage not used: `C0334`, `C0337`, `C0338`, `C0350`, `C0351` are 3 to 11
+  second fragments; `C0377` is camera-rig repositioning; `C0352` is unwrapping
+  bagged parts; `C0354` duplicates the hotend parts already covered by `C0353`.
 - Related firmware-debugging references:
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4465#issuecomment-2660022554`
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4487#issuecomment-2665450594`

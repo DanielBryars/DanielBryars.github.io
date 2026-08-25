@@ -758,6 +758,132 @@
       1600
     ]
   },
+  "projects/3d-printers/images/clip-hotend-small-parts-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-bearings-on-rods-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-display-module-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-electronics-board-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-extruder-assembly-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-extruder-mounting-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-frame-uprights-overhead-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-heatbed-wiring-overhead-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-loom-connectors-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-machine-complete-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-orange-parts-overhead-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-piece-to-camera-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-unboxing-overhead-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/extra-x-axis-overhead-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "projects/3d-printers/images/filament-storage/01-sealed-container-lid-on.jpg": {
     "height": 1350,
     "width": 2400,
@@ -867,6 +993,9 @@
   "projects/3d-printers/videos/clip-frame-assembly.mp4": {
     "web": "projects/3d-printers/media/clip-frame-assembly-720.mp4"
   },
+  "projects/3d-printers/videos/clip-hotend-small-parts.mp4": {
+    "web": "projects/3d-printers/media/clip-hotend-small-parts-720.mp4"
+  },
   "projects/3d-printers/videos/clip-rods-on-bench.mp4": {
     "web": "projects/3d-printers/media/clip-rods-on-bench-720.mp4"
   },
@@ -875,6 +1004,45 @@
   },
   "projects/3d-printers/videos/clip-wiring-electronics.mp4": {
     "web": "projects/3d-printers/media/clip-wiring-electronics-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-bearings-on-rods.mp4": {
+    "web": "projects/3d-printers/media/extra-bearings-on-rods-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-display-module.mp4": {
+    "web": "projects/3d-printers/media/extra-display-module-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-electronics-board.mp4": {
+    "web": "projects/3d-printers/media/extra-electronics-board-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-extruder-assembly.mp4": {
+    "web": "projects/3d-printers/media/extra-extruder-assembly-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-extruder-mounting.mp4": {
+    "web": "projects/3d-printers/media/extra-extruder-mounting-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-frame-uprights-overhead.mp4": {
+    "web": "projects/3d-printers/media/extra-frame-uprights-overhead-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-heatbed-wiring-overhead.mp4": {
+    "web": "projects/3d-printers/media/extra-heatbed-wiring-overhead-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-loom-connectors.mp4": {
+    "web": "projects/3d-printers/media/extra-loom-connectors-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-machine-complete.mp4": {
+    "web": "projects/3d-printers/media/extra-machine-complete-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-orange-parts-overhead.mp4": {
+    "web": "projects/3d-printers/media/extra-orange-parts-overhead-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-piece-to-camera.mp4": {
+    "web": "projects/3d-printers/media/extra-piece-to-camera-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-unboxing-overhead.mp4": {
+    "web": "projects/3d-printers/media/extra-unboxing-overhead-720.mp4"
+  },
+  "projects/3d-printers/videos/extra-x-axis-overhead.mp4": {
+    "web": "projects/3d-printers/media/extra-x-axis-overhead-720.mp4"
   },
   "projects/active-speakers/images/01-speakers-measurement-bench.jpg": {
     "height": 3376,
