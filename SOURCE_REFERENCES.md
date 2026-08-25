@@ -44,6 +44,15 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `project-assets\cv-in-a-box\DSC09233.JPG`, `DSC09234.JPG`, `DSC09240.JPG`, `DSC09244.JPG`
 - Notes: source appears to have been supplied directly into the asset folder during the session.
 
+### 3D Printers - filament storage
+
+- Page: `cool-projectsDPrinters.html`
+- Curated assets: `project-assetsd-printersilament-storage`
+- Source: camera originals `DSC09789.JPG`, `DSC09792.JPG`, `DSC09795.JPG`, `DSC09796.JPG`,
+  6000px and roughly 10MB each. Imported at 2400px under descriptive names, following the
+  same rule as the danfest gallery: full-size camera files are not committed. The originals
+  are left in the asset folder untracked and can be archived or deleted.
+
 ### Belly Board
 
 - Page: `cool-projects\BellyBoard.html`

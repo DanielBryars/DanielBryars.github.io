@@ -118,6 +118,42 @@
   "project-assets/3d-printers/clip-wiring-electronics.mp4": {
     "web": "derived/project-assets/3d-printers/clip-wiring-electronics-720.mp4"
   },
+  "project-assets/3d-printers/filament-storage/01-sealed-container-lid-on.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/3d-printers/filament-storage/02-container-side-on-bench.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/3d-printers/filament-storage/03-spool-and-hygrometer.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/3d-printers/filament-storage/04-hygrometer-reading.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "project-assets/3d-printers/poster-finished-printer.jpg": {
     "height": 720,
     "width": 1280,
