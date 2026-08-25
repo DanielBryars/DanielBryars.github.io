@@ -17,7 +17,7 @@ Clip extraction recipes, with timecodes, live in `tools/enrich_project_media.py`
 | 3D Printers | `\\192.168.1.13\Public\Video\Daniel\3dPrinter` (photos in `\Photos`) |
 | Active Speakers | `F:\video\speakers`, `\\192.168.1.13\YouTubeVideo\Daniel\Speakers`, `C:\Users\bryar\OneDrive\Documents\Projects\Speakers`, code in `D:\git\KingRO4Y` |
 | Belly Board | supplied directly into the repo; no external folder recorded |
-| Corten Balustrade | **not recorded** — see Unresolved below |
+| Corten Balustrade | not recorded |
 | Curving Skirting Board | `\\192.168.1.13\Public\Video\Daniel\Curved Skirtingboard` |
 | CV in a Box | supplied directly into the repo |
 | Drift Trike | `\\192.168.1.13\Public\Video\Daniel\Drift Trike` |
@@ -220,6 +220,13 @@ Stills supplied by Daniel:
   `20191102_142400.jpg`, `LastFew.jpg`
 - `Screenshot 2025-03-27 201258.png` for the FEA design check
 
+`clip-cutting-slats.mp4` (portrait, 1280x2276) and `clip-welding-frame.mp4` have
+no audio track, and that is correct: both were shot in slow motion, which
+records no sound. They play back at 30fps. Do not try to "fix" them by
+re-cutting.
+
+The raw footage location for this project is not recorded.
+
 ## Belly Board
 
 `projects/belly-board/files/selected/README.md` maps each `DSC0____.JPG` to its
@@ -260,10 +267,3 @@ Add one when material arrives: Arduino Inverted Pendulum, BBC Micro Teletext,
 Ben Eater 8-Bit Computer, Chess Board, Clock Project, Diffvantage, House Build,
 Otter Surfboard, Physical Design and Analysis, Robot Learning MSc, Shadow
 Printing, Speed Boat.
-
-## Unresolved
-
-- **Corten Balustrade footage.** `clip-cutting-slats.mp4` (chop saw) and
-  `clip-welding-frame.mp4` (TIG welding) have no audio track and no recorded
-  source folder, so they cannot be re-cut with sound until the raw footage is
-  found. It is not under `\\192.168.1.13\Public\Video\Daniel\`.
