@@ -90,7 +90,16 @@ Do not publish files from the source folders blindly. Some sources are personal 
 ### Active Speakers ESP32 Controller
 
 - Page: `cool-projects\ActiveSpeakersESP32Controller.html`
-- Curated assets: `project-assets\active-speakers-esp32-controller`
+- Curated assets: `project-assets\active-speakers`
+- Primary media sources:
+  - `F:\video\speakers`
+  - `C:\Users\bryar\OneDrive\Documents\Projects\Speakers`
+  - `\\192.168.1.13\YouTubeVideo\Daniel\Speakers`
+  - `D:\git\KingRO4Y`
+- Current media expansion notes: additional short clips and stills were selected from
+  `F:\video\speakers`, mainly routing, rear-baffle work, sanding, plate-amp fitting,
+  driver fitting and finished measurement photos. The imported stills were resized
+  before committing; clip transcodes preserve stereo AAC audio.
 - Cross-chat source: `RCA to XLR Converters`
   - Sonifex RB-UL2 gain matching and unity-gain calibration notes.
   - DAC/preamp selection notes around Topping E70, DacMagic 200M, SMSL DL200 and Topping DX5 II.
@@ -102,7 +111,8 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - ESP32/Hypex USB-controller context: reverse-engineered USB protocol with Wireshark and a physical volume/input controller.
 - Cross-chat source: `Mini USB Cable Length`
   - Hypex FA503 controller note: the amplifier is a USB peripheral, so the controller can expose USB-C and use a USB-C to Mini-USB cable to the FA503; USB 2.0 only needs D+, D-, VBUS and ground plus the USB-C CC handling.
-- Notes: page is a noindex draft until photos and the actual controller hardware are added.
+- Notes: public project page now covers the active speaker build, measurement work
+  and in-progress controller work. It still needs a short FreeCAD screen recording.
 
 ### Corten Balustrade
 

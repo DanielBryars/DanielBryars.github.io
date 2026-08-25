@@ -298,8 +298,62 @@
       1600
     ]
   },
+  "project-assets/active-speakers/14-finished-pair-measurement.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/15-finished-pair-wide.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/16-workshop-measurement-wide.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/17-rear-amp-cavity.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/18-gloss-edge-reflection.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/clip-amp-plate-fitting.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-amp-plate-fitting-720.mp4"
+  },
+  "project-assets/active-speakers/clip-amp-wiring-bench.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-amp-wiring-bench-720.mp4"
+  },
   "project-assets/active-speakers/clip-bench-test.mp4": {
     "web": "derived/project-assets/active-speakers/clip-bench-test-720.mp4"
+  },
+  "project-assets/active-speakers/clip-coax-driver-fitting.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-coax-driver-fitting-720.mp4"
   },
   "project-assets/active-speakers/clip-driver-fitting.mp4": {
     "web": "derived/project-assets/active-speakers/clip-driver-fitting-720.mp4"
@@ -307,13 +361,55 @@
   "project-assets/active-speakers/clip-final-walkaround.mp4": {
     "web": "derived/project-assets/active-speakers/clip-final-walkaround-720.mp4"
   },
+  "project-assets/active-speakers/clip-finish-sanding.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-finish-sanding-720.mp4"
+  },
   "project-assets/active-speakers/clip-finishing-coat.mp4": {
     "web": "derived/project-assets/active-speakers/clip-finishing-coat-720.mp4"
+  },
+  "project-assets/active-speakers/clip-plate-amp-check.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-plate-amp-check-720.mp4"
+  },
+  "project-assets/active-speakers/clip-rear-baffle-cutting.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-rear-baffle-cutting-720.mp4"
+  },
+  "project-assets/active-speakers/clip-router-rebate-detail.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-router-rebate-detail-720.mp4"
   },
   "project-assets/active-speakers/clip-routing-baffle.mp4": {
     "web": "derived/project-assets/active-speakers/clip-routing-baffle-720.mp4"
   },
+  "project-assets/active-speakers/clip-woofer-fitting.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-woofer-fitting-720.mp4"
+  },
+  "project-assets/active-speakers/poster-amp-plate-fitting.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-amp-wiring-bench.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "project-assets/active-speakers/poster-bench-test.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-coax-driver-fitting.jpg": {
     "height": 900,
     "width": 1600,
     "widths": [
@@ -340,6 +436,15 @@
       1600
     ]
   },
+  "project-assets/active-speakers/poster-finish-sanding.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "project-assets/active-speakers/poster-finishing-coat.jpg": {
     "height": 900,
     "width": 1600,
@@ -349,7 +454,43 @@
       1600
     ]
   },
+  "project-assets/active-speakers/poster-plate-amp-check.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-rear-baffle-cutting.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-router-rebate-detail.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "project-assets/active-speakers/poster-routing-baffle.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-woofer-fitting.jpg": {
     "height": 900,
     "width": 1600,
     "widths": [
@@ -435,6 +576,38 @@
       480,
       960,
       1600
+    ]
+  },
+  "project-assets/chess-board/Scan_20260825 (4).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "project-assets/chess-board/Scan_20260825 (5).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "project-assets/chess-board/Scan_20260825 (8).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "project-assets/chess-board/Scan_20260825 (9).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
     ]
   },
   "project-assets/corten-ballustrade/01-terrace-layout.jpg": {
