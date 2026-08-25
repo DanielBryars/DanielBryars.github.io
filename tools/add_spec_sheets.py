@@ -9,7 +9,7 @@ The screen bar reads DRAFT while any field is still a placeholder. When a page
 is done, replace the values, drop class="tbc", and change DRAFT to LOGGED.
 Find the remaining ones with:
 
-    grep -l 'data-spec="draft"' cool-projects/*.html
+    rg -l 'data-spec="draft"' projects
 
     python tools/add_spec_sheets.py
 """

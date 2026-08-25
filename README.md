@@ -11,15 +11,18 @@ automatically on every push to `master`.
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | Landing page: intro, selected projects, contact |
+| `index.html` | Site landing page: intro, selected projects, contact |
 | `cv.html` | CV, with a print stylesheet so it saves to a sensible PDF |
 | `about.html` | Background and origin story |
-| `cool-projects/` | Project index and one page per project |
+| `projects/index.html` | Projects landing page: the list/grid of project write-ups |
+| `projects/<project>/index.html` | One folder per project, with the page and its media together |
 | `bbcb-demo.html` | A Ceefax-style teletext page, standalone styles |
 | `styles.css` | Every stylesheet rule for the main site |
 | `fonts.css` | Local `@font-face` declarations (VT323) |
-| `project-assets/` | Original photos and video, one folder per project |
-| `derived/` | Generated web-sized images and 720p video (do not edit by hand) |
+| `projects/<project>/images/`, `videos/`, `files/` | Original project photos, clips and supporting files |
+| `projects/<project>/media/` | Generated web-sized project media (do not edit by hand) |
+| `project-assets/` | Remaining non-project source assets, currently DanFest |
+| `derived/` | Generated site-level and DanFest media (do not edit by hand) |
 | `tools/` | Python maintenance scripts, see below |
 | `images/` | Site-level images, share card, touch icon |
 | `ontology/`, `video/`, `*.wav` | Odds and ends used by individual pages |
@@ -33,10 +36,12 @@ places, so they read as a choice rather than a theme.
 
 ## Adding a project
 
-1. Drop the original photos and clips into `project-assets/<project-name>/`.
-2. Copy an existing page in `cool-projects/` as a starting point, and add a
-   card to `cool-projects/index.html`.
-3. Regenerate and wire up the media:
+1. Create `projects/<project-name>/`.
+2. Drop the original photos and clips into `images/`, `videos/` or `files/`
+   inside that project folder.
+3. Copy an existing `projects/<project-name>/index.html` as a starting point,
+   and add a card to `projects/index.html`.
+4. Regenerate and wire up the media:
 
    ```bash
    python tools/make_derivatives.py    # resize images, transcode video
@@ -46,9 +51,9 @@ places, so they read as a choice rather than a theme.
    ```
 
    All four are idempotent, so running them over the whole site is safe.
-4. Fill in the `BUILD SPEC` block. Pages still carrying placeholders are listed
-   by `grep -l 'data-spec="draft"' cool-projects/*.html`.
-5. Refresh the footer build stamp with `./update-build-info.sh`.
+5. Fill in the `BUILD SPEC` block. Pages still carrying placeholders are listed
+   by `rg -l 'data-spec="draft"' projects`.
+6. Refresh the footer build stamp with `./update-build-info.sh`.
 
 ## Tools
 

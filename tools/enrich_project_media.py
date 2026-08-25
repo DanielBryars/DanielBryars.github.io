@@ -90,7 +90,7 @@ def main() -> None:
             ],
         },
         {
-            "slug": "desk-project",
+            "slug": "motorised-standing-desk",
             "media": [
                 ("image", r"F:\video\desk-project\C1661.MP4", "00:08:00", "extra-frame-assembly.jpg"),
                 ("image", r"F:\video\desk-project\C1663.MP4", "00:12:40", "extra-top-on-bench.jpg"),
@@ -193,16 +193,21 @@ def main() -> None:
     ]
 
     for recipe in recipes:
-        base = REPO / "derived" / "project-assets" / recipe["slug"]
+        # These extracts are source material, not generated web media, so they
+        # belong beside the other originals. Writing them into media/ makes the
+        # media tools treat them as derivatives and re-encode them.
+        project = REPO / "projects" / recipe["slug"]
+        images = project / "images"
+        videos = project / "videos"
         for item in recipe["media"]:
             if item[0] == "image":
                 _, src, at, name = item
-                image_from_video(src, base / name, at)
-                print(base / name)
+                image_from_video(src, images / name, at)
+                print(images / name)
             else:
                 _, src, at, name, poster, duration = item
-                clip_from_video(src, base / name, base / poster, at, duration)
-                print(base / name)
+                clip_from_video(src, videos / name, images / poster, at, duration)
+                print(videos / name)
 
 
 if __name__ == "__main__":

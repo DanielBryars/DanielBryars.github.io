@@ -1,6 +1,6 @@
 """Turn the empty project pages into honest holding pages.
 
-They used to carry an "ASSET SLOT / drop photos into project-assets/x/" panel
+They used to carry an "ASSET SLOT / drop photos into projects/x/images/" panel
 and a note about what "we" would do later - working notes that had no business
 being on a public site. This replaces that with a short holding page and adds
 robots=noindex so an empty page cannot turn up in a search result.

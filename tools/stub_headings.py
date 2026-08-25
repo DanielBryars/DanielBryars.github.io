@@ -16,7 +16,7 @@ HEADINGS = {
     "3DPrinters.html": ("Machines that make the other machines.", "Printers, mods and a lot of brackets."),
     "BenEater8BitComputer.html": ("A CPU you can point at.", "Breadboards, LEDs and first principles."),
     "ClockProject.html": ("An object, not a circuit with a display.", "Electronics, enclosure, typography."),
-    "HiscotsLights.html": ("A room that changes after dark.", "Lighting design and a lot of cable."),
+    "HomeAssistant.html": ("Relay panels", "Lighting control and a lot of cable."),
     "MGEVProject.html": ("The car turned out to be the small part.", "Vehicle, charger, tariff and house."),
     "OtterSurfboard.html": ("Wood, water, and no undo button.", "Outline, shaping, glassing, finish."),
     "RobotArm.html": ("Where the simulation stops agreeing.", "CAN steppers, MuJoCo, teleoperation, policies."),

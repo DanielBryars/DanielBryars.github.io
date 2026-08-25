@@ -60,13 +60,14 @@ def layout_context(text: str, position: int) -> str:
     return " ".join(stack)
 
 
-# A page that has already been rewritten points at derived/, so map those paths
-# back to the original they came from. Without this the script would quietly
-# stop touching pages after its first run.
+# A page that has already been rewritten points at the generated copy, so map
+# those paths back to the original they came from. Without this the script
+# would quietly stop touching pages after its first run. derived_path knows
+# both layouts: the derived/ mirror and projects/<slug>/media/.
 BY_DERIVED_STEM: dict[str, str] = {}
 for _key in MANIFEST:
-    _source = Path(_key)
-    BY_DERIVED_STEM[f"derived/{_source.parent.as_posix()}/{_source.stem}"] = _key
+    _generated = derived_path(REPO / _key, "").relative_to(REPO)
+    BY_DERIVED_STEM[_generated.as_posix()] = _key
 
 DERIVED_SUFFIX_RE = re.compile(r"-(?:\d+|720)$")
 

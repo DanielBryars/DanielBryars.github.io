@@ -32,7 +32,7 @@ COPY = {
         "electronics were the easy half; the case, the typography and the decision about what "
         "it should do at 3am took much longer."
     ),
-    "HiscotsLights.html": (
+    "HomeAssistant.html": (
         "A lighting installation for a space that deserved better than a grid of downlights. "
         "Design constraints, a lot of cable, and a room that reads completely differently "
         "after dark."

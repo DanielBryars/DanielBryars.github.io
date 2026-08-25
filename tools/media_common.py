@@ -20,8 +20,9 @@ REPO = Path(__file__).resolve().parent.parent
 # Widths we generate for responsive <img srcset>.
 IMAGE_WIDTHS = (480, 960, 1600)
 
-# Everything generated lands under this mirror tree so it can be deleted and
-# rebuilt in one go without touching the original camera files.
+# Older site-wide generated assets still land under this mirror tree. Project
+# pages now keep their generated media beside the project under
+# projects/<slug>/media/.
 DERIVED = "derived"
 
 RASTER_SUFFIXES = {".jpg", ".jpeg", ".png"}
@@ -65,9 +66,41 @@ def resolve(page: Path, url: str) -> Path | None:
     return (page.parent / url).resolve()
 
 
+def is_generated(path: Path) -> bool:
+    """True if `path` is output rather than source.
+
+    Two trees hold generated media: the old `derived/` mirror, and the
+    per-project `projects/<slug>/media/` folders. Feeding either back into the
+    media tools produces derivatives of derivatives, so they are skipped.
+    """
+    parts = path.parts
+    if path.is_absolute():
+        try:
+            parts = path.relative_to(REPO).parts
+        except ValueError:
+            return False
+    return DERIVED in parts or (len(parts) > 2 and parts[0] == "projects" and "media" in parts)
+
+
 def derived_path(source: Path, suffix: str) -> Path:
-    """derived/ mirror of `source` with `suffix` appended to the stem."""
+    """Where the generated copy of `source` belongs, with `suffix` on the stem.
+
+    Project sources land beside the page in `projects/<slug>/media/`; anything
+    else keeps using the `derived/` mirror.
+    """
     rel = source.relative_to(REPO)
+    if len(rel.parts) >= 4 and rel.parts[0] == "projects" and rel.parts[2] in {
+        "images",
+        "videos",
+        "files",
+    }:
+        return (
+            REPO
+            / "projects"
+            / rel.parts[1]
+            / "media"
+            / Path(*rel.parts[3:]).with_name(f"{rel.stem}{suffix}")
+        )
     return REPO / DERIVED / rel.parent / f"{rel.stem}{suffix}"
 
 

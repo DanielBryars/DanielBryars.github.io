@@ -55,9 +55,13 @@ Consequences:
 - `index.html` - landing page: hero, career signal strip, selected projects, contact
 - `cv.html` - CV; `@media print` in `styles.css` makes it save to a decent PDF
 - `about.html` - background
-- `cool-projects/index.html` - project index: written-up projects as cards, the
+- `projects/index.html` - project index: written-up projects as cards, the
   rest as a plain `.backlog` list
-- `cool-projects/*.html` - one page per project
+- `projects/<project>/index.html` - one folder per project, holding the page and
+  its media together. Source photos, clips and supporting files go in
+  `images/`, `videos/` and `files/`; generated web media lands in `media/` and
+  is never edited by hand. MSc module pages live under
+  `msc-ai/<module>/index.html` and share the programme-level folders.
 - `danfest.html` - photographs from Daniel's 50th. Marked `noindex`: it is full
   of identifiable guests and is for friends, not for search engines or
   recruiters. Built by `tools/build_danfest.py`, which resizes the originals on
@@ -185,15 +189,19 @@ What those show:
 
 ## Media
 
-Originals live in `project-assets/<project>/`. Never reference them directly
-from a page and never resize them in place. Instead:
+Originals live in `projects/<project>/images/`, `videos/` and `files/`. Never
+reference them directly from a page and never resize them in place. Instead:
 
 ```bash
-python tools/make_derivatives.py    # 480/960/1600px JPEG, 720p MP4 -> derived/
+python tools/make_derivatives.py    # 480/960/1600px JPEG, 720p MP4 -> media/
 python tools/rewrite_media.py       # srcset, sizes, width/height, loading
 ```
 
-`rewrite_media.py` points every `<img>` at `derived/`, adds intrinsic
+Generated project media lands in `projects/<project>/media/`. Site-level and
+danfest media still use the older `derived/` mirror, alongside the originals in
+`project-assets/danfest/`.
+
+`rewrite_media.py` points every `<img>` at the generated copy, adds intrinsic
 dimensions, marks the first image on a page `eager`/`fetchpriority=high` and
 everything else `lazy`, and switches `<video>` to the 720p transcode with
 `preload="none"`.
@@ -243,6 +251,8 @@ first so the footer stamp matches the commit.
 
 ## Repository size
 
-`project-assets/` holds full-size originals and is already several hundred MB,
-with `derived/` on top. Before adding a large batch, consider whether the
+The originals under `projects/<project>/images/` and `project-assets/danfest/`
+run to several hundred MB, with the generated copies on top. Import large
+photographs at 2400px rather than full camera resolution, as
+`tools/build_danfest.py` does. Before adding a large batch, consider whether the
 originals belong in the repository at all.

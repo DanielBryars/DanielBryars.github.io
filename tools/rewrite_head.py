@@ -35,36 +35,38 @@ DESC_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"', re.IGNOR
 # generic cover. Keyed by path relative to the repo root.
 PAGE_IMAGES = {
     "index.html": "images/og-cover.jpg",
-    "cool-projects/DriftTrike.html": "project-assets/drift-trike/01-finished-trike-on-grass.jpg",
-    "cool-projects/CortenBalustrade.html": "project-assets/corten-ballustrade/08-finished-curve.jpg",
-    "cool-projects/LatheSparks.html": "project-assets/lathe-sparks/05-sparks-hero.jpg",
-    "cool-projects/MegaBookCase.html": "project-assets/mega-book-case/04-loaded-bookcase-wide.jpg",
-    "cool-projects/SpiralStairCase.html": "project-assets/spiral-staircase/01-finished-staircase-full.jpg",
-    "cool-projects/CurvingSkirtingBoard.html": "project-assets/curving-skirting-board/01-steam-box-on-terrace.jpg",
-    "cool-projects/VintageStringLights.html": "project-assets/vintage-string-lights/01-finished-string-lights-wide.jpg",
-    "cool-projects/MotorisedStandingDesk.html": "project-assets/desk-project/06-father-son-finished-top.jpg",
-    "cool-projects/BellyBoard.html": "project-assets/belly-board/selected/06-finished-grain-detail.jpg",
-    "cool-projects/ChessBoard.html": "images/ChessProjectElectromagnets.jpg",
-    "cool-projects/CVInABox.html": "images/CV-Box.jpg",
-    "cool-projects/RobotArm.html": "project-assets/robot-arm/07-cycloidal-joint-closeup.jpg",
-    "cool-projects/3DPrinters.html": "project-assets/3d-printers/01-prusa-mk4-toolhead.jpg",
-    "cool-projects/MScAI.html": "project-assets/msc-ai/robotics-rviz.jpg",
-    "cool-projects/ActiveSpeakersESP32Controller.html": "project-assets/active-speakers/01-speakers-measurement-bench.jpg",
+    "projects/index.html": "images/og-cover.jpg",
+    "projects/3d-printers/index.html": "projects/3d-printers/images/01-prusa-mk4-toolhead.jpg",
+    "projects/active-speakers/index.html": "projects/active-speakers/images/01-speakers-measurement-bench.jpg",
+    "projects/belly-board/index.html": "projects/belly-board/images/selected/06-finished-grain-detail.jpg",
+    "projects/chess-board/index.html": "projects/chess-board/images/ChessProjectElectromagnets.jpg",
+    "projects/corten-balustrade/index.html": "projects/corten-balustrade/images/08-finished-curve.jpg",
+    "projects/curving-skirting-board/index.html": "projects/curving-skirting-board/images/01-steam-box-on-terrace.jpg",
+    "projects/cv-in-a-box/index.html": "projects/cv-in-a-box/images/CV-Box.jpg",
+    "projects/drift-trike/index.html": "projects/drift-trike/images/01-finished-trike-on-grass.jpg",
+    "projects/lathe-sparks/index.html": "projects/lathe-sparks/images/05-sparks-hero.jpg",
+    "projects/mega-book-case/index.html": "projects/mega-book-case/images/04-loaded-bookcase-wide.jpg",
+    "projects/motorised-standing-desk/index.html": "projects/motorised-standing-desk/images/06-father-son-finished-top.jpg",
+    "projects/msc-ai/index.html": "projects/msc-ai/images/robotics-rviz.jpg",
+    "projects/robot-arm/index.html": "projects/robot-arm/images/07-cycloidal-joint-closeup.jpg",
+    "projects/spiral-staircase/index.html": "projects/spiral-staircase/images/01-finished-staircase-full.jpg",
+    "projects/vintage-string-lights/index.html": "projects/vintage-string-lights/images/01-finished-string-lights-wide.jpg",
 }
 
-# The MSc module pages all share the programme's share image unless they have
+# The MSc module pages all share the programme's images folder unless they have
 # a figure of their own worth leading with.
-for _module, _image in {
-    "MSc-DataMiningTextAnalytics.html": "dmta-generating-podcast.jpg",
-    "MSc-DataScience.html": "data-science-output-02.jpg",
-    "MSc-DeepLearning.html": "dl-encoder-decoder.jpg",
-    "MSc-KRR.html": "krr-sandwich-counterexample.jpg",
-    "MSc-MachineLearning.html": "ml-mars-loops.jpg",
-    "MSc-MLXCourseProjects.html": "mlx-course-architecture.jpg",
-    "MSc-ProgrammingForDataScience.html": "p4ds-architecture-pipeline.jpg",
-    "MSc-Robotics.html": "robotics-rviz.jpg",
-}.items():
-    PAGE_IMAGES[f"cool-projects/{_module}"] = f"project-assets/msc-ai/{_image}"
+MSC_PAGE_IMAGES = {
+    "projects/msc-ai/data-mining-text-analytics/index.html": "dmta-generating-podcast.jpg",
+    "projects/msc-ai/data-science/index.html": "data-science-output-02.jpg",
+    "projects/msc-ai/deep-learning/index.html": "dl-encoder-decoder.jpg",
+    "projects/msc-ai/knowledge-representation/index.html": "krr-sandwich-counterexample.jpg",
+    "projects/msc-ai/machine-learning/index.html": "ml-mars-loops.jpg",
+    "projects/msc-ai/mlx-course-projects/index.html": "mlx-course-architecture.jpg",
+    "projects/msc-ai/programming-for-data-science/index.html": "p4ds-architecture-pipeline.jpg",
+    "projects/msc-ai/robotics/index.html": "robotics-rviz.jpg",
+}
+for _page, _image in MSC_PAGE_IMAGES.items():
+    PAGE_IMAGES[_page] = f"projects/msc-ai/images/{_image}"
 
 PERSON_JSONLD = """    <script type="application/ld+json">
     {

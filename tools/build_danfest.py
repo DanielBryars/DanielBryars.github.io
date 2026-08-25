@@ -182,7 +182,7 @@ PAGE_HEAD = """<!DOCTYPE html>
             </a>
             <nav class="top-nav">
                 <a href="index.html">Home</a>
-                <a href="cool-projects/index.html">Projects</a>
+                <a href="projects/index.html">Projects</a>
                 <a href="cv.html">CV</a>
                 <a href="https://danfest.bryars.com" target="_blank" rel="noreferrer">Page 501</a>
             </nav>

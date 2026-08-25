@@ -1,5 +1,7 @@
 # Source references
 
+> Project folder note: on 2026-08-25 the public project pages moved from `cool-projects/*.html` to `projects/<slug>/index.html`. Project source media now lives beside each page in `images/`, `videos/` or `files/`, with generated web media in `media/`. The old `cool-projects/` folder has been removed.
+
 This file records where the raw material came from for the project and academic pages assembled during the Codex/ChatGPT site-building session. It is intentionally practical: local paths, network shares, repo links, and notes about conversion or curation.
 
 Do not publish files from the source folders blindly. Some sources are personal media, some are course material, and some include third-party papers or assignment briefs. The website should use only curated outputs, original photographs/videos, generated diagrams, or short descriptions.
@@ -9,7 +11,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
 ### Home page, projects index, about page, CV page and shared styling
 
 - Site repo: `E:\git\DanielBryars.github.io`
-- Main pages: `index.html`, `about.html`, `cv.html`, `cool-projects\index.html`
+- Main pages: `index.html`, `about.html`, `cv.html`, `projects\index.html`
 - Shared stylesheet: `styles.css`
 - Notes: visual styling and page structure were updated in-place in the site repo. Treat this repo as the source of record for the final HTML/CSS, with project-specific sources listed below.
 
@@ -34,20 +36,20 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### CV in a Box
 
-- Page: `cool-projects\CVInABox.html`
-- Curated assets: `project-assets\cv-in-a-box`
+- Page: `projects\cv-in-a-box\index.html`
+- Curated assets: `projects\cv-in-a-box\images`
 - Known source material now in repo:
-  - `project-assets\cv-in-a-box\BoxedSoftwareDesign.mp4`
-  - `project-assets\cv-in-a-box\Software Box Front.pdf`
-  - `project-assets\cv-in-a-box\Software Box V2 Front Page.svg`
-  - `project-assets\cv-in-a-box\Software Box V2 Back Page.svg`
-  - `project-assets\cv-in-a-box\DSC09233.JPG`, `DSC09234.JPG`, `DSC09240.JPG`, `DSC09244.JPG`
+  - `projects\cv-in-a-box\images\BoxedSoftwareDesign.mp4`
+  - `projects\cv-in-a-box\images\Software Box Front.pdf`
+  - `projects\cv-in-a-box\images\Software Box V2 Front Page.svg`
+  - `projects\cv-in-a-box\images\Software Box V2 Back Page.svg`
+  - `projects\cv-in-a-box\images\DSC09233.JPG`, `DSC09234.JPG`, `DSC09240.JPG`, `DSC09244.JPG`
 - Notes: source appears to have been supplied directly into the asset folder during the session.
 
 ### 3D Printers - filament storage
 
-- Page: `cool-projectsDPrinters.html`
-- Curated assets: `project-assetsd-printersilament-storage`
+- Page: `projects\3d-printers\index.html`
+- Curated assets: `projects\3d-printers\images\filament-storage`
 - Source: camera originals `DSC09789.JPG`, `DSC09792.JPG`, `DSC09795.JPG`, `DSC09796.JPG`,
   6000px and roughly 10MB each. Imported at 2400px under descriptive names, following the
   same rule as the danfest gallery: full-size camera files are not committed. The camera
@@ -55,24 +57,24 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### Belly Board
 
-- Page: `cool-projects\BellyBoard.html`
-- Curated assets: `project-assets\belly-board`
+- Page: `projects\belly-board\index.html`
+- Curated assets: `projects\belly-board\images`
 - Known source material: user-added `belly-board` asset folder in the site repo.
 - Notes: images were significantly reduced/curated; unused images were removed after selection. External raw folder was not specified in the chat.
 
 ### Lathe Sparks
 
-- Page: `cool-projects\LatheSparks.html`
-- Curated assets: `project-assets\lathe-sparks`
+- Page: `projects\lathe-sparks\index.html`
+- Curated assets: `projects\lathe-sparks\images`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\Lathe`
-- Earlier local/user-added media folder: `project-assets\lathe-sparks`
+- Earlier local/user-added media folder: `projects\lathe-sparks\images`
 - Video tools mentioned by user: `C:\ffmpeg`, `C:\ffmpeg-shared`
 - Notes: initial lathe clips were converted for the web; user later noted the first converted clips had no sound and pointed back to the originals on the network share.
 
 ### Motorised Standing Desk
 
-- Page: `cool-projects\MotorisedStandingDesk.html`
-- Curated assets: `project-assets\desk-project`
+- Page: `projects\motorised-standing-desk\index.html`
+- Curated assets: `projects\motorised-standing-desk\images`
 - Original media source: `F:\video\desk-project`
 - Cross-chat source: `Standing desk design specs` (`691860c7-e7d0-8325-99d4-d60b397c9619`)
   - Original design discussion covered a more ambitious DIY sit-stand mechanism before the bought-frame build: linear actuator on each leg versus a pulley/gear/screw arrangement, cable-routing holes, programmable heights, optional tilt, desk size, height range and load capacity.
@@ -83,14 +85,14 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - Practical details discussed: furniture/cabinet-grade birch ply, BB/BB plywood being suitable under linoleum, 18-24mm thickness depending on span, R3-R5 edge round-over, R25 corners, raw sanded plywood under the adhesive, underside sealing, threaded inserts, linoleum adhesives, J-roller use and A2/B1-style trowel notch sizing.
   - Public page keeps this as a design-process detour only. The actual published build currently says 32mm plywood with laminate flooring as the working surface.
 - Important correction: the media labelled "Motor wiring" was actually robot-arm work, not the desk project, and should not be used as desk evidence.
-- Cross-chat/session correction: `derived\project-assets\desk-project\extra-finished-detail.jpg` was also identified as robot-arm/VR work rather than desk work and was removed from the public desk page.
+- Cross-chat/session correction: `derived\projects\motorised-standing-desk\images\extra-finished-detail.jpg` was also identified as robot-arm/VR work rather than desk work and was removed from the public desk page.
 - Current task chat notes: standing-desk page was specifically critiqued against the sharpened 3D-printer page. The public page keeps the short hero line "Height-adjustable desk.", the father/son workshop angle, 32mm plywood, laminate-flooring work surface, 1800mm x 800mm top, curved corners, Desktronic dual-motor frame, routed laminate edge and visible lacquered ply edge.
 - Notes: page was assembled from mixed photos/videos and curated into a smaller set.
 
 ### Active Speakers ESP32 Controller
 
-- Page: `cool-projects\ActiveSpeakersESP32Controller.html`
-- Curated assets: `project-assets\active-speakers`
+- Page: `projects\active-speakers\index.html`
+- Curated assets: `projects\active-speakers\images`
 - Primary media sources:
   - `F:\video\speakers`
   - `C:\Users\bryar\OneDrive\Documents\Projects\Speakers`
@@ -116,8 +118,8 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### Corten Balustrade
 
-- Page: `cool-projects\CortenBalustrade.html`
-- Curated assets: `project-assets\corten-ballustrade`
+- Page: `projects\corten-balustrade\index.html`
+- Curated assets: `projects\corten-balustrade\images`
 - Known source material: user-added Corten balustrade folder/assets in the site repo.
 - User-requested originals/frames:
   - `_MG_8675.CR2` converted by user to JPEG
@@ -134,22 +136,22 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### Vintage String Lights
 
-- Page: `cool-projects\VintageStringLights.html`
-- Curated assets: `project-assets\vintage-string-lights`
+- Page: `projects\vintage-string-lights\index.html`
+- Curated assets: `projects\vintage-string-lights\images`
 - Original media source: `\\192.168.1.13\YouTubeVideo\Daniel\Vintage String Lights`
 - Notes: user added two finished photos; additional frames and clips were sampled from video to show making and installation.
 
 ### Spiral Staircase
 
-- Page: `cool-projects\SpiralStairCase.html`
-- Curated assets: `project-assets\spiral-staircase`
+- Page: `projects\spiral-staircase\index.html`
+- Curated assets: `projects\spiral-staircase\images`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\SpiralStairCase`
 - Notes: user had already supplied a few finished photos in the asset folder; additional frames and clips were sampled from the network-share videos.
 
 ### Mega Book Case
 
-- Page: `cool-projects\MegaBookCase.html`
-- Curated assets: `project-assets\mega-book-case`
+- Page: `projects\mega-book-case\index.html`
+- Curated assets: `projects\mega-book-case\images`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\Book Case`
 - Cross-chat source: `CV Assistance: Structure, Content` (`dbf9778f-2880-485a-8ead-391e237bb605`)
   - Daniel described the bookcase as part of a broader interests/hobbies section alongside the family house, home automation, TIG-welded balustrade and curved wooden stairs.
@@ -160,15 +162,15 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### Curving Skirting Board
 
-- Page: `cool-projects\CurvingSkirtingBoard.html`
-- Curated assets: `project-assets\curving-skirting-board`
+- Page: `projects\curving-skirting-board\index.html`
+- Curated assets: `projects\curving-skirting-board\images`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\Curved Skirtingboard`
 - Notes: source included steam-box construction, timber bending, and fitting skirting board to the curved wall.
 
 ### Drift Trike
 
-- Page: `cool-projects\DriftTrike.html`
-- Curated assets: `project-assets\drift-trike`
+- Page: `projects\drift-trike\index.html`
+- Curated assets: `projects\drift-trike\images`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\Drift Trike`
 - User-directed clip references:
   - `Finished2\C1251.MP4`, from `00:30` to `01:00`: Lincoln driving it
@@ -192,7 +194,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### 3D Printer Build
 
-- Page: `cool-projects\3DPrinters.html`
+- Page: `projects\3d-printers\index.html`
 - Curated assets: `project-assets\3d-printers`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\3dPrinter`
 - Original photo source: `\\192.168.1.13\Public\Video\Daniel\3dPrinter\Photos`
@@ -237,7 +239,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `C0380.MP4`, from `00:12:15`, 30 seconds -> `clip-final-cable-routing-720.mp4`
   - `C0380.MP4`, from `00:10:45`, 45 seconds -> `clip-late-underframe-detail-720.mp4`
   - `C0381.MP4`, from `00:44:40`, 60 seconds -> `clip-final-bench-rotation-720.mp4`
-  - Poster frames generated from the same source clips into `derived\project-assets\3d-printers`.
+  - Poster frames generated from the same source clips into `projects\3d-printers\media`.
 - Related firmware-debugging references:
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4465#issuecomment-2660022554`
   - `https://github.com/prusa3d/Prusa-Firmware-Buddy/issues/4487#issuecomment-2665450594`
@@ -246,7 +248,7 @@ Do not publish files from the source folders blindly. Some sources are personal 
   - `https://github.com/user-attachments/assets/63b1e905-b220-405f-a598-9b13e7cc0005` -> `project-assets\3d-printers\firmware-62-layer-shift-result.jpg`
   - `https://github.com/user-attachments/assets/7ecef519-a56e-4b9f-b573-c4b864e5a49c` -> `project-assets\3d-printers\firmware-613-success-result.jpg`
   - `https://github.com/user-attachments/assets/c96e7413-e60a-4282-b1a5-038f58956f53` -> `project-assets\3d-printers\firmware-arctos-gears-comparison.jpg`
-  - Web versions generated in `derived\project-assets\3d-printers` at 480px, 960px and 1600px widths.
+  - Web versions generated in `projects\3d-printers\media` at 480px, 960px and 1600px widths.
 - FreeCAD/source notes: Daniel reported multiple FreeCAD/3D-printing conversations. The logged-in ChatGPT chat-history search later found several relevant old chats:
   - `3D Printing with FreeCAD` (`6a6cad90-b728-83eb-aec4-fdcb216d7c14`): importing SVG as geometry, using Inkscape to clean SVG paths, FreeCAD Draft/Part workflows, extruding faces into printable plaques, and the Body-vs-Part "Selected object must belong to the active body" trap.
   - `Side Hole in Cylinder` (`69877019-7a00-8387-a52a-41d5c79d7e58`): radial side holes, datum-plane confusion, projecting cylinder axes, pocket direction, symmetric through-cuts, pads for bosses, and using `Up to face` plus offset for bosses protruding from curved surfaces.
@@ -257,8 +259,8 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### Robot Arm
 
-- Page: `cool-projects\RobotArm.html`
-- Curated assets: `project-assets\robot-arm`
+- Page: `projects\robot-arm\index.html`
+- Curated assets: `projects\robot-arm\images`
 - Original media source: `\\192.168.1.13\Public\Video\Daniel\RobotArm`
 - Original source folders inspected:
   - `\\192.168.1.13\Public\Video\Daniel\RobotArm\Pictures`
@@ -290,8 +292,8 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### MG EV Project / Smart Lead
 
-- Page: `cool-projects\MGEVProject.html`
-- Curated assets: `project-assets\mg-ev-project`
+- Page: `projects\mg-ev-project\index.html`
+- Curated assets: `projects\mg-ev-project\images`
 - Placeholder assets: `project-assets\ev-charger-smart-lead`
 - Cross-chat source: `Crimp vs Solder Terminals` (`6a60927d-0a14-83eb-9322-df0e1c1cab7c`)
   - Smart-lead details: Duosida Type 2 contacts, CP/PP signal contacts, 2.5mm and 6mm power conductors, ratchet crimper versus hydraulic crimper versus soldering, and the Duosida/Evalbo guidance around non-insulated terminal tooling.
@@ -307,101 +309,101 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### MSc Artificial Intelligence overview
 
-- Overview page: `cool-projects\MScAI.html`
+- Overview page: `projects\msc-ai\index.html`
 - Module pages:
-  - `cool-projects\MSc-ProgrammingForDataScience.html`
-  - `cool-projects\MSc-DataScience.html`
-  - `cool-projects\MSc-Algorithms.html`
-  - `cool-projects\MSc-MachineLearning.html`
-  - `cool-projects\MSc-KRR.html`
-  - `cool-projects\MSc-Ethics.html`
-  - `cool-projects\MSc-DeepLearning.html`
-  - `cool-projects\MSc-DataMiningTextAnalytics.html`
-  - `cool-projects\MSc-Robotics.html`
-- Curated assets: `project-assets\msc-ai`
+  - `projects\msc-ai\programming-for-data-science\index.html`
+  - `projects\msc-ai\data-science\index.html`
+  - `projects\msc-ai\algorithms\index.html`
+  - `projects\msc-ai\machine-learning\index.html`
+  - `projects\msc-ai\knowledge-representation\index.html`
+  - `projects\msc-ai\ethics\index.html`
+  - `projects\msc-ai\deep-learning\index.html`
+  - `projects\msc-ai\data-mining-text-analytics\index.html`
+  - `projects\msc-ai\robotics\index.html`
+- Curated assets: `projects\msc-ai\images`
 - Original academic source folder: `C:\Users\bryar\OneDrive\Documents\Leeds`
 - Explicit exclusion: do not include Final Project, dissertation, CORL material, course handouts, assignment briefs, or Leeds teaching material.
 - Notes: pages describe modules and show selected figures from Daniel's own assessments/notebooks/outputs only.
 
 ### Programming for Data Science
 
-- Page: `cool-projects\MSc-ProgrammingForDataScience.html`
+- Page: `projects\msc-ai\programming-for-data-science\index.html`
 - Curated assets:
-  - `project-assets\msc-ai\p4ds-architecture-pipeline.jpg`
-  - `project-assets\msc-ai\p4ds-project-gutenberg-export.jpg`
-  - `project-assets\msc-ai\p4ds-letter-frequencies.jpg`
+  - `projects\msc-ai\images\p4ds-architecture-pipeline.jpg`
+  - `projects\msc-ai\images\p4ds-project-gutenberg-export.jpg`
+  - `projects\msc-ai\images\p4ds-letter-frequencies.jpg`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Programming for Data Science module/assessment files.
 - Notes: Project Gutenberg/text-processing assessment outputs only; avoid publishing brief/course PDFs.
 
 ### Data Science
 
-- Page: `cool-projects\MSc-DataScience.html`
-- Curated assets: `project-assets\msc-ai\data-science-output-01.jpg` through `data-science-output-06.jpg`
+- Page: `projects\msc-ai\data-science\index.html`
+- Curated assets: `projects\msc-ai\images\data-science-output-01.jpg` through `data-science-output-06.jpg`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Data Science module/assessment files.
 - Notes: fraud/classification/cost-analysis outputs selected from Daniel's own work.
 
 ### Algorithms
 
-- Page: `cool-projects\MSc-Algorithms.html`
+- Page: `projects\msc-ai\algorithms\index.html`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Algorithms module material.
 - Notes: descriptive page only; no teaching material or problem sheets should be published.
 
 ### Machine Learning
 
-- Page: `cool-projects\MSc-MachineLearning.html`
+- Page: `projects\msc-ai\machine-learning\index.html`
 - Curated assets:
-  - `project-assets\msc-ai\ml-initial-gpr.jpg`
-  - `project-assets\msc-ai\ml-mars-loops.jpg`
-  - `project-assets\msc-ai\ml-final-orbit-plot.jpg`
-  - `project-assets\msc-ai\ml-neural-network-diagram.jpg`
+  - `projects\msc-ai\images\ml-initial-gpr.jpg`
+  - `projects\msc-ai\images\ml-mars-loops.jpg`
+  - `projects\msc-ai\images\ml-final-orbit-plot.jpg`
+  - `projects\msc-ai\images\ml-neural-network-diagram.jpg`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Machine Learning module/assessment files.
 - Notes: Mars/JPL/orbit regression assessment outputs from Daniel's own submitted work.
 
 ### Knowledge Representation and Reasoning
 
-- Page: `cool-projects\MSc-KRR.html`
+- Page: `projects\msc-ai\knowledge-representation\index.html`
 - Curated assets:
-  - `project-assets\msc-ai\krr-sandwich-counterexample.jpg`
-  - `project-assets\msc-ai\krr-protege-ontology.jpg`
+  - `projects\msc-ai\images\krr-sandwich-counterexample.jpg`
+  - `projects\msc-ai\images\krr-protege-ontology.jpg`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, KRR module/assessment files.
 - Notes: sandwich ontology, OWL/Protege, description logic and reasoning outputs from Daniel's own work.
 
 ### Ethics of AI
 
-- Page: `cool-projects\MSc-Ethics.html`
+- Page: `projects\msc-ai\ethics\index.html`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Ethics of AI module/assessment files.
 - Notes: descriptive page only; do not publish teaching material.
 
 ### Deep Learning
 
-- Page: `cool-projects\MSc-DeepLearning.html`
+- Page: `projects\msc-ai\deep-learning\index.html`
 - Curated assets:
-  - `project-assets\msc-ai\dl-encoder-decoder.jpg`
-  - `project-assets\msc-ai\dl-bleu-bad-model.jpg`
-  - `project-assets\msc-ai\dl-cosine-similarity.jpg`
-  - `project-assets\msc-ai\dl-resnet152-diagram.jpg`
+  - `projects\msc-ai\images\dl-encoder-decoder.jpg`
+  - `projects\msc-ai\images\dl-bleu-bad-model.jpg`
+  - `projects\msc-ai\images\dl-cosine-similarity.jpg`
+  - `projects\msc-ai\images\dl-resnet152-diagram.jpg`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Deep Learning module/assessment files.
 - Notes: image-captioning assessment outputs from Daniel's own work.
 
 ### Data Mining and Text Analytics
 
-- Page: `cool-projects\MSc-DataMiningTextAnalytics.html`
+- Page: `projects\msc-ai\data-mining-text-analytics\index.html`
 - Curated assets:
-  - `project-assets\msc-ai\dmta-generating-podcast.jpg`
-  - `project-assets\msc-ai\dmta-persona-scores.jpg`
-  - `project-assets\msc-ai\dmta-chatgpt-text-improvement.jpg`
+  - `projects\msc-ai\images\dmta-generating-podcast.jpg`
+  - `projects\msc-ai\images\dmta-persona-scores.jpg`
+  - `projects\msc-ai\images\dmta-chatgpt-text-improvement.jpg`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Data Mining and Text Analytics module/assessment files.
 - Specific source for the "Muppet test": `OCOM5204M Data Mining and Text Analytics\Assessment2\Research Proposal.docx` and exported/submitted PDF in the Leeds folder.
 - Notes: include only small, humorous/generated excerpts and Daniel's own synopsis; do not republish the proposal wholesale.
 
 ### Robotics
 
-- Page: `cool-projects\MSc-Robotics.html`
+- Page: `projects\msc-ai\robotics\index.html`
 - Curated assets:
-  - `project-assets\msc-ai\robotics-rviz.jpg`
-  - `project-assets\msc-ai\robotics-reward-function.jpg`
-  - `project-assets\msc-ai\robotics-sarsa-learning.jpg`
-  - `project-assets\msc-ai\robotics-world.jpg`
+  - `projects\msc-ai\images\robotics-rviz.jpg`
+  - `projects\msc-ai\images\robotics-reward-function.jpg`
+  - `projects\msc-ai\images\robotics-sarsa-learning.jpg`
+  - `projects\msc-ai\images\robotics-world.jpg`
 - Source: `C:\Users\bryar\OneDrive\Documents\Leeds`, Robotics module/assessment files.
 - Related local repos:
   - `E:\git\Introduction-to-Autonomous-Robots-Labs`
@@ -410,8 +412,8 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### MLX course projects
 
-- Page: `cool-projects\MSc-MLXCourseProjects.html`
-- Generated asset: `project-assets\msc-ai\mlx-course-architecture.jpg`
+- Page: `projects\msc-ai\mlx-course-projects\index.html`
+- Generated asset: `projects\msc-ai\images\mlx-course-architecture.jpg`
 - GitHub profile: `https://github.com/DanielBryars`
 - MLX course website: `https://ml.institute/`
 - Source repos:
@@ -427,12 +429,22 @@ Do not publish files from the source folders blindly. Some sources are personal 
 
 ### Shadow Printing
 
-- Page: `cool-projects\ShadowPrinting.html`
-- Curated assets: `project-assets\shadow-printing`
+- Page: `projects\shadow-printing\index.html`
+- Curated assets: `projects\shadow-printing\images`
 - Cross-chat source: `New Toy Idea` (`61a1dfda-4513-4bd2-b4ed-c26f0e30e2ce`)
   - Original idea: choose a picture, use software to calculate 3D-printable block geometry, then illuminate it with a torch or the sun so the cast shadow reveals the chosen silhouette.
   - Related clock variant: cast clock digits or hands as shadows, with possible naming directions including LightCast and TimeInShadows.
 - Notes: page remains noindex/draft until actual generated models, prints or photos exist.
+
+### Home Assistant
+
+- Page: `projects\home-assistant\index.html`
+- Curated assets: `projects\home-assistant\images`
+- Known source material: relay-panel photographs that were previously sitting
+  under `projects\home-assistant`.
+- Notes: these are not decorative lighting photos. They show the relay-panel
+  installation used to control the house lights through Home Assistant. Page is
+  still noindex and needs a fuller write-up.
 
 ## Empty project folders prepared for later
 
@@ -441,11 +453,10 @@ These remaining project asset folders were created as placeholders so images/med
 - `project-assets\arduino-inverted-pendulum`
 - `project-assets\bbc-micro-teletext`
 - `project-assets\ben-eater-8-bit-computer`
-- `project-assets\clock-project`
+- `projects\clock-project\images`
 - `project-assets\diffvantage`
-- `project-assets\hiscots-lights`
 - `project-assets\house-build`
 - `project-assets\otter-surfboard`
 - `project-assets\physical-design-and-analysis`
 - `project-assets\robot-learning-msc`
-- `project-assets\speed-boat`
+- `projects\speed-boat\images`

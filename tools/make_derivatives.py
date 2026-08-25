@@ -1,7 +1,8 @@
-"""Generate web-sized images and videos into derived/.
+"""Generate web-sized images and videos into the site's media folders.
 
 Originals stay exactly where they are; nothing here is destructive. Run after
-dropping new media into project-assets/ and then run tools/rewrite_media.py.
+dropping new project media into projects/<slug>/images/ or
+projects/<slug>/videos/, then run tools/rewrite_media.py.
 """
 
 from __future__ import annotations
@@ -15,6 +16,7 @@ from PIL import Image, ImageOps
 
 from media_common import (
     DERIVED,
+    is_generated,
     IMAGE_WIDTHS,
     RASTER_SUFFIXES,
     REPO,
@@ -93,7 +95,7 @@ def main() -> int:
         if not target.exists():
             missing.add(f"{page.relative_to(REPO)} -> {url}")
             continue
-        if DERIVED in target.parts:
+        if is_generated(target):
             continue
         if target.suffix.lower() in RASTER_SUFFIXES:
             images.add(target)

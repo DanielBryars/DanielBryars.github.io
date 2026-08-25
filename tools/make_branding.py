@@ -18,7 +18,7 @@ CYAN = "#53d8ff"
 INK = "#f5f2dc"
 BLACK = "#050505"
 
-OG_SOURCE = REPO / "project-assets" / "lathe-sparks" / "05-sparks-hero.jpg"
+OG_SOURCE = REPO / "projects" / "lathe-sparks" / "images" / "05-sparks-hero.jpg"
 OG_OUT = REPO / "images" / "og-cover.jpg"
 ICON_OUT = REPO / "images" / "apple-touch-icon.png"
 

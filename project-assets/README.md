@@ -1,14 +1,17 @@
-# Project Assets
+# Non-Project Assets
 
-Drop project images, sketches, screenshots, videos, notes and source snippets into the matching folder.
+Project pages now keep their source media beside the page:
 
-Suggested loose convention:
-- `hero.*` for the main image.
-- `process-*.*` for build/process photos.
-- `result-*.*` for final photos.
-- `notes.md` for rough notes, story fragments, parts lists or things to explain later.
+```text
+projects/<project>/images/
+projects/<project>/videos/
+projects/<project>/files/
+projects/<project>/media/
+```
 
-The folders are intentionally broad and can be renamed or split as the project pages become more polished.
+This folder is only for remaining site sections that are not part of the
+project index. At the moment that means `danfest/`.
 
 House drawings repo:
+
 - https://github.com/DanielBryars/ChadHouse

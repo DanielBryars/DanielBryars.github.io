@@ -1,22 +1,4 @@
 {
-  "images/CV-Box.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "images/ChessProjectElectromagnets.jpg": {
-    "height": 1743,
-    "width": 2626,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
   "images/EveningShadows.png": {
     "height": 2953,
     "width": 4752,
@@ -36,936 +18,6 @@
   "images/image-1.png": {
     "height": 356,
     "width": 500,
-    "widths": [
-      480
-    ]
-  },
-  "project-assets/3d-printers/01-prusa-mk4-toolhead.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/02-heated-bed-closeup.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/03-frame-and-print-head.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/04-toolhead-rods-detail.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/05-extruder-hinges-detail.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/06-leadscrew-orange-block.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/07-control-screen.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/clip-finished-printer.mp4": {
-    "web": "derived/project-assets/3d-printers/clip-finished-printer-720.mp4"
-  },
-  "project-assets/3d-printers/clip-frame-assembly.mp4": {
-    "web": "derived/project-assets/3d-printers/clip-frame-assembly-720.mp4"
-  },
-  "project-assets/3d-printers/clip-rods-on-bench.mp4": {
-    "web": "derived/project-assets/3d-printers/clip-rods-on-bench-720.mp4"
-  },
-  "project-assets/3d-printers/clip-unboxing.mp4": {
-    "web": "derived/project-assets/3d-printers/clip-unboxing-720.mp4"
-  },
-  "project-assets/3d-printers/clip-wiring-electronics.mp4": {
-    "web": "derived/project-assets/3d-printers/clip-wiring-electronics-720.mp4"
-  },
-  "project-assets/3d-printers/filament-storage/01-sealed-container-lid-on.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/filament-storage/02-container-side-on-bench.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/filament-storage/03-spool-and-hygrometer.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/filament-storage/04-hygrometer-reading.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/3d-printers/poster-finished-printer.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/3d-printers/poster-frame-assembly.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/3d-printers/poster-rods-on-bench.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/3d-printers/poster-unboxing.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/3d-printers/poster-wiring-electronics.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/active-speakers/01-speakers-measurement-bench.jpg": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/02-speakers-wide-workshop.jpg": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/03-empty-baffles-on-bench.jpg": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/04-routed-coax-opening.jpg": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/05-gloss-finish-reflection.jpg": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/06-pair-fronts-close.jpg": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/07-speaker-response.png": {
-    "height": 825,
-    "width": 1100,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/active-speakers/08-speaker-compare.png": {
-    "height": 825,
-    "width": 1210,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/active-speakers/09-damage-check.png": {
-    "height": 825,
-    "width": 1210,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/active-speakers/10-preset-compare.png": {
-    "height": 605,
-    "width": 1210,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/active-speakers/11-cad-all.jpg": {
-    "height": 1489,
-    "width": 2105,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/13-rear-baffle.jpg": {
-    "height": 1488,
-    "width": 2105,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/14-finished-pair-measurement.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/15-finished-pair-wide.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/16-workshop-measurement-wide.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/17-rear-amp-cavity.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/18-gloss-edge-reflection.jpg": {
-    "height": 1350,
-    "width": 2400,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/clip-amp-plate-fitting.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-amp-plate-fitting-720.mp4"
-  },
-  "project-assets/active-speakers/clip-amp-wiring-bench.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-amp-wiring-bench-720.mp4"
-  },
-  "project-assets/active-speakers/clip-bench-test.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-bench-test-720.mp4"
-  },
-  "project-assets/active-speakers/clip-coax-driver-fitting.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-coax-driver-fitting-720.mp4"
-  },
-  "project-assets/active-speakers/clip-driver-fitting.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-driver-fitting-720.mp4"
-  },
-  "project-assets/active-speakers/clip-final-walkaround.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-final-walkaround-720.mp4"
-  },
-  "project-assets/active-speakers/clip-finish-sanding.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-finish-sanding-720.mp4"
-  },
-  "project-assets/active-speakers/clip-finishing-coat.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-finishing-coat-720.mp4"
-  },
-  "project-assets/active-speakers/clip-plate-amp-check.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-plate-amp-check-720.mp4"
-  },
-  "project-assets/active-speakers/clip-rear-baffle-cutting.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-rear-baffle-cutting-720.mp4"
-  },
-  "project-assets/active-speakers/clip-router-rebate-detail.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-router-rebate-detail-720.mp4"
-  },
-  "project-assets/active-speakers/clip-routing-baffle.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-routing-baffle-720.mp4"
-  },
-  "project-assets/active-speakers/clip-woofer-fitting.mp4": {
-    "web": "derived/project-assets/active-speakers/clip-woofer-fitting-720.mp4"
-  },
-  "project-assets/active-speakers/poster-amp-plate-fitting.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-amp-wiring-bench.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-bench-test.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-coax-driver-fitting.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-driver-fitting.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-final-walkaround.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-finish-sanding.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-finishing-coat.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-plate-amp-check.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-rear-baffle-cutting.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-router-rebate-detail.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-routing-baffle.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/active-speakers/poster-woofer-fitting.jpg": {
-    "height": 900,
-    "width": 1600,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/01-board-blank-on-bench.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/02-rounded-outline.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/03-board-on-workbench.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/04-upright-board.jpg": {
-    "height": 1200,
-    "width": 675,
-    "widths": [
-      480
-    ]
-  },
-  "project-assets/belly-board/selected/05-makers-mark-closeup.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/06-finished-grain-detail.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/07-cliff-and-surf.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/08-course-shop-interior.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/belly-board/selected/09-surf-shop-board-racks.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/chess-board/Scan_20260825 (4).png": {
-    "height": 1752,
-    "width": 1275,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/chess-board/Scan_20260825 (5).png": {
-    "height": 1752,
-    "width": 1275,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/chess-board/Scan_20260825 (8).png": {
-    "height": 1752,
-    "width": 1275,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/chess-board/Scan_20260825 (9).png": {
-    "height": 1752,
-    "width": 1275,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/corten-ballustrade/01-terrace-layout.jpg": {
-    "height": 1350,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/03-box-section-on-bench.jpg": {
-    "height": 1350,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/04-weld-detail.jpg": {
-    "height": 2400,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/05-bryars-makers-mark.jpg": {
-    "height": 1350,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/06-first-upright-posts.jpg": {
-    "height": 2400,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/07-balustrade-installed-wide.jpg": {
-    "height": 1350,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/08-finished-curve.jpg": {
-    "height": 1350,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/09-cutting-the-slats.jpg": {
-    "height": 2400,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/11-fea-design-check.png": {
-    "height": 1364,
-    "width": 735,
-    "widths": [
-      480
-    ]
-  },
-  "project-assets/corten-ballustrade/12-people-at-finished-balustrade.jpg": {
-    "height": 1199,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/13-people-at-balustrade.jpg": {
-    "height": 2700,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/14-steel-sections-ready.jpg": {
-    "height": 2400,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/15-welding-table-unfinished-kitchen.jpg": {
-    "height": 1350,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/16-last-few-posts.jpg": {
-    "height": 2400,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/corten-ballustrade/clip-cutting-slats.mp4": {
-    "web": "derived/project-assets/corten-ballustrade/clip-cutting-slats-720.mp4"
-  },
-  "project-assets/corten-ballustrade/clip-welding-frame.mp4": {
-    "web": "derived/project-assets/corten-ballustrade/clip-welding-frame-720.mp4"
-  },
-  "project-assets/curving-skirting-board/01-steam-box-on-terrace.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/02-steam-box-wide-terrace.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/03-steam-box-with-tools.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/04-curved-wall-before-skirting.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/05-curved-wall-installation.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/06-curved-wall-skirting-laid-out.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/07-workshop-final-trimming.jpg": {
-    "height": 1013,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/08-steam-box-wrapped-and-running.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/09-brass-steam-fitting.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/10-drilling-steam-flange.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/11-first-bend-against-wall.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/12-fixing-curved-skirting.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/13-finishing-the-curve.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/clip-building-steam-box-poster.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/clip-building-steam-box.mp4": {
-    "web": "derived/project-assets/curving-skirting-board/clip-building-steam-box-720.mp4"
-  },
-  "project-assets/curving-skirting-board/clip-final-finishing-poster.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/clip-final-finishing.mp4": {
-    "web": "derived/project-assets/curving-skirting-board/clip-final-finishing-720.mp4"
-  },
-  "project-assets/curving-skirting-board/clip-first-wall-fit-poster.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/clip-first-wall-fit.mp4": {
-    "web": "derived/project-assets/curving-skirting-board/clip-first-wall-fit-720.mp4"
-  },
-  "project-assets/curving-skirting-board/clip-fixing-skirting-poster.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/clip-fixing-skirting.mp4": {
-    "web": "derived/project-assets/curving-skirting-board/clip-fixing-skirting-720.mp4"
-  },
-  "project-assets/curving-skirting-board/clip-steam-box-running-poster.jpg": {
-    "height": 1012,
-    "width": 1800,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/curving-skirting-board/clip-steam-box-running.mp4": {
-    "web": "derived/project-assets/curving-skirting-board/clip-steam-box-running-720.mp4"
-  },
-  "project-assets/cv-in-a-box/BoxedSoftwareDesign.mp4": {
-    "web": "derived/project-assets/cv-in-a-box/BoxedSoftwareDesign-720.mp4"
-  },
-  "project-assets/cv-in-a-box/DSC09233.JPG": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/cv-in-a-box/DSC09234.JPG": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/cv-in-a-box/DSC09240.JPG": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/cv-in-a-box/DSC09244.JPG": {
-    "height": 3376,
-    "width": 6000,
-    "widths": [
-      480,
-      960,
-      1600
-    ]
-  },
-  "project-assets/cv-in-a-box/LookInside.jpg": {
-    "height": 911,
-    "width": 908,
-    "widths": [
-      480
-    ]
-  },
-  "project-assets/cv-in-a-box/Software Box.png": {
-    "height": 1123,
-    "width": 794,
     "widths": [
       480
     ]
@@ -1562,8 +614,8 @@
       1600
     ]
   },
-  "project-assets/desk-project/01-laying-out-the-desk.jpg": {
-    "height": 1012,
+  "projects/3d-printers/images/01-prusa-mk4-toolhead.jpg": {
+    "height": 1013,
     "width": 1800,
     "widths": [
       480,
@@ -1571,8 +623,8 @@
       1600
     ]
   },
-  "project-assets/desk-project/02-workshop-team.jpg": {
-    "height": 1012,
+  "projects/3d-printers/images/02-heated-bed-closeup.jpg": {
+    "height": 1013,
     "width": 1800,
     "widths": [
       480,
@@ -1580,8 +632,8 @@
       1600
     ]
   },
-  "project-assets/desk-project/03-test-fitting-top.jpg": {
-    "height": 1012,
+  "projects/3d-printers/images/03-frame-and-print-head.jpg": {
+    "height": 1013,
     "width": 1800,
     "widths": [
       480,
@@ -1589,8 +641,8 @@
       1600
     ]
   },
-  "project-assets/desk-project/04-cutting-and-marking.jpg": {
-    "height": 1012,
+  "projects/3d-printers/images/04-toolhead-rods-detail.jpg": {
+    "height": 1013,
     "width": 1800,
     "widths": [
       480,
@@ -1598,8 +650,8 @@
       1600
     ]
   },
-  "project-assets/desk-project/05-finished-timber-top.jpg": {
-    "height": 1012,
+  "projects/3d-printers/images/05-extruder-hinges-detail.jpg": {
+    "height": 1013,
     "width": 1800,
     "widths": [
       480,
@@ -1607,8 +659,8 @@
       1600
     ]
   },
-  "project-assets/desk-project/06-father-son-finished-top.jpg": {
-    "height": 1012,
+  "projects/3d-printers/images/06-leadscrew-orange-block.jpg": {
+    "height": 1013,
     "width": 1800,
     "widths": [
       480,
@@ -1616,112 +668,364 @@
       1600
     ]
   },
-  "project-assets/desk-project/clip-finished-top.mp4": {
-    "web": "derived/project-assets/desk-project/clip-finished-top-720.mp4"
-  },
-  "project-assets/desk-project/clip-tabletop-build.mp4": {
-    "web": "derived/project-assets/desk-project/clip-tabletop-build-720.mp4"
-  },
-  "project-assets/drift-trike/01-finished-trike-on-grass.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/07-control-screen.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/02-finished-trike-workshop-wide.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/08-toolhead-front-fan.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/03-control-box-and-seat.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/09-heatbed-print-surface.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/04-axle-and-motor-detail.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/10-rear-cable-exit.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/05-axle-bearing-detail.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/11-belt-and-rod-perspective.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/06-controller-board.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/12-toolhead-depth-of-field.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/07-green-welding-filter.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/13-nozzle-over-bed.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/08-frame-on-welding-table.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/14-extruder-motor-detail.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/09-drive-wheel-on-table.jpg": {
-    "height": 1069,
-    "width": 1900,
+  "projects/3d-printers/images/15-leadscrew-thread-detail.jpg": {
+    "height": 1800,
+    "width": 1013,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/10-son-driving-grass.jpg": {
-    "height": 1068,
-    "width": 1900,
+  "projects/3d-printers/images/16-control-display-closeup.jpg": {
+    "height": 1013,
+    "width": 1800,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/11-filtered-weld-sparks.jpg": {
-    "height": 1068,
-    "width": 1900,
+  "projects/3d-printers/images/filament-storage/01-sealed-container-lid-on.jpg": {
+    "height": 1350,
+    "width": 2400,
     "widths": [
       480,
       960,
       1600
     ]
   },
-  "project-assets/drift-trike/12-finished-weld-detail.jpg": {
+  "projects/3d-printers/images/filament-storage/02-container-side-on-bench.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/filament-storage/03-spool-and-hygrometer.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/filament-storage/04-hygrometer-reading.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/firmware-613-success-result.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/firmware-62-layer-shift-result.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/firmware-arctos-gears-comparison.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/3d-printers/images/poster-finished-printer.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/3d-printers/images/poster-frame-assembly.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/3d-printers/images/poster-rods-on-bench.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/3d-printers/images/poster-unboxing.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/3d-printers/images/poster-wiring-electronics.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/3d-printers/videos/clip-finished-printer.mp4": {
+    "web": "projects/3d-printers/media/clip-finished-printer-720.mp4"
+  },
+  "projects/3d-printers/videos/clip-frame-assembly.mp4": {
+    "web": "projects/3d-printers/media/clip-frame-assembly-720.mp4"
+  },
+  "projects/3d-printers/videos/clip-rods-on-bench.mp4": {
+    "web": "projects/3d-printers/media/clip-rods-on-bench-720.mp4"
+  },
+  "projects/3d-printers/videos/clip-unboxing.mp4": {
+    "web": "projects/3d-printers/media/clip-unboxing-720.mp4"
+  },
+  "projects/3d-printers/videos/clip-wiring-electronics.mp4": {
+    "web": "projects/3d-printers/media/clip-wiring-electronics-720.mp4"
+  },
+  "projects/active-speakers/images/01-speakers-measurement-bench.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/02-speakers-wide-workshop.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/03-empty-baffles-on-bench.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/04-routed-coax-opening.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/05-gloss-finish-reflection.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/06-pair-fronts-close.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/07-speaker-response.png": {
+    "height": 825,
+    "width": 1100,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/active-speakers/images/08-speaker-compare.png": {
+    "height": 825,
+    "width": 1210,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/active-speakers/images/09-damage-check.png": {
+    "height": 825,
+    "width": 1210,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/active-speakers/images/10-preset-compare.png": {
+    "height": 605,
+    "width": 1210,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/active-speakers/images/11-cad-all.jpg": {
+    "height": 1489,
+    "width": 2105,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/13-rear-baffle.jpg": {
+    "height": 1488,
+    "width": 2105,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/14-finished-pair-measurement.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/15-finished-pair-wide.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/16-workshop-measurement-wide.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/17-rear-amp-cavity.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/18-gloss-edge-reflection.jpg": {
+    "height": 1350,
+    "width": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/active-speakers/images/poster-amp-plate-fitting.jpg": {
     "height": 900,
     "width": 1600,
     "widths": [
@@ -1730,72 +1034,564 @@
       1600
     ]
   },
-  "project-assets/drift-trike/clip-belt-sanding.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-belt-sanding-720.mp4"
+  "projects/active-speakers/images/poster-amp-wiring-bench.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-control-box-testing.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-control-box-testing-720.mp4"
+  "projects/active-speakers/images/poster-bench-test.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-finished-walkaround.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-finished-walkaround-720.mp4"
+  "projects/active-speakers/images/poster-coax-driver-fitting.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-green-welding-bead.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-green-welding-bead-720.mp4"
+  "projects/active-speakers/images/poster-driver-fitting.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-green-welding-close-bead.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-green-welding-close-bead-720.mp4"
+  "projects/active-speakers/images/poster-final-walkaround.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-green-welding-first-pass.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-green-welding-first-pass-720.mp4"
+  "projects/active-speakers/images/poster-finish-sanding.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-green-welding-long-pass.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-green-welding-long-pass-720.mp4"
+  "projects/active-speakers/images/poster-finishing-coat.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-initial-motor-electronics-test.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-initial-motor-electronics-test-720.mp4"
+  "projects/active-speakers/images/poster-plate-amp-check.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-lincoln-learning-to-tap.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-lincoln-learning-to-tap-720.mp4"
+  "projects/active-speakers/images/poster-rear-baffle-cutting.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-lincoln-wheel-fitting.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-lincoln-wheel-fitting-720.mp4"
+  "projects/active-speakers/images/poster-router-rebate-detail.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-machined-hole-detail.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-machined-hole-detail-720.mp4"
+  "projects/active-speakers/images/poster-routing-baffle.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-making-wires.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-making-wires-720.mp4"
+  "projects/active-speakers/images/poster-woofer-fitting.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/drift-trike/clip-motor-axle-assembly.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-motor-axle-assembly-720.mp4"
+  "projects/active-speakers/videos/clip-amp-plate-fitting.mp4": {
+    "web": "projects/active-speakers/media/clip-amp-plate-fitting-720.mp4"
   },
-  "project-assets/drift-trike/clip-motor-mount-drilling.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-motor-mount-drilling-720.mp4"
+  "projects/active-speakers/videos/clip-amp-wiring-bench.mp4": {
+    "web": "projects/active-speakers/media/clip-amp-wiring-bench-720.mp4"
   },
-  "project-assets/drift-trike/clip-plasma-cutting.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-plasma-cutting-720.mp4"
+  "projects/active-speakers/videos/clip-bench-test.mp4": {
+    "web": "projects/active-speakers/media/clip-bench-test-720.mp4"
   },
-  "project-assets/drift-trike/clip-slow-motion-drilling.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-slow-motion-drilling-720.mp4"
+  "projects/active-speakers/videos/clip-coax-driver-fitting.mp4": {
+    "web": "projects/active-speakers/media/clip-coax-driver-fitting-720.mp4"
   },
-  "project-assets/drift-trike/clip-son-driving.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-son-driving-720.mp4"
+  "projects/active-speakers/videos/clip-driver-fitting.mp4": {
+    "web": "projects/active-speakers/media/clip-driver-fitting-720.mp4"
   },
-  "project-assets/drift-trike/clip-wide-workshop-welding.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-wide-workshop-welding-720.mp4"
+  "projects/active-speakers/videos/clip-final-walkaround.mp4": {
+    "web": "projects/active-speakers/media/clip-final-walkaround-720.mp4"
   },
-  "project-assets/drift-trike/clip-workshop-assembly.mp4": {
-    "web": "derived/project-assets/drift-trike/clip-workshop-assembly-720.mp4"
+  "projects/active-speakers/videos/clip-finish-sanding.mp4": {
+    "web": "projects/active-speakers/media/clip-finish-sanding-720.mp4"
   },
-  "project-assets/drift-trike/poster-belt-sanding.jpg": {
-    "height": 720,
-    "width": 1280,
+  "projects/active-speakers/videos/clip-finishing-coat.mp4": {
+    "web": "projects/active-speakers/media/clip-finishing-coat-720.mp4"
+  },
+  "projects/active-speakers/videos/clip-plate-amp-check.mp4": {
+    "web": "projects/active-speakers/media/clip-plate-amp-check-720.mp4"
+  },
+  "projects/active-speakers/videos/clip-rear-baffle-cutting.mp4": {
+    "web": "projects/active-speakers/media/clip-rear-baffle-cutting-720.mp4"
+  },
+  "projects/active-speakers/videos/clip-router-rebate-detail.mp4": {
+    "web": "projects/active-speakers/media/clip-router-rebate-detail-720.mp4"
+  },
+  "projects/active-speakers/videos/clip-routing-baffle.mp4": {
+    "web": "projects/active-speakers/media/clip-routing-baffle-720.mp4"
+  },
+  "projects/active-speakers/videos/clip-woofer-fitting.mp4": {
+    "web": "projects/active-speakers/media/clip-woofer-fitting-720.mp4"
+  },
+  "projects/belly-board/images/selected/01-board-blank-on-bench.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/belly-board/images/selected/02-rounded-outline.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/belly-board/images/selected/03-board-on-workbench.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/belly-board/images/selected/04-upright-board.jpg": {
+    "height": 1200,
+    "width": 675,
+    "widths": [
+      480
+    ]
+  },
+  "projects/belly-board/images/selected/05-makers-mark-closeup.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/belly-board/images/selected/06-finished-grain-detail.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/belly-board/images/selected/07-cliff-and-surf.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/belly-board/images/selected/08-course-shop-interior.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/belly-board/images/selected/09-surf-shop-board-racks.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/chess-board/images/ChessProjectElectromagnets.jpg": {
+    "height": 1743,
+    "width": 2626,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/chess-board/images/Scan_20260825 (2).png": {
+    "height": 1752,
+    "width": 1275,
     "widths": [
       480,
       960
     ]
   },
-  "project-assets/drift-trike/poster-control-box-testing.jpg": {
+  "projects/chess-board/images/Scan_20260825 (3).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/chess-board/images/Scan_20260825 (4).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/chess-board/images/Scan_20260825 (5).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/chess-board/images/Scan_20260825 (6).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": []
+  },
+  "projects/chess-board/images/Scan_20260825 (7).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": []
+  },
+  "projects/chess-board/images/Scan_20260825 (8).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/chess-board/images/Scan_20260825 (9).png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/chess-board/images/Scan_20260825.png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": []
+  },
+  "projects/chess-board/images/Silicon_Graphics_O2_Plus.jpg": {
+    "height": 574,
+    "width": 457,
+    "widths": []
+  },
+  "projects/chess-board/images/board-base-drawing.png": {
+    "height": 1275,
+    "width": 1752,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/chess-board/images/cad-control-screenshot.png": {
+    "height": 1275,
+    "width": 1752,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/chess-board/images/electromagnet-core.png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/chess-board/images/movement-diagram.png": {
+    "height": 1752,
+    "width": 1275,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/chess-board/images/test-circuit.png": {
+    "height": 1275,
+    "width": 1752,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/01-terrace-layout.jpg": {
+    "height": 1350,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/02-curved-wall-before-posts.jpg": {
+    "height": 1350,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/03-box-section-on-bench.jpg": {
+    "height": 1350,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/04-weld-detail.jpg": {
+    "height": 2400,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/05-bryars-makers-mark.jpg": {
+    "height": 1350,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/06-first-upright-posts.jpg": {
+    "height": 2400,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/07-balustrade-installed-wide.jpg": {
+    "height": 1350,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/08-finished-curve.jpg": {
+    "height": 1350,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/09-cutting-the-slats.jpg": {
+    "height": 2400,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/10-weathering-steel-ready.jpg": {
+    "height": 2400,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/11-fea-design-check.png": {
+    "height": 1364,
+    "width": 735,
+    "widths": [
+      480
+    ]
+  },
+  "projects/corten-balustrade/images/12-people-at-finished-balustrade.jpg": {
+    "height": 1199,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/13-people-at-balustrade.jpg": {
+    "height": 2700,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/14-steel-sections-ready.jpg": {
+    "height": 2400,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/15-welding-table-unfinished-kitchen.jpg": {
+    "height": 1350,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/images/16-last-few-posts.jpg": {
+    "height": 2400,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/corten-balustrade/videos/clip-cutting-slats.mp4": {
+    "web": "projects/corten-balustrade/media/clip-cutting-slats-720.mp4"
+  },
+  "projects/corten-balustrade/videos/clip-welding-frame.mp4": {
+    "web": "projects/corten-balustrade/media/clip-welding-frame-720.mp4"
+  },
+  "projects/curving-skirting-board/images/01-steam-box-on-terrace.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/02-steam-box-wide-terrace.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/03-steam-box-with-tools.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/04-curved-wall-before-skirting.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/05-curved-wall-installation.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/06-curved-wall-skirting-laid-out.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/07-workshop-final-trimming.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/08-steam-box-wrapped-and-running.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -1804,7 +1600,7 @@
       1600
     ]
   },
-  "project-assets/drift-trike/poster-finished-walkaround.jpg": {
+  "projects/curving-skirting-board/images/09-brass-steam-fitting.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -1813,79 +1609,7 @@
       1600
     ]
   },
-  "project-assets/drift-trike/poster-green-welding-bead.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-green-welding-close-bead.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-green-welding-first-pass.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-green-welding-long-pass.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-initial-motor-electronics-test.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-lincoln-learning-to-tap.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-lincoln-wheel-fitting.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-machined-hole-detail.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-making-wires.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-motor-axle-assembly.jpg": {
+  "projects/curving-skirting-board/images/10-drilling-steam-flange.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -1894,7 +1618,7 @@
       1600
     ]
   },
-  "project-assets/drift-trike/poster-motor-mount-drilling.jpg": {
+  "projects/curving-skirting-board/images/11-first-bend-against-wall.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -1903,23 +1627,7 @@
       1600
     ]
   },
-  "project-assets/drift-trike/poster-plasma-cutting.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-slow-motion-drilling.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-son-driving.jpg": {
+  "projects/curving-skirting-board/images/12-fixing-curved-skirting.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -1928,15 +1636,7 @@
       1600
     ]
   },
-  "project-assets/drift-trike/poster-wide-workshop-welding.jpg": {
-    "height": 720,
-    "width": 1280,
-    "widths": [
-      480,
-      960
-    ]
-  },
-  "project-assets/drift-trike/poster-workshop-assembly.jpg": {
+  "projects/curving-skirting-board/images/13-finishing-the-curve.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -1945,7 +1645,686 @@
       1600
     ]
   },
-  "project-assets/lathe-sparks/01-colchester-chipmaster.jpg": {
+  "projects/curving-skirting-board/images/clip-building-steam-box-poster.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/clip-final-finishing-poster.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/clip-first-wall-fit-poster.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/clip-fixing-skirting-poster.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/clip-steam-box-running-poster.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-bending-form.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-bending-session-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-clamping-curve.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-fitted-wall.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-fitting-to-wall-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-steam-box-build.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-steam-box-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/images/extra-steaming-timber.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/curving-skirting-board/videos/clip-building-steam-box.mp4": {
+    "web": "projects/curving-skirting-board/media/clip-building-steam-box-720.mp4"
+  },
+  "projects/curving-skirting-board/videos/clip-final-finishing.mp4": {
+    "web": "projects/curving-skirting-board/media/clip-final-finishing-720.mp4"
+  },
+  "projects/curving-skirting-board/videos/clip-first-wall-fit.mp4": {
+    "web": "projects/curving-skirting-board/media/clip-first-wall-fit-720.mp4"
+  },
+  "projects/curving-skirting-board/videos/clip-fixing-skirting.mp4": {
+    "web": "projects/curving-skirting-board/media/clip-fixing-skirting-720.mp4"
+  },
+  "projects/curving-skirting-board/videos/clip-steam-box-running.mp4": {
+    "web": "projects/curving-skirting-board/media/clip-steam-box-running-720.mp4"
+  },
+  "projects/curving-skirting-board/videos/extra-bending-session.mp4": {
+    "web": "projects/curving-skirting-board/media/extra-bending-session-720.mp4"
+  },
+  "projects/curving-skirting-board/videos/extra-fitting-to-wall.mp4": {
+    "web": "projects/curving-skirting-board/media/extra-fitting-to-wall-720.mp4"
+  },
+  "projects/curving-skirting-board/videos/extra-steam-box.mp4": {
+    "web": "projects/curving-skirting-board/media/extra-steam-box-720.mp4"
+  },
+  "projects/cv-in-a-box/images/CV-Box.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/cv-in-a-box/images/DSC09233.JPG": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/cv-in-a-box/images/DSC09234.JPG": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/cv-in-a-box/images/DSC09240.JPG": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/cv-in-a-box/images/DSC09244.JPG": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/cv-in-a-box/images/LookInside.jpg": {
+    "height": 911,
+    "width": 908,
+    "widths": [
+      480
+    ]
+  },
+  "projects/cv-in-a-box/images/Software Box.png": {
+    "height": 1123,
+    "width": 794,
+    "widths": [
+      480
+    ]
+  },
+  "projects/cv-in-a-box/videos/BoxedSoftwareDesign.mp4": {
+    "web": "projects/cv-in-a-box/media/BoxedSoftwareDesign-720.mp4"
+  },
+  "projects/drift-trike/images/01-finished-trike-on-grass.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/02-finished-trike-workshop-wide.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/03-control-box-and-seat.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/04-axle-and-motor-detail.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/05-axle-bearing-detail.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/06-controller-board.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/07-green-welding-filter.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/08-frame-on-welding-table.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/09-drive-wheel-on-table.jpg": {
+    "height": 1069,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/10-son-driving-grass.jpg": {
+    "height": 1068,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/11-filtered-weld-sparks.jpg": {
+    "height": 1068,
+    "width": 1900,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/12-finished-weld-detail.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-finished-run.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-frame-layout-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-frame-layout.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-mini-cam-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-mini-cam.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-test-run-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-test-run.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-unboxing-parts.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-unboxing-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/extra-workshop-build.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/poster-belt-sanding.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-bright-weld-closeup.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": []
+  },
+  "projects/drift-trike/images/poster-control-box-testing.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/poster-controller-wiring.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": []
+  },
+  "projects/drift-trike/images/poster-finished-walkaround.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/poster-green-filter-welding.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": []
+  },
+  "projects/drift-trike/images/poster-green-welding-bead.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-green-welding-close-bead.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-green-welding-first-pass.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-green-welding-long-pass.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-initial-motor-electronics-test.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-lincoln-learning-to-tap.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-lincoln-wheel-fitting.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-machined-hole-detail.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-making-wires.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-motor-axle-assembly.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/poster-motor-mount-drilling.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/poster-plasma-cutting.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-slow-motion-drilling.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-son-driving.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/images/poster-wide-workshop-welding.jpg": {
+    "height": 720,
+    "width": 1280,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "projects/drift-trike/images/poster-workshop-assembly.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/drift-trike/videos/clip-belt-sanding.mp4": {
+    "web": "projects/drift-trike/media/clip-belt-sanding-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-control-box-testing.mp4": {
+    "web": "projects/drift-trike/media/clip-control-box-testing-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-finished-walkaround.mp4": {
+    "web": "projects/drift-trike/media/clip-finished-walkaround-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-green-welding-bead.mp4": {
+    "web": "projects/drift-trike/media/clip-green-welding-bead-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-green-welding-close-bead.mp4": {
+    "web": "projects/drift-trike/media/clip-green-welding-close-bead-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-green-welding-first-pass.mp4": {
+    "web": "projects/drift-trike/media/clip-green-welding-first-pass-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-green-welding-long-pass.mp4": {
+    "web": "projects/drift-trike/media/clip-green-welding-long-pass-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-initial-motor-electronics-test.mp4": {
+    "web": "projects/drift-trike/media/clip-initial-motor-electronics-test-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-lincoln-learning-to-tap.mp4": {
+    "web": "projects/drift-trike/media/clip-lincoln-learning-to-tap-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-lincoln-wheel-fitting.mp4": {
+    "web": "projects/drift-trike/media/clip-lincoln-wheel-fitting-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-machined-hole-detail.mp4": {
+    "web": "projects/drift-trike/media/clip-machined-hole-detail-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-making-wires.mp4": {
+    "web": "projects/drift-trike/media/clip-making-wires-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-motor-axle-assembly.mp4": {
+    "web": "projects/drift-trike/media/clip-motor-axle-assembly-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-motor-mount-drilling.mp4": {
+    "web": "projects/drift-trike/media/clip-motor-mount-drilling-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-plasma-cutting.mp4": {
+    "web": "projects/drift-trike/media/clip-plasma-cutting-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-slow-motion-drilling.mp4": {
+    "web": "projects/drift-trike/media/clip-slow-motion-drilling-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-son-driving.mp4": {
+    "web": "projects/drift-trike/media/clip-son-driving-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-wide-workshop-welding.mp4": {
+    "web": "projects/drift-trike/media/clip-wide-workshop-welding-720.mp4"
+  },
+  "projects/drift-trike/videos/clip-workshop-assembly.mp4": {
+    "web": "projects/drift-trike/media/clip-workshop-assembly-720.mp4"
+  },
+  "projects/drift-trike/videos/extra-frame-layout.mp4": {
+    "web": "projects/drift-trike/media/extra-frame-layout-720.mp4"
+  },
+  "projects/drift-trike/videos/extra-mini-cam.mp4": {
+    "web": "projects/drift-trike/media/extra-mini-cam-720.mp4"
+  },
+  "projects/drift-trike/videos/extra-test-run.mp4": {
+    "web": "projects/drift-trike/media/extra-test-run-720.mp4"
+  },
+  "projects/drift-trike/videos/extra-unboxing.mp4": {
+    "web": "projects/drift-trike/media/extra-unboxing-720.mp4"
+  },
+  "projects/home-assistant/images/20190807_143121.jpg": {
+    "height": 3024,
+    "width": 4032,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/home-assistant/images/20190807_173312.jpg": {
+    "height": 4032,
+    "width": 3024,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/home-assistant/images/20250514_035820.jpg": {
+    "height": 2992,
+    "width": 2992,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/home-assistant/images/20250514_035826.jpg": {
+    "height": 2992,
+    "width": 2992,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/lathe-sparks/images/01-colchester-chipmaster.jpg": {
     "height": 1200,
     "width": 1200,
     "widths": [
@@ -1953,7 +2332,7 @@
       960
     ]
   },
-  "project-assets/lathe-sparks/02-chipmaster-bed-and-chuck.jpg": {
+  "projects/lathe-sparks/images/02-chipmaster-bed-and-chuck.jpg": {
     "height": 1200,
     "width": 1200,
     "widths": [
@@ -1961,7 +2340,12 @@
       960
     ]
   },
-  "project-assets/lathe-sparks/04-headstock.jpg": {
+  "projects/lathe-sparks/images/03-lathe-in-workshop.jpg": {
+    "height": 1200,
+    "width": 1200,
+    "widths": []
+  },
+  "projects/lathe-sparks/images/04-headstock.jpg": {
     "height": 1200,
     "width": 1200,
     "widths": [
@@ -1969,7 +2353,7 @@
       960
     ]
   },
-  "project-assets/lathe-sparks/05-sparks-hero.jpg": {
+  "projects/lathe-sparks/images/05-sparks-hero.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -1978,7 +2362,7 @@
       1600
     ]
   },
-  "project-assets/lathe-sparks/06-sparks-sideways.jpg": {
+  "projects/lathe-sparks/images/06-sparks-sideways.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -1987,7 +2371,7 @@
       1600
     ]
   },
-  "project-assets/lathe-sparks/07-sparks-curl.jpg": {
+  "projects/lathe-sparks/images/07-sparks-curl.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -1996,7 +2380,7 @@
       1600
     ]
   },
-  "project-assets/lathe-sparks/08-sparks-shower.jpg": {
+  "projects/lathe-sparks/images/08-sparks-shower.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2005,7 +2389,7 @@
       1600
     ]
   },
-  "project-assets/lathe-sparks/09-sparks-wide.jpg": {
+  "projects/lathe-sparks/images/09-sparks-wide.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2014,16 +2398,93 @@
       1600
     ]
   },
-  "project-assets/lathe-sparks/clip1-1080p.mp4": {
-    "web": "derived/project-assets/lathe-sparks/clip1-1080p-720.mp4"
+  "projects/lathe-sparks/images/10-sparks-detail.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": []
   },
-  "project-assets/lathe-sparks/clip2-1080p.mp4": {
-    "web": "derived/project-assets/lathe-sparks/clip2-1080p-720.mp4"
+  "projects/lathe-sparks/images/extra-falling-sparks.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/lathe-sparks/clip4-1080p.mp4": {
-    "web": "derived/project-assets/lathe-sparks/clip4-1080p-720.mp4"
+  "projects/lathe-sparks/images/extra-glowing-cut-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/mega-book-case/01-wall-before-build.jpg": {
+  "projects/lathe-sparks/images/extra-heavy-shower-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/lathe-sparks/images/extra-orange-tail.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/lathe-sparks/images/extra-side-sparks-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/lathe-sparks/images/extra-tool-close.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/lathe-sparks/images/extra-wide-shower.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/lathe-sparks/videos/clip1-1080p.mp4": {
+    "web": "projects/lathe-sparks/media/clip1-1080p-720.mp4"
+  },
+  "projects/lathe-sparks/videos/clip2-1080p.mp4": {
+    "web": "projects/lathe-sparks/media/clip2-1080p-720.mp4"
+  },
+  "projects/lathe-sparks/videos/clip4-1080p.mp4": {
+    "web": "projects/lathe-sparks/media/clip4-1080p-720.mp4"
+  },
+  "projects/lathe-sparks/videos/extra-glowing-cut.mp4": {
+    "web": "projects/lathe-sparks/media/extra-glowing-cut-720.mp4"
+  },
+  "projects/lathe-sparks/videos/extra-heavy-shower.mp4": {
+    "web": "projects/lathe-sparks/media/extra-heavy-shower-720.mp4"
+  },
+  "projects/lathe-sparks/videos/extra-side-sparks.mp4": {
+    "web": "projects/lathe-sparks/media/extra-side-sparks-720.mp4"
+  },
+  "projects/mega-book-case/images/01-wall-before-build.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2032,7 +2493,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/02-first-uprights-installed.jpg": {
+  "projects/mega-book-case/images/02-first-uprights-installed.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2041,7 +2502,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/03-wall-frame-progress.jpg": {
+  "projects/mega-book-case/images/03-wall-frame-progress.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2050,7 +2511,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/04-loaded-bookcase-wide.jpg": {
+  "projects/mega-book-case/images/04-loaded-bookcase-wide.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2059,7 +2520,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/05-loaded-bookcase-closer.jpg": {
+  "projects/mega-book-case/images/05-loaded-bookcase-closer.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2068,7 +2529,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/06-bookcase-through-glass.jpg": {
+  "projects/mega-book-case/images/06-bookcase-through-glass.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2077,7 +2538,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/07-bookcase-and-room.jpg": {
+  "projects/mega-book-case/images/07-bookcase-and-room.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2086,7 +2547,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/08-shelf-detail.jpg": {
+  "projects/mega-book-case/images/08-shelf-detail.jpg": {
     "height": 1800,
     "width": 1013,
     "widths": [
@@ -2094,7 +2555,7 @@
       960
     ]
   },
-  "project-assets/mega-book-case/09-console-drawer-build.jpg": {
+  "projects/mega-book-case/images/09-console-drawer-build.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2103,7 +2564,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/10-console-electronics.jpg": {
+  "projects/mega-book-case/images/10-console-electronics.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2112,7 +2573,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/11-ladder-installed-room-wide.jpg": {
+  "projects/mega-book-case/images/11-ladder-installed-room-wide.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2121,7 +2582,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/12-ladder-on-rails.jpg": {
+  "projects/mega-book-case/images/12-ladder-on-rails.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2130,7 +2591,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/13-ladder-frame-workbench.jpg": {
+  "projects/mega-book-case/images/13-ladder-frame-workbench.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2139,7 +2600,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/14-ladder-welding-workshop.jpg": {
+  "projects/mega-book-case/images/14-ladder-welding-workshop.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2148,7 +2609,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-carcase-clamping-poster.jpg": {
+  "projects/mega-book-case/images/clip-carcase-clamping-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2157,10 +2618,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-carcase-clamping.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-carcase-clamping-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-console-build-poster.jpg": {
+  "projects/mega-book-case/images/clip-console-build-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2169,10 +2627,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-console-build.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-console-build-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-front-face-layout-poster.jpg": {
+  "projects/mega-book-case/images/clip-front-face-layout-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2181,10 +2636,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-front-face-layout.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-front-face-layout-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-ladder-roller-machining-poster.jpg": {
+  "projects/mega-book-case/images/clip-ladder-roller-machining-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2193,10 +2645,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-ladder-roller-machining.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-ladder-roller-machining-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-ladder-waxing-poster.jpg": {
+  "projects/mega-book-case/images/clip-ladder-waxing-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2205,10 +2654,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-ladder-waxing.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-ladder-waxing-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-ladder-welding-poster.jpg": {
+  "projects/mega-book-case/images/clip-ladder-welding-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2217,10 +2663,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-ladder-welding.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-ladder-welding-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-panel-work-poster.jpg": {
+  "projects/mega-book-case/images/clip-panel-work-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2229,10 +2672,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-panel-work.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-panel-work-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-shelves-going-in-poster.jpg": {
+  "projects/mega-book-case/images/clip-shelves-going-in-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2241,10 +2681,7 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-shelves-going-in.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-shelves-going-in-720.mp4"
-  },
-  "project-assets/mega-book-case/clip-wall-frame-fitting-poster.jpg": {
+  "projects/mega-book-case/images/clip-wall-frame-fitting-poster.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2253,10 +2690,286 @@
       1600
     ]
   },
-  "project-assets/mega-book-case/clip-wall-frame-fitting.mp4": {
-    "web": "derived/project-assets/mega-book-case/clip-wall-frame-fitting-720.mp4"
+  "projects/mega-book-case/images/extra-cabinet-assembly-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/msc-ai/data-science-output-01.jpg": {
+  "projects/mega-book-case/images/extra-cabinet-assembly.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-console-detail.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-console-work-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-early-timber-layout.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-fitting-in-room.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-ladder-build.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-ladder-welding.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-ladder-work-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-long-shelf-work.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-roller-detail.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/images/extra-room-fitting-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/mega-book-case/videos/clip-carcase-clamping.mp4": {
+    "web": "projects/mega-book-case/media/clip-carcase-clamping-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-console-build.mp4": {
+    "web": "projects/mega-book-case/media/clip-console-build-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-front-face-layout.mp4": {
+    "web": "projects/mega-book-case/media/clip-front-face-layout-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-ladder-roller-machining.mp4": {
+    "web": "projects/mega-book-case/media/clip-ladder-roller-machining-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-ladder-waxing.mp4": {
+    "web": "projects/mega-book-case/media/clip-ladder-waxing-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-ladder-welding.mp4": {
+    "web": "projects/mega-book-case/media/clip-ladder-welding-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-panel-work.mp4": {
+    "web": "projects/mega-book-case/media/clip-panel-work-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-shelves-going-in.mp4": {
+    "web": "projects/mega-book-case/media/clip-shelves-going-in-720.mp4"
+  },
+  "projects/mega-book-case/videos/clip-wall-frame-fitting.mp4": {
+    "web": "projects/mega-book-case/media/clip-wall-frame-fitting-720.mp4"
+  },
+  "projects/mega-book-case/videos/extra-cabinet-assembly.mp4": {
+    "web": "projects/mega-book-case/media/extra-cabinet-assembly-720.mp4"
+  },
+  "projects/mega-book-case/videos/extra-console-work.mp4": {
+    "web": "projects/mega-book-case/media/extra-console-work-720.mp4"
+  },
+  "projects/mega-book-case/videos/extra-ladder-work.mp4": {
+    "web": "projects/mega-book-case/media/extra-ladder-work-720.mp4"
+  },
+  "projects/mega-book-case/videos/extra-room-fitting.mp4": {
+    "web": "projects/mega-book-case/media/extra-room-fitting-720.mp4"
+  },
+  "projects/motorised-standing-desk/images/01-laying-out-the-desk.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/02-workshop-team.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/03-test-fitting-top.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/04-cutting-and-marking.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/05-finished-timber-top.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/06-father-son-finished-top.jpg": {
+    "height": 1012,
+    "width": 1800,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/extra-checking-fit.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/extra-desk-test.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/extra-frame-assembly.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/extra-height-test-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/extra-layout-and-frame-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/extra-top-on-bench.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/images/extra-working-the-top-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/motorised-standing-desk/videos/clip-finished-top.mp4": {
+    "web": "projects/motorised-standing-desk/media/clip-finished-top-720.mp4"
+  },
+  "projects/motorised-standing-desk/videos/clip-tabletop-build.mp4": {
+    "web": "projects/motorised-standing-desk/media/clip-tabletop-build-720.mp4"
+  },
+  "projects/motorised-standing-desk/videos/extra-height-test.mp4": {
+    "web": "projects/motorised-standing-desk/media/extra-height-test-720.mp4"
+  },
+  "projects/motorised-standing-desk/videos/extra-layout-and-frame.mp4": {
+    "web": "projects/motorised-standing-desk/media/extra-layout-and-frame-720.mp4"
+  },
+  "projects/motorised-standing-desk/videos/extra-working-the-top.mp4": {
+    "web": "projects/motorised-standing-desk/media/extra-working-the-top-720.mp4"
+  },
+  "projects/msc-ai/images/data-science-output-01.jpg": {
     "height": 602,
     "width": 1289,
     "widths": [
@@ -2264,7 +2977,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/data-science-output-02.jpg": {
+  "projects/msc-ai/images/data-science-output-02.jpg": {
     "height": 1490,
     "width": 989,
     "widths": [
@@ -2272,35 +2985,40 @@
       960
     ]
   },
-  "project-assets/msc-ai/data-science-output-03.jpg": {
+  "projects/msc-ai/images/data-science-output-03.jpg": {
     "height": 549,
     "width": 869,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/data-science-output-04.jpg": {
+  "projects/msc-ai/images/data-science-output-04.jpg": {
     "height": 549,
     "width": 847,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/data-science-output-05.jpg": {
+  "projects/msc-ai/images/data-science-output-05.jpg": {
     "height": 549,
     "width": 847,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/dl-bleu-bad-model.jpg": {
+  "projects/msc-ai/images/data-science-output-06.jpg": {
+    "height": 549,
+    "width": 847,
+    "widths": []
+  },
+  "projects/msc-ai/images/dl-bleu-bad-model.jpg": {
     "height": 686,
     "width": 873,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/dl-cosine-similarity.jpg": {
+  "projects/msc-ai/images/dl-cosine-similarity.jpg": {
     "height": 799,
     "width": 1000,
     "widths": [
@@ -2308,7 +3026,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/dl-encoder-decoder.jpg": {
+  "projects/msc-ai/images/dl-encoder-decoder.jpg": {
     "height": 678,
     "width": 1498,
     "widths": [
@@ -2316,12 +3034,12 @@
       960
     ]
   },
-  "project-assets/msc-ai/dl-resnet152-diagram.jpg": {
+  "projects/msc-ai/images/dl-resnet152-diagram.jpg": {
     "height": 1500,
     "width": 476,
     "widths": []
   },
-  "project-assets/msc-ai/dmta-chatgpt-text-improvement.jpg": {
+  "projects/msc-ai/images/dmta-chatgpt-text-improvement.jpg": {
     "height": 814,
     "width": 1212,
     "widths": [
@@ -2329,7 +3047,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/dmta-generating-podcast.jpg": {
+  "projects/msc-ai/images/dmta-generating-podcast.jpg": {
     "height": 1022,
     "width": 1500,
     "widths": [
@@ -2337,7 +3055,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/dmta-persona-scores.jpg": {
+  "projects/msc-ai/images/dmta-persona-scores.jpg": {
     "height": 1064,
     "width": 1500,
     "widths": [
@@ -2345,14 +3063,14 @@
       960
     ]
   },
-  "project-assets/msc-ai/krr-protege-ontology.jpg": {
+  "projects/msc-ai/images/krr-protege-ontology.jpg": {
     "height": 368,
     "width": 787,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/krr-sandwich-counterexample.jpg": {
+  "projects/msc-ai/images/krr-sandwich-counterexample.jpg": {
     "height": 908,
     "width": 1158,
     "widths": [
@@ -2360,7 +3078,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/ml-final-orbit-plot.jpg": {
+  "projects/msc-ai/images/ml-final-orbit-plot.jpg": {
     "height": 1201,
     "width": 1174,
     "widths": [
@@ -2368,7 +3086,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/ml-initial-gpr.jpg": {
+  "projects/msc-ai/images/ml-initial-gpr.jpg": {
     "height": 1287,
     "width": 1120,
     "widths": [
@@ -2376,7 +3094,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/ml-mars-loops.jpg": {
+  "projects/msc-ai/images/ml-mars-loops.jpg": {
     "height": 1216,
     "width": 1225,
     "widths": [
@@ -2384,7 +3102,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/ml-neural-network-diagram.jpg": {
+  "projects/msc-ai/images/ml-neural-network-diagram.jpg": {
     "height": 723,
     "width": 1500,
     "widths": [
@@ -2392,7 +3110,7 @@
       960
     ]
   },
-  "project-assets/msc-ai/mlx-course-architecture.jpg": {
+  "projects/msc-ai/images/mlx-course-architecture.jpg": {
     "height": 980,
     "width": 1600,
     "widths": [
@@ -2401,7 +3119,7 @@
       1600
     ]
   },
-  "project-assets/msc-ai/p4ds-architecture-pipeline.jpg": {
+  "projects/msc-ai/images/p4ds-architecture-pipeline.jpg": {
     "height": 815,
     "width": 1500,
     "widths": [
@@ -2409,14 +3127,14 @@
       960
     ]
   },
-  "project-assets/msc-ai/p4ds-letter-frequencies.jpg": {
+  "projects/msc-ai/images/p4ds-letter-frequencies.jpg": {
     "height": 1200,
     "width": 667,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/p4ds-project-gutenberg-export.jpg": {
+  "projects/msc-ai/images/p4ds-project-gutenberg-export.jpg": {
     "height": 661,
     "width": 1500,
     "widths": [
@@ -2424,14 +3142,14 @@
       960
     ]
   },
-  "project-assets/msc-ai/robotics-reward-function.jpg": {
+  "projects/msc-ai/images/robotics-reward-function.jpg": {
     "height": 1054,
     "width": 796,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/robotics-rviz.jpg": {
+  "projects/msc-ai/images/robotics-rviz.jpg": {
     "height": 852,
     "width": 1500,
     "widths": [
@@ -2439,21 +3157,21 @@
       960
     ]
   },
-  "project-assets/msc-ai/robotics-sarsa-learning.jpg": {
+  "projects/msc-ai/images/robotics-sarsa-learning.jpg": {
     "height": 1043,
     "width": 776,
     "widths": [
       480
     ]
   },
-  "project-assets/msc-ai/robotics-world.jpg": {
+  "projects/msc-ai/images/robotics-world.jpg": {
     "height": 602,
     "width": 602,
     "widths": [
       480
     ]
   },
-  "project-assets/robot-arm/01-printer-making-arm-parts.jpg": {
+  "projects/robot-arm/images/01-printer-making-arm-parts.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2462,7 +3180,7 @@
       1600
     ]
   },
-  "project-assets/robot-arm/02-printed-coupler-on-bed.jpg": {
+  "projects/robot-arm/images/02-printed-coupler-on-bed.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2471,7 +3189,12 @@
       1600
     ]
   },
-  "project-assets/robot-arm/04-workshop-context.jpg": {
+  "projects/robot-arm/images/03-printer-in-progress.jpg": {
+    "height": 1013,
+    "width": 1800,
+    "widths": []
+  },
+  "projects/robot-arm/images/04-workshop-context.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2480,7 +3203,7 @@
       1600
     ]
   },
-  "project-assets/robot-arm/05-workshop-wide.jpg": {
+  "projects/robot-arm/images/05-workshop-wide.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2489,7 +3212,7 @@
       1600
     ]
   },
-  "project-assets/robot-arm/06-rods-and-fasteners.jpg": {
+  "projects/robot-arm/images/06-rods-and-fasteners.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2498,7 +3221,7 @@
       1600
     ]
   },
-  "project-assets/robot-arm/07-cycloidal-joint-closeup.jpg": {
+  "projects/robot-arm/images/07-cycloidal-joint-closeup.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2507,7 +3230,7 @@
       1600
     ]
   },
-  "project-assets/robot-arm/08-joint-side-by-side.jpg": {
+  "projects/robot-arm/images/08-joint-side-by-side.jpg": {
     "height": 1013,
     "width": 1800,
     "widths": [
@@ -2516,25 +3239,97 @@
       1600
     ]
   },
-  "project-assets/robot-arm/clip-arm-assembly.mp4": {
-    "web": "derived/project-assets/robot-arm/clip-arm-assembly-720.mp4"
+  "projects/robot-arm/images/extra-a-axis-build.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/robot-arm/clip-cycloidal-layout.mp4": {
-    "web": "derived/project-assets/robot-arm/clip-cycloidal-layout-720.mp4"
+  "projects/robot-arm/images/extra-a-axis-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/robot-arm/clip-joint-hand-test.mp4": {
-    "web": "derived/project-assets/robot-arm/clip-joint-hand-test-720.mp4"
+  "projects/robot-arm/images/extra-arm-motion-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/robot-arm/clip-metalwork-welding.mp4": {
-    "web": "derived/project-assets/robot-arm/clip-metalwork-welding-720.mp4"
+  "projects/robot-arm/images/extra-arm-on-bench.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/robot-arm/clip-printing-arm-parts.mp4": {
-    "web": "derived/project-assets/robot-arm/clip-printing-arm-parts-720.mp4"
+  "projects/robot-arm/images/extra-cycloidal-parts.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/robot-arm/clip-servo-electronics.mp4": {
-    "web": "derived/project-assets/robot-arm/clip-servo-electronics-720.mp4"
+  "projects/robot-arm/images/extra-cycloidal-work-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/robot-arm/poster-arm-assembly.jpg": {
+  "projects/robot-arm/images/extra-printed-part.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/robot-arm/images/extra-servo-bench.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/robot-arm/images/extra-servo-testing-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/robot-arm/images/extra-wiring-servo.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/robot-arm/images/poster-arm-assembly.jpg": {
     "height": 720,
     "width": 1280,
     "widths": [
@@ -2542,7 +3337,7 @@
       960
     ]
   },
-  "project-assets/robot-arm/poster-cycloidal-layout.jpg": {
+  "projects/robot-arm/images/poster-cycloidal-layout.jpg": {
     "height": 720,
     "width": 1280,
     "widths": [
@@ -2550,7 +3345,7 @@
       960
     ]
   },
-  "project-assets/robot-arm/poster-joint-hand-test.jpg": {
+  "projects/robot-arm/images/poster-joint-hand-test.jpg": {
     "height": 720,
     "width": 1280,
     "widths": [
@@ -2558,7 +3353,7 @@
       960
     ]
   },
-  "project-assets/robot-arm/poster-metalwork-welding.jpg": {
+  "projects/robot-arm/images/poster-metalwork-welding.jpg": {
     "height": 720,
     "width": 1280,
     "widths": [
@@ -2566,7 +3361,7 @@
       960
     ]
   },
-  "project-assets/robot-arm/poster-printing-arm-parts.jpg": {
+  "projects/robot-arm/images/poster-printing-arm-parts.jpg": {
     "height": 720,
     "width": 1280,
     "widths": [
@@ -2574,7 +3369,7 @@
       960
     ]
   },
-  "project-assets/robot-arm/poster-servo-electronics.jpg": {
+  "projects/robot-arm/images/poster-servo-electronics.jpg": {
     "height": 720,
     "width": 1280,
     "widths": [
@@ -2582,7 +3377,37 @@
       960
     ]
   },
-  "project-assets/spiral-staircase/01-finished-staircase-full.jpg": {
+  "projects/robot-arm/videos/clip-arm-assembly.mp4": {
+    "web": "projects/robot-arm/media/clip-arm-assembly-720.mp4"
+  },
+  "projects/robot-arm/videos/clip-cycloidal-layout.mp4": {
+    "web": "projects/robot-arm/media/clip-cycloidal-layout-720.mp4"
+  },
+  "projects/robot-arm/videos/clip-joint-hand-test.mp4": {
+    "web": "projects/robot-arm/media/clip-joint-hand-test-720.mp4"
+  },
+  "projects/robot-arm/videos/clip-metalwork-welding.mp4": {
+    "web": "projects/robot-arm/media/clip-metalwork-welding-720.mp4"
+  },
+  "projects/robot-arm/videos/clip-printing-arm-parts.mp4": {
+    "web": "projects/robot-arm/media/clip-printing-arm-parts-720.mp4"
+  },
+  "projects/robot-arm/videos/clip-servo-electronics.mp4": {
+    "web": "projects/robot-arm/media/clip-servo-electronics-720.mp4"
+  },
+  "projects/robot-arm/videos/extra-a-axis.mp4": {
+    "web": "projects/robot-arm/media/extra-a-axis-720.mp4"
+  },
+  "projects/robot-arm/videos/extra-arm-motion.mp4": {
+    "web": "projects/robot-arm/media/extra-arm-motion-720.mp4"
+  },
+  "projects/robot-arm/videos/extra-cycloidal-work.mp4": {
+    "web": "projects/robot-arm/media/extra-cycloidal-work-720.mp4"
+  },
+  "projects/robot-arm/videos/extra-servo-testing.mp4": {
+    "web": "projects/robot-arm/media/extra-servo-testing-720.mp4"
+  },
+  "projects/spiral-staircase/images/01-finished-staircase-full.jpg": {
     "height": 1920,
     "width": 1080,
     "widths": [
@@ -2590,7 +3415,7 @@
       960
     ]
   },
-  "project-assets/spiral-staircase/02-finished-staircase-pergola.jpg": {
+  "projects/spiral-staircase/images/02-finished-staircase-pergola.jpg": {
     "height": 1920,
     "width": 1080,
     "widths": [
@@ -2598,7 +3423,7 @@
       960
     ]
   },
-  "project-assets/spiral-staircase/03-finished-staircase-detail.jpg": {
+  "projects/spiral-staircase/images/03-finished-staircase-detail.jpg": {
     "height": 1920,
     "width": 1080,
     "widths": [
@@ -2606,7 +3431,7 @@
       960
     ]
   },
-  "project-assets/spiral-staircase/04-before-red-staircase-overhead.jpg": {
+  "projects/spiral-staircase/images/04-before-red-staircase-overhead.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2615,7 +3440,7 @@
       1600
     ]
   },
-  "project-assets/spiral-staircase/05-red-staircase-in-courtyard.jpg": {
+  "projects/spiral-staircase/images/05-red-staircase-in-courtyard.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2624,7 +3449,7 @@
       1600
     ]
   },
-  "project-assets/spiral-staircase/06-handrail-prep.jpg": {
+  "projects/spiral-staircase/images/06-handrail-prep.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2633,7 +3458,7 @@
       1600
     ]
   },
-  "project-assets/spiral-staircase/07-grinding-handrail.jpg": {
+  "projects/spiral-staircase/images/07-grinding-handrail.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2642,7 +3467,7 @@
       1600
     ]
   },
-  "project-assets/spiral-staircase/08-handrail-detail.jpg": {
+  "projects/spiral-staircase/images/08-handrail-detail.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2651,7 +3476,7 @@
       1600
     ]
   },
-  "project-assets/spiral-staircase/09-cutting-curved-rail.jpg": {
+  "projects/spiral-staircase/images/09-cutting-curved-rail.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2660,16 +3485,97 @@
       1600
     ]
   },
-  "project-assets/spiral-staircase/clip-cutting-curved-rail.mp4": {
-    "web": "derived/project-assets/spiral-staircase/clip-cutting-curved-rail-720.mp4"
+  "projects/spiral-staircase/images/extra-fabrication-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/spiral-staircase/clip-overhead-before.mp4": {
-    "web": "derived/project-assets/spiral-staircase/clip-overhead-before-720.mp4"
+  "projects/spiral-staircase/images/extra-fitting-up.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/spiral-staircase/clip-working-on-handrail.mp4": {
-    "web": "derived/project-assets/spiral-staircase/clip-working-on-handrail-720.mp4"
+  "projects/spiral-staircase/images/extra-installation-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/vintage-string-lights/01-finished-string-lights-wide.jpg": {
+  "projects/spiral-staircase/images/extra-jig-work.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/spiral-staircase/images/extra-raw-steel.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/spiral-staircase/images/extra-setting-up-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/spiral-staircase/images/extra-stair-detail.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/spiral-staircase/images/extra-welded-tread.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/spiral-staircase/videos/clip-cutting-curved-rail.mp4": {
+    "web": "projects/spiral-staircase/media/clip-cutting-curved-rail-720.mp4"
+  },
+  "projects/spiral-staircase/videos/clip-overhead-before.mp4": {
+    "web": "projects/spiral-staircase/media/clip-overhead-before-720.mp4"
+  },
+  "projects/spiral-staircase/videos/clip-working-on-handrail.mp4": {
+    "web": "projects/spiral-staircase/media/clip-working-on-handrail-720.mp4"
+  },
+  "projects/spiral-staircase/videos/extra-fabrication.mp4": {
+    "web": "projects/spiral-staircase/media/extra-fabrication-720.mp4"
+  },
+  "projects/spiral-staircase/videos/extra-installation.mp4": {
+    "web": "projects/spiral-staircase/media/extra-installation-720.mp4"
+  },
+  "projects/spiral-staircase/videos/extra-setting-up.mp4": {
+    "web": "projects/spiral-staircase/media/extra-setting-up-720.mp4"
+  },
+  "projects/vintage-string-lights/images/01-finished-string-lights-wide.jpg": {
     "height": 1800,
     "width": 1800,
     "widths": [
@@ -2678,7 +3584,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/02-finished-kitchen-lights.jpg": {
+  "projects/vintage-string-lights/images/02-finished-kitchen-lights.jpg": {
     "height": 1800,
     "width": 1800,
     "widths": [
@@ -2687,7 +3593,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/03-bandsaw-cutting-blocks.jpg": {
+  "projects/vintage-string-lights/images/03-bandsaw-cutting-blocks.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2696,7 +3602,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/04-marking-the-blocks.jpg": {
+  "projects/vintage-string-lights/images/04-marking-the-blocks.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2705,7 +3611,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/05-parts-on-welding-table.jpg": {
+  "projects/vintage-string-lights/images/05-parts-on-welding-table.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2714,7 +3620,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/06-first-bulb-test.jpg": {
+  "projects/vintage-string-lights/images/06-first-bulb-test.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2723,7 +3629,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/07-bulb-holder-wiring.jpg": {
+  "projects/vintage-string-lights/images/07-bulb-holder-wiring.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2732,7 +3638,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/08-installing-across-beams.jpg": {
+  "projects/vintage-string-lights/images/08-installing-across-beams.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2741,7 +3647,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/09-string-layout-installed.jpg": {
+  "projects/vintage-string-lights/images/09-string-layout-installed.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2750,7 +3656,7 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/10-evening-sky-payoff.jpg": {
+  "projects/vintage-string-lights/images/10-evening-sky-payoff.jpg": {
     "height": 1012,
     "width": 1800,
     "widths": [
@@ -2759,13 +3665,85 @@
       1600
     ]
   },
-  "project-assets/vintage-string-lights/clip-cutting-blocks.mp4": {
-    "web": "derived/project-assets/vintage-string-lights/clip-cutting-blocks-720.mp4"
+  "projects/vintage-string-lights/images/extra-cable-and-holders-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/vintage-string-lights/clip-installing-lights.mp4": {
-    "web": "derived/project-assets/vintage-string-lights/clip-installing-lights-720.mp4"
+  "projects/vintage-string-lights/images/extra-cutting-stock.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
-  "project-assets/vintage-string-lights/clip-wiring-and-test.mp4": {
-    "web": "derived/project-assets/vintage-string-lights/clip-wiring-and-test-720.mp4"
+  "projects/vintage-string-lights/images/extra-drilling-blocks.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/vintage-string-lights/images/extra-final-install-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/vintage-string-lights/images/extra-finished-run.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/vintage-string-lights/images/extra-repetition-at-bench-poster.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/vintage-string-lights/images/extra-wiring-bench.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "projects/vintage-string-lights/videos/clip-cutting-blocks.mp4": {
+    "web": "projects/vintage-string-lights/media/clip-cutting-blocks-720.mp4"
+  },
+  "projects/vintage-string-lights/videos/clip-installing-lights.mp4": {
+    "web": "projects/vintage-string-lights/media/clip-installing-lights-720.mp4"
+  },
+  "projects/vintage-string-lights/videos/clip-wiring-and-test.mp4": {
+    "web": "projects/vintage-string-lights/media/clip-wiring-and-test-720.mp4"
+  },
+  "projects/vintage-string-lights/videos/extra-cable-and-holders.mp4": {
+    "web": "projects/vintage-string-lights/media/extra-cable-and-holders-720.mp4"
+  },
+  "projects/vintage-string-lights/videos/extra-final-install.mp4": {
+    "web": "projects/vintage-string-lights/media/extra-final-install-720.mp4"
+  },
+  "projects/vintage-string-lights/videos/extra-repetition-at-bench.mp4": {
+    "web": "projects/vintage-string-lights/media/extra-repetition-at-bench-720.mp4"
   }
 }
