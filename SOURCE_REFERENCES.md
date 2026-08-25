@@ -55,6 +55,16 @@ Do not publish files from the source folders blindly. Some sources are personal 
   same rule as the danfest gallery: full-size camera files are not committed. The camera
   originals have been deleted; the 2400px imports are the copies of record here.
 
+### Active Speakers - FreeCAD walkthrough
+
+- FreeCAD walkthrough: screen recording `2026-08-25 18-07-08.mp4`, 1724x720, 106 seconds,
+  renamed to `freecad-walkthrough.mp4`. The recording came in at -52.5 LUFS, roughly 36dB
+  below a normal web level, so the audio was normalised to -16 LUFS with a two-pass EBU
+  R128 pass (`loudnorm`) and the video stream copied untouched. The source targets a true
+  peak of -3 dBTP: at -1.5 the 96k AAC web copy overshot to 0 dBTP, and the extra headroom
+  leaves the derived copy at -1.1. Full
+  length, no trim. Poster frame taken at 00:00:10.
+
 ### Belly Board
 
 - Page: `projects\belly-board\index.html`

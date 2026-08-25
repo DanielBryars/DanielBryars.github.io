@@ -1193,6 +1193,15 @@
       1600
     ]
   },
+  "projects/active-speakers/images/freecad-walkthrough-poster.jpg": {
+    "height": 720,
+    "width": 1724,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "projects/active-speakers/images/poster-amp-plate-fitting.jpg": {
     "height": 900,
     "width": 1600,
@@ -1348,6 +1357,9 @@
   },
   "projects/active-speakers/videos/clip-woofer-fitting.mp4": {
     "web": "projects/active-speakers/media/clip-woofer-fitting-720.mp4"
+  },
+  "projects/active-speakers/videos/freecad-walkthrough.mp4": {
+    "web": "projects/active-speakers/media/freecad-walkthrough-720.mp4"
   },
   "projects/belly-board/images/selected/01-board-blank-on-bench.jpg": {
     "height": 1013,
