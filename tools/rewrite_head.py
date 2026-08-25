@@ -49,6 +49,7 @@ PAGE_IMAGES = {
     "cool-projects/RobotArm.html": "project-assets/robot-arm/07-cycloidal-joint-closeup.jpg",
     "cool-projects/3DPrinters.html": "project-assets/3d-printers/01-prusa-mk4-toolhead.jpg",
     "cool-projects/MScAI.html": "project-assets/msc-ai/robotics-rviz.jpg",
+    "cool-projects/ActiveSpeakersESP32Controller.html": "project-assets/active-speakers/01-speakers-measurement-bench.jpg",
 }
 
 # The MSc module pages all share the programme's share image unless they have

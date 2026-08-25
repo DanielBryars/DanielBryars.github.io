@@ -194,6 +194,170 @@
       960
     ]
   },
+  "project-assets/active-speakers/01-speakers-measurement-bench.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/02-speakers-wide-workshop.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/03-empty-baffles-on-bench.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/04-routed-coax-opening.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/05-gloss-finish-reflection.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/06-pair-fronts-close.jpg": {
+    "height": 3376,
+    "width": 6000,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/07-speaker-response.png": {
+    "height": 825,
+    "width": 1100,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "project-assets/active-speakers/08-speaker-compare.png": {
+    "height": 825,
+    "width": 1210,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "project-assets/active-speakers/09-damage-check.png": {
+    "height": 825,
+    "width": 1210,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "project-assets/active-speakers/10-preset-compare.png": {
+    "height": 605,
+    "width": 1210,
+    "widths": [
+      480,
+      960
+    ]
+  },
+  "project-assets/active-speakers/11-cad-all.jpg": {
+    "height": 1489,
+    "width": 2105,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/13-rear-baffle.jpg": {
+    "height": 1488,
+    "width": 2105,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/clip-bench-test.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-bench-test-720.mp4"
+  },
+  "project-assets/active-speakers/clip-driver-fitting.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-driver-fitting-720.mp4"
+  },
+  "project-assets/active-speakers/clip-final-walkaround.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-final-walkaround-720.mp4"
+  },
+  "project-assets/active-speakers/clip-finishing-coat.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-finishing-coat-720.mp4"
+  },
+  "project-assets/active-speakers/clip-routing-baffle.mp4": {
+    "web": "derived/project-assets/active-speakers/clip-routing-baffle-720.mp4"
+  },
+  "project-assets/active-speakers/poster-bench-test.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-driver-fitting.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-final-walkaround.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-finishing-coat.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "project-assets/active-speakers/poster-routing-baffle.jpg": {
+    "height": 900,
+    "width": 1600,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "project-assets/belly-board/selected/01-board-blank-on-bench.jpg": {
     "height": 1013,
     "width": 1800,
