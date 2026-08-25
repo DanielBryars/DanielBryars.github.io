@@ -196,10 +196,8 @@ Clips, re-cut with audio in August 2026 after the originals were found silent.
 
 | Source | From | Length | Asset |
 | --- | --- | --- | --- |
+| `C1662.MP4` | `00:01:05` | 32s | `clip-tabletop-build.mp4` |
 | `C1665.MP4` | `00:00:38` | 28s | `clip-finished-top.mp4` |
-
-`clip-tabletop-build.mp4` is still silent: no confident match was found in
-`F:ideo\desk-project`.
 
 ## Active Speakers
 
