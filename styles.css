@@ -1339,9 +1339,21 @@ h1 {
 }
 
 @media (max-width: 620px) {
+    .screen-bar {
+        flex-wrap: wrap;
+    }
+
+    .screen-bar span {
+        min-width: 0;
+    }
+
     .spec-sheet dl > div {
         grid-template-columns: 1fr;
         gap: 2px;
+    }
+
+    .chess-board-page .artifact-copy h1 {
+        font-size: 38px;
     }
 }
 

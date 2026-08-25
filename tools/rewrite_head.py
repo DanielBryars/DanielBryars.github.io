@@ -44,6 +44,7 @@ PAGE_IMAGES = {
     "cool-projects/VintageStringLights.html": "project-assets/vintage-string-lights/01-finished-string-lights-wide.jpg",
     "cool-projects/MotorisedStandingDesk.html": "project-assets/desk-project/06-father-son-finished-top.jpg",
     "cool-projects/BellyBoard.html": "project-assets/belly-board/selected/06-finished-grain-detail.jpg",
+    "cool-projects/ChessBoard.html": "images/ChessProjectElectromagnets.jpg",
     "cool-projects/CVInABox.html": "images/CV-Box.jpg",
     "cool-projects/RobotArm.html": "project-assets/robot-arm/07-cycloidal-joint-closeup.jpg",
     "cool-projects/3DPrinters.html": "project-assets/3d-printers/01-prusa-mk4-toolhead.jpg",
