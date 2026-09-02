@@ -22,10 +22,12 @@ as it actually is.
 
 Consequences:
 
-- The homepage headline is **"I build things."** Do not replace it with a
-  grand tagline. The previous one ("systems where software has to survive
+- The homepage headline is **"I like building things."** Do not replace it with
+  a grand tagline. The previous one ("systems where software has to survive
   contact with the physical world") was killed for being competent-sounding
-  LinkedIn language.
+  LinkedIn language. It read "I build things." until 2026-09-02; the "I like"
+  is deliberate, and the same enthusiasm carries the brand subline ("I like
+  applying science and engineering to build things") and the through-line band.
 - Photographs go high. The differentiator is that these objects exist, so the
   `.evidence-strip` sits directly under the hero, above any prose.
 - Lead with the extraordinary: &pound;8M ARR and the exit, Formula One, the MSc
