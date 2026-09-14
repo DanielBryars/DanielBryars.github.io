@@ -2343,3 +2343,12 @@ h1 {
         display: none;
     }
 }
+
+/* Short personal notes use the existing directory layout. */
+.heroes-list .directory-card {
+    min-height: 0;
+}
+
+.top-nav a[aria-current="page"] {
+    color: var(--yellow);
+}

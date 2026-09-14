@@ -14,6 +14,7 @@ automatically on every push to `master`.
 | `index.html` | Site landing page: intro, selected projects, contact |
 | `cv.html` | CV, with a print stylesheet so it saves to a sensible PDF |
 | `about.html` | Background and origin story |
+| `heroes.html` | Personal notes on people whose work I admire |
 | `projects/index.html` | Projects landing page: the list/grid of project write-ups |
 | `projects/<project>/index.html` | One folder per project, with the page and its media together |
 | `bbcb-demo.html` | A Ceefax-style teletext page, standalone styles |
